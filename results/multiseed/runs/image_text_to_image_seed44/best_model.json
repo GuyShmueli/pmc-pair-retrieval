@@ -1,0 +1,108 @@
+{
+  "configuration": "image_text_to_image",
+  "epoch": 26,
+  "global_step": 14248,
+  "val": {
+    "n_queries": 8245,
+    "R@1": {
+      "mean": 0.07176175264651809,
+      "lo": 0.06637256081538527,
+      "hi": 0.07625883087840016
+    },
+    "R@5": {
+      "mean": 0.20853480255968865,
+      "lo": 0.20069765366313402,
+      "hi": 0.21601781627105682
+    },
+    "R@10": {
+      "mean": 0.3093657143409502,
+      "lo": 0.30025544979577357,
+      "hi": 0.31738718270146266
+    },
+    "R@100": {
+      "mean": 0.7461812664498844,
+      "lo": 0.7370434418870977,
+      "hi": 0.7540395131950274
+    },
+    "Hit@1": {
+      "mean": 0.12043662825955125,
+      "lo": 0.11303214069132808,
+      "hi": 0.12674651303820497
+    },
+    "Hit@5": {
+      "mean": 0.29896907216494845,
+      "lo": 0.28999090357792606,
+      "hi": 0.3086810187992723
+    },
+    "Hit@10": {
+      "mean": 0.42171012734990904,
+      "lo": 0.4096846573681019,
+      "hi": 0.4312947240751971
+    },
+    "Hit@100": {
+      "mean": 0.8312916919345058,
+      "lo": 0.8225560946027896,
+      "hi": 0.8384536082474227
+    },
+    "mAP": {
+      "mean": 0.1683218473278466,
+      "lo": 0.16266426388579788,
+      "hi": 0.17363037717522462
+    },
+    "nDCG": {
+      "mean": 0.3416760163884878,
+      "lo": 0.33619312109270405,
+      "hi": 0.34656328324927005
+    },
+    "gallery_size": 8245
+  },
+  "config": {
+    "configuration": "image_text_to_image",
+    "seed": 44,
+    "hash_seed": 42,
+    "split": "data/article_disjoint_split.json",
+    "hard_negatives": "data/hard_negatives.json",
+    "image_size": 224,
+    "train_views": 3,
+    "eval_views": 3,
+    "crop_scale": [
+      0.9,
+      1.0
+    ],
+    "epochs": 30,
+    "batch_size": 128,
+    "lr": 1e-06,
+    "weight_decay": 0.2,
+    "betas": [
+      0.9,
+      0.98
+    ],
+    "eps": 1e-06,
+    "warmup_steps": 200,
+    "clip_grad_norm": 1.5,
+    "frozen_vision_blocks": 8,
+    "precision": "bf16",
+    "grad_checkpointing": "all",
+    "lambda_image_image": 0.3,
+    "lambda_image_text": 0.6,
+    "triplet_margin": 0.09,
+    "triplet_topk_negatives": 4,
+    "hard_negatives_per_anchor": 15,
+    "hard_negatives_sampled_per_image": 3,
+    "query_text": "mean",
+    "eval_batch_size": 128,
+    "text_batch_size": 256,
+    "early_stopping": {
+      "metric": "R@10",
+      "min_epochs": 3,
+      "patience": 3
+    },
+    "num_workers": 4,
+    "log_every": 20
+  },
+  "weights_file": "best_model.safetensors",
+  "kind": "full_model",
+  "n_tensors": 351,
+  "state_dict_sha256": "91ff29172d066dd0946346aded14b425e01cabbce045dd92434fc2f15964592d",
+  "sha256": "049b11db47ff7bce4563d808b0fbb9fcf6e1342fc649ee9ed49fee6f6e720d92"
+}

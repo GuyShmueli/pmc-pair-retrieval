@@ -1,0 +1,65 @@
+# image_to_image: fine-tune the BiomedCLIP vision tower for image-to-image retrieval.
+# Every training image in use is drawn as a query once per epoch (the incomplete last batch is
+# dropped), paired with one of its direct pair partners drawn uniformly at random; a per-positive
+# InfoNCE loss runs over the images of the batch. Training images that are pixel copies of a
+# validation or test image are not used, nor are partners left without a training positive (with
+# the shipped split and pixel hashes, 70,549 of the 70,552 training images are used). The epoch
+# with the highest validation Recall@10 is kept. See pmc_pair_retrieval/train_image_to_image.py.
+#
+#   python -m pmc_pair_retrieval.train --config configs/image_to_image.yaml \
+#       --data-dir DATA_DIR --output-dir runs/image_to_image
+configuration: image_to_image
+
+# Randomness. seed: Python, numpy and torch generators and the epoch item sampler.
+# hash_seed: PYTHONHASHSEED, set by the train command.
+seed: 42
+hash_seed: 42
+
+# Data files (repository-relative). evaluate uses the same split file.
+split: data/article_disjoint_split.json   # image id -> train / val / test
+pixel_hashes: data/pixel_md5.json         # md5 of the decoded pixels; identical images are never negatives
+                                          # of each other
+
+# Views and augmentation. Each image is resized to a short side of image_size and cut into three
+# square crops along its long axis: start, centre and end. Training jitters each crop: a random
+# resized crop of crop_scale of its area (aspect ratio 1), then colour jitter with probability
+# color_jitter.p, then a random rotation of up to rotation_degrees. Validation and evaluate use the
+# crops as they are.
+image_size: 224                           # input size of the pretrained vision tower
+train_views: 3                            # views per training image (must be 3)
+eval_views: 3                             # views per image in validation and evaluate (must be 3)
+crop_scale: [0.9, 1.0]
+color_jitter:
+  brightness: 0.1
+  contrast: 0.1
+  p: 0.5
+rotation_degrees: 5
+
+# Optimisation: the whole vision tower is trained; the text tower and the logit scale stay frozen.
+epochs: 12
+batch_size: 128             # queries per step; with their positives 256 images, i.e. 768 view crops
+lr: 6.0e-6                  # peak learning rate of the top block, the final norm and the projection head
+layer_decay: 0.75           # block i (0-11) trains at lr * 0.75^(11 - i); the patch, position and
+                            # class-token embeddings at lr * 0.75^12
+weight_decay: 0.05          # weight matrices only (not biases, norms, position embedding or class token)
+betas: [0.9, 0.98]          # AdamW
+eps: 1.0e-6                 # AdamW
+warmup_steps: 200           # linear warmup, then cosine decay to zero at epochs x steps per epoch (12 x 551)
+clip_grad_norm: 1.5
+temperature: 0.10           # InfoNCE logits = cosine similarity / temperature
+grad_checkpointing: true    # recompute block activations in the backward pass (memory only)
+
+# Validation, checkpoint selection and early stopping. The checkpoint with the highest validation
+# metric is kept (strictly higher than all earlier epochs; epoch 0, the pretrained model, is not
+# eligible). Training stops once the metric has not improved for patience epochs, but not before
+# min_epochs; with patience 12 and 12 epochs it never stops early.
+eval_batch_size: 128        # images per forward pass in validation and evaluate
+early_stopping:
+  metric: R@10
+  min_epochs: 3
+  patience: 12
+
+# Data loading. num_workers changes the numbers: worker w of each epoch's DataLoader draws the
+# augmentations of batches w, w + num_workers, ... from its own seeded generator.
+num_workers: 8
+log_every: 100              # optimizer steps between progress lines

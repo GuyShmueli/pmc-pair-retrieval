@@ -1,0 +1,17 @@
+# Conda environment: Python 3.11.10 with the pinned packages of requirements.txt.
+#
+#   conda env create -f environment.yml
+#   conda activate pmc-pair-retrieval
+#
+# The pip, certifi and ca-certificates minimums exclude releases affected by the eMudhra/emSign CA certificate
+# incident; they do not change any computation.
+name: pmc-pair-retrieval
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.10
+  - pip>=26.2.2
+  - certifi>=2026.10.19
+  - ca-certificates>=2026.10.19
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,104 @@
+cff-version: "1.2.0"
+message: >-
+  Please cite this software, the PMC-PaIR dataset, the PMC-PaIR Data Descriptor,
+  BiomedCLIP and, if you use it, the PMC-PaIR dataset construction pipeline, as
+  listed under references. The license field covers only the files that
+  LICENSING.md lists as code, documentation and configuration. LICENSING.md
+  gives the terms for the other paths.
+title: "BiomedCLIP image retrieval on PMC-PaIR"
+type: software
+version: "1.1.0rc1"
+license: MIT
+authors:
+  - family-names: Shmueli
+    given-names: Guy
+  - family-names: Hope
+    given-names: Tom
+keywords:
+  - medical imaging
+  - image retrieval
+  - case reports
+  - PubMed Central
+  - BiomedCLIP
+references:
+  - type: data
+    title: "PMC-PaIR: Clinically similar medical image pairs from PubMed Central case reports"
+    authors:
+      - family-names: Shmueli
+        given-names: Guy
+      - family-names: Hope
+        given-names: Tom
+    # Reserved DOI: it resolves once the dataset record is published (README.md, Release status).
+    doi: "10.5281/zenodo.23439169"
+  - type: article
+    title: >-
+      Clinically similar image pairs with modality, anatomy and diagnosis
+      labels from PubMed Central case reports
+    authors:
+      - family-names: Shmueli
+        given-names: Guy
+      - family-names: Hope
+        given-names: Tom
+  - type: software
+    title: "PMC-PaIR dataset construction pipeline"
+    authors:
+      - family-names: Shmueli
+        given-names: Guy
+      - family-names: Hope
+        given-names: Tom
+  - type: article
+    title: "A Multimodal Biomedical Foundation Model Trained from Fifteen Million Image–Text Pairs"
+    authors:
+      - family-names: Zhang
+        given-names: Sheng
+      - family-names: Xu
+        given-names: Yanbo
+      - family-names: Usuyama
+        given-names: Naoto
+      - family-names: Xu
+        given-names: Hanwen
+      - family-names: Bagga
+        given-names: Jaspreet
+      - family-names: Tinn
+        given-names: Robert
+      - family-names: Preston
+        given-names: Sam
+      - family-names: Rao
+        given-names: Rajesh
+      - family-names: Wei
+        given-names: Mu
+      - family-names: Valluri
+        given-names: Naveen
+      - family-names: Wong
+        given-names: Cliff
+      - family-names: Tupini
+        given-names: Andrea
+      - family-names: Wang
+        given-names: Yu
+      - family-names: Mazzola
+        given-names: Matt
+      - family-names: Shukla
+        given-names: Swadheen
+      - family-names: Liden
+        given-names: Lars
+      - family-names: Gao
+        given-names: Jianfeng
+      - family-names: Crabtree
+        given-names: Angela
+      - family-names: Piening
+        given-names: Brian
+      - family-names: Bifulco
+        given-names: Carlo
+      - family-names: Lungren
+        given-names: Matthew P.
+      - family-names: Naumann
+        given-names: Tristan
+      - family-names: Wang
+        given-names: Sheng
+      - family-names: Poon
+        given-names: Hoifung
+    journal: "NEJM AI"
+    volume: 2
+    issue: "1"
+    year: 2025
+    doi: "10.1056/AIoa2400640"

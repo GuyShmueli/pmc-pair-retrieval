@@ -1,0 +1,76 @@
+# image_text_to_image: fine-tune BiomedCLIP (both towers) for retrieval with an image plus its descriptions as
+# the query. Every training pair is used at most once per epoch (only full batches; the remainder of fewer
+# than batch_size pairs is skipped), in batches built around cached hard negatives; an image-image and an
+# image-text triplet loss are combined. The epoch with the highest validation Recall@10 (image-plus-text
+# queries) is kept. See pmc_pair_retrieval/train_image_text_to_image.py.
+#
+#   python -m pmc_pair_retrieval.train --config configs/image_text_to_image.yaml \
+#       --data-dir DATA_DIR --output-dir runs/image_text_to_image
+configuration: image_text_to_image
+
+# Randomness. seed: Python, numpy and torch generators, the shuffle of the training pairs, the batch
+# sampler and the bootstrap of the validation intervals. hash_seed: PYTHONHASHSEED, set by the train
+# command; the order of the training pairs depends on it (and on Python 3.11).
+seed: 42
+hash_seed: 42
+
+# Data files (repository-relative). evaluate uses the same split file.
+split: data/article_disjoint_split.json   # image id -> train / val / test
+hard_negatives: data/hard_negatives.json  # training image id -> 15 hard negatives mined with pretrained BiomedCLIP
+
+# Views and augmentation. Each image is resized to a short side of image_size and cut into three
+# square crops along its long axis: start, centre and end. Training jitters each crop with a random
+# resized crop of crop_scale of its area (aspect ratio 1). Validation and evaluate use the crops as
+# they are.
+image_size: 224             # input size of the pretrained vision tower
+train_views: 3              # views per training image (must be 3)
+eval_views: 3               # views per image in validation and evaluate (must be 3)
+crop_scale: [0.9, 1.0]
+
+# Optimisation. Both towers are trained except the first frozen_vision_blocks of the 12 vision
+# transformer blocks (8 = round(0.7 x 12)); the patch, position and class-token embeddings stay trainable.
+epochs: 30                  # maximum number of epochs; also the horizon of the cosine schedule
+batch_size: 128             # pairs per step: 256 images, i.e. 768 view crops
+lr: 1.0e-6                  # peak learning rate of all trained parameters
+weight_decay: 0.2           # weight matrices and embeddings only (not biases or norms)
+betas: [0.9, 0.98]          # AdamW
+eps: 1.0e-6                 # AdamW
+warmup_steps: 200           # linear warmup, then cosine decay to zero at epochs x steps per epoch (30 x 548)
+clip_grad_norm: 1.5
+frozen_vision_blocks: 8
+precision: bf16             # bf16 autocast over fp32 weights
+grad_checkpointing: all     # recompute the activations of these vision blocks in the backward pass
+                            # (none, trainable or all; memory only)
+
+# Losses: lambda_image_image * image-image triplet loss + lambda_image_text * image-text triplet loss.
+# Each hinge compares a positive with the mean of the triplet_topk_negatives highest-scoring negatives.
+lambda_image_image: 0.3
+lambda_image_text: 0.6
+triplet_margin: 0.09
+triplet_topk_negatives: 4
+
+# Hard-negative batches. Each training image keeps at most hard_negatives_per_anchor of its cached hard
+# negatives (training images that are not known positives and not from the same component or article);
+# the batch sampler draws up to hard_negatives_sampled_per_image of them for every image it visits and adds
+# at most one pair containing one of them (see the trainer's HardNegativeBatchSampler).
+hard_negatives_per_anchor: 15
+hard_negatives_sampled_per_image: 3
+
+# Validation, checkpoint selection and early stopping. The query vector of a validation image combines
+# its image embedding with the mean of the unit embeddings of its distinct descriptions (query_text: mean;
+# the mean is not renormalised); evaluate scores the reported results with the same query text. The
+# checkpoint with the highest validation metric is kept (strictly higher than all earlier epochs).
+# Training stops once the metric has not improved for patience epochs, but not before min_epochs; in the
+# published run (seed 42) it stopped training after epoch 24, and the checkpoint of epoch 21 was kept.
+query_text: mean
+eval_batch_size: 128        # images per forward pass in validation and evaluate
+text_batch_size: 256        # descriptions per text batch in validation and evaluate
+early_stopping:
+  metric: R@10
+  min_epochs: 3
+  patience: 3
+
+# Data loading. num_workers changes the numbers: the persistent training workers are seeded once, and
+# worker w draws the swaps, descriptions and augmentations of batches w, w + num_workers, ...
+num_workers: 4
+log_every: 20               # steps of an epoch between progress lines
