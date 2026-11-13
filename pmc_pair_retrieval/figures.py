@@ -29,8 +29,8 @@ Figures (180 mm wide, Arial 7 pt; see ``figure_drawing``):
   (a), their paired differences with 95% confidence intervals (b) and the share of queries
   whose Recall@10 or Hit@10 changed (c);
 - ``retrieval_subgroups_hit10``: paired Hit@10 difference with 95% interval by modality,
-  anatomy and diagnosis (categories with at least 100 queries and 20 article groups),
-  for both configurations. Filled green circles mark intervals above zero, and open grey
+  anatomy and diagnosis (categories with at least 140 queries and 20 article groups),
+  for both configurations. Filled green circles mark intervals above zero, and open gray
   circles mark intervals that include zero. Other categories and the aspect-ratio and
   description-count strata remain in the source data, with both Recall@10 and Hit@10;
 - ``retrieval_example_<category>_<configuration>`` for the categories improvement,
@@ -53,7 +53,7 @@ Example selection, for each category (token ``improvement``, ``deterioration`` o
    (``continued_miss``) r_p > 10 and r_f > 10;
 3. every displayed image (query, positive and the top five of both models) may be shown:
    it is distributed in the public release (``file_redistribution_status`` included, not
-   in ``withheld_image_ids.txt``), its image licence and every licence component are CC BY
+   in ``withheld_image_ids.txt``), its image license and every license component are CC BY
    (any version) or a public-domain statement, commercial use is permitted and there is no
    share-alike condition; its longer side has at least ``figure_drawing.MIN_LONG_PX``
    pixels; and it is not listed in ``data/figure_image_exclusions.csv``, the images found
@@ -92,7 +92,7 @@ compares it with the shipped ``results/figures/``: each shipped file other than
 recorded in the shipped manifest, and the font files by content (family, style, version
 and sha256; their file names may differ). The software versions recorded in the manifest
 are not compared; each one that differs is printed as a note. The PNG previews are
-compared only when the FreeType versions agree, because FreeType rasterises their text.
+compared only when the FreeType versions agree, because FreeType rasterizes their text.
 """
 from __future__ import annotations
 
@@ -141,7 +141,7 @@ LEVEL_METRICS = ("R@1", "R@10", "R@100", "Hit@10")
 CHANGE_METRICS = ("R@10", "Hit@10")
 TOP_EVALUATED = 10
 TOP_SHOWN = drawing.RANKS_SHOWN
-MIN_SUBGROUP_QUERIES = 100
+MIN_SUBGROUP_QUERIES = 140
 MIN_SUBGROUP_GROUPS = 20
 
 EXAMPLE_CATEGORIES = ("improvement", "deterioration", "continued_miss")
@@ -288,7 +288,7 @@ class Inputs:
     files: dict[str, Path] = field(default_factory=dict)
 
     def licensed(self, image_id: str) -> bool:
-        """Whether an image is distributed under a licence that allows it in a CC BY figure (rule 3)."""
+        """Whether an image is distributed under a license that allows it in a CC BY figure (rule 3)."""
         row = self.licences.get(image_id)
         if row is None or image_id in self.withheld or row["file_redistribution_status"] != "included":
             return False
@@ -422,11 +422,11 @@ def load_inputs(data_dir: str | Path) -> Inputs:
     exclusions = read_exclusions(package_file(EXCLUSIONS_FILE))
     unknown = [i for i in exclusions if i not in licences]
     if unknown:
-        raise SystemExit(f"[figures] {EXCLUSIONS_FILE.name} lists images without a licence record ({unknown[0]})")
+        raise SystemExit(f"[figures] {EXCLUSIONS_FILE.name} lists images without a license record ({unknown[0]})")
 
     absent = [q for q in query_ids if q not in labels or q not in sizes or q not in licences]
     if absent:
-        raise SystemExit(f"[figures] {len(absent)} test queries lack labels, sizes or licence records "
+        raise SystemExit(f"[figures] {len(absent)} test queries lack labels, sizes or license records "
                          f"(example {absent[0]})")
     inputs = Inputs(data_dir, query_ids, rows, rankings, results, weights, dict(partners),
                     {i: sorted(t) for i, t in descriptions.items()}, groups, articles, ignored, labels, sizes,
@@ -583,7 +583,7 @@ def subgroup_members(inputs: Inputs) -> dict[str, dict[str, list[int]]]:
 
 
 def drawn_subgroup(n_queries: int, n_groups: int) -> bool:
-    """Whether counts meet the display thresholds: at least 100 queries from 20 article groups."""
+    """Whether counts meet the display thresholds: at least 140 queries from 20 article groups."""
     return n_queries >= MIN_SUBGROUP_QUERIES and n_groups >= MIN_SUBGROUP_GROUPS
 
 
@@ -837,7 +837,7 @@ LEGEND_LINE_MM = 9.5 / TEX_POINTS_PER_INCH * 25.4  # 8 pt type on 9.5 pt line sp
 # figure_pages.tex (no float too large for the page) is the authority.
 LEGEND_WORDS_PER_LINE = 20
 LEGEND_SKIP_MM = 6.0  # the 4 pt caption skip plus a margin of about 1.4 legend lines (4.6 mm)
-# How a licence name of licenses.csv reads in a sentence ("reproduced under ..."); CC BY names read as they are.
+# How a license name of licenses.csv reads in a sentence ("reproduced under ..."); CC BY names read as they are.
 LICENCE_PHRASES = {"Public domain (publisher statement)": "the publisher's public-domain statement",
                    "Public Domain Mark 1.0": "the Public Domain Mark 1.0"}
 CODE_REPOSITORY = "of the code repository, see Code availability"
@@ -906,7 +906,7 @@ def _title(legend: str) -> str:
 
 
 def figure_environment(stem: str, label: str, legend: str, height_mm: float) -> str:
-    """A LaTeX figure environment: the figure at its natural size, centred, and a legend of at most 350 words.
+    """A LaTeX figure environment: the figure at its natural size, centered, and a legend of at most 350 words.
 
     The figure must fit on a page of the reference layout with its legend directly below.
     """
@@ -946,7 +946,7 @@ def performance_legend(tables: Mapping[str, list[dict[str, str]]]) -> str:
         "$224 \\times 224$ pixel views. i2i, image-only queries (configuration image\\_to\\_image), scored by the "
         "cosine similarity of the query and gallery image embeddings; (i+t)2i, image-plus-text queries "
         "(configuration image\\_text\\_to\\_image), scored by that cosine similarity plus the dot product of the "
-        "gallery image embedding with the mean (not renormalised) of the unit text embeddings of the query image's "
+        "gallery image embedding with the mean (not renormalized) of the unit text embeddings of the query image's "
         "distinct descriptions. Fine-tuned, the released weights of each configuration, from the epoch with the "
         f"highest validation Recall@10 (i2i, {epoch(i2i)}; (i+t)2i, {epoch(it2i)}, with the mean-description query "
         "text). \\textbf{a}, Mean Recall@k (share of a query's recorded positives among its "
@@ -976,7 +976,7 @@ def subgroups_legend(tables: Mapping[str, list[dict[str, str]]]) -> str:
         "percentage points. Panel \\textbf{a} shows i2i (image-only queries), and panel \\textbf{b} shows "
         "(i+t)2i (image-plus-text queries). Circles mark mean differences. Lines show 95\\% confidence "
         f"intervals from {resamples:,} paired bootstrap resamples of article groups, with each query weighted "
-        "equally. Filled green circles indicate intervals entirely above zero. Open grey circles indicate "
+        "equally. Filled green circles indicate intervals entirely above zero. Open gray circles indicate "
         "intervals that include zero. The dashed lines mark the differences over all test queries "
         f"({float(diffs[(i2i, 'Hit@10')]['difference']):+.2f} and "
         f"{float(diffs[(it2i, 'Hit@10')]['difference']):+.2f} percentage points, respectively). "
@@ -1020,7 +1020,7 @@ def abbreviations(text: str) -> list[str]:
 
 
 def figure_references(tables: Mapping[str, list[dict[str, str]]]) -> dict[str, list[dict[str, str]]]:
-    """Figure stem -> its source articles in order of first display, each with its licence and licence URL."""
+    """Figure stem -> its source articles in order of first display, each with its license and license URL."""
     out: dict[str, list[dict[str, str]]] = {}
     for row in tables["image_credits.csv"]:
         articles = out.setdefault(row["figure"], [])
@@ -1029,17 +1029,17 @@ def figure_references(tables: Mapping[str, list[dict[str, str]]]) -> dict[str, l
             articles.append({"pmcid": row["pmcid"], "image_license": row["image_license"],
                              "image_license_url": row["image_license_url"]})
         elif entry["image_license"] != row["image_license"]:
-            raise SystemExit(f"[figures] {row['pmcid']} has images under different licences in {row['figure']}")
+            raise SystemExit(f"[figures] {row['pmcid']} has images under different licenses in {row['figure']}")
     return out
 
 
 def licence_text(licence: str, url: str) -> str:
-    """A licence as it reads in a legend or reference, with its URL when the licence record gives one."""
+    """A license as it reads in a legend or reference, with its URL when the license record gives one."""
     return tex(LICENCE_PHRASES.get(licence, licence)) + (f" (\\url{{{url}}})" if url else "")
 
 
 def credit_sentence(articles: Sequence[Mapping[str, str]]) -> str:
-    """Credit sentence of an example legend: the cited source articles grouped by licence, with licence URLs.
+    """Credit sentence of an example legend: the cited source articles grouped by license, with license URLs.
 
     The copyright notices and full attributions are in the cited references and in
     ``source_data/image_credits.csv``, to which the legend points.
@@ -1071,7 +1071,7 @@ def example_legend(stem: str, tables: Mapping[str, list[dict[str, str]]],
     definitions = "; ".join(f"{a}, {ABBREVIATIONS[a]}" for a in found)
     token = tex(f"{conf}/{category}/")
     converted = any(r["converted_to_srgb"] == "yes" for r in tables["image_credits.csv"] if r["figure"] == stem)
-    integrity = ("Images are shown whole, with their embedded colour profiles applied, and otherwise unaltered except "
+    integrity = ("Images are shown whole, with their embedded color profiles applied, and otherwise unaltered except "
                  "for uniform downscaling" if converted else
                  "Images are shown whole, unaltered except for uniform downscaling")
     return (
@@ -1164,7 +1164,7 @@ def references_text(tables: Mapping[str, list[dict[str, str]]], order: Sequence[
              "% cited in the example legends of captions.tex; the entries are in order of first citation, so that",
              "% the numbering starts at 1 in a document that sets the example figures (for example the",
              "% Supplementary Information). Each entry gives the authors, title, journal, year and DOI of the",
-             "% article, the licence of the reproduced images and the article's copyright notice.",
+             "% article, the license of the reproduced images and the article's copyright notice.",
              f"\\begin{{thebibliography}}{{{len(order)}}}"]
     for pmcid in order:
         a = articles[pmcid]
@@ -1364,7 +1364,7 @@ def compare_with_shipped(output_dir: Path, shipped_dir: Path = SHIPPED_DIR) -> t
     the files differently). The software versions recorded in the manifest are printed
     where they differ and are not compared. The PNG previews are the exception when
     matplotlib was built with another FreeType version than the shipped figures: FreeType
-    rasterises their text, so differing previews are then returned in ``previews`` instead
+    rasterizes their text, so differing previews are then returned in ``previews`` instead
     of ``problems``.
     """
     reference_path = shipped_dir / MANIFEST
@@ -1453,7 +1453,7 @@ def main(argv: list[str] | None = None) -> None:
     if previews:
         print(f"[figures] OK: the regenerated outputs equal the shipped files in {SHIPPED_DIR} other than "
               f"manifest.json, and the sha256 values and fonts of its manifest, except the {len(previews)} PNG "
-              "previews, which matplotlib rasterised with another FreeType version", flush=True)
+              "previews, which matplotlib rasterized with another FreeType version", flush=True)
     else:
         print(f"[figures] OK: the regenerated outputs equal the shipped files in {SHIPPED_DIR} other than "
               "manifest.json, and every sha256 and the fonts of its manifest", flush=True)

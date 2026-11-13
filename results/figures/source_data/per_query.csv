@@ -136,7 +136,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 10171836_1_2,PMC10171836,10171836_1_2,1,1,8094,750,803,up_to_2,ct,vasculature,stone_or_calcification|vascular_stenosis_or_vasospasm,no,,0.0,0.0,30,0.0,0.0,134,0.0,0.0,57,0.0,0.0,125
 10173891_1_1,PMC10173891,10173891_1_1,3,2,8074,750,539,up_to_2,ultrasound,reproductive_pelvic,fibrosis_or_scarring|pregnancy_related_disorder,yes,,0.0,0.0,23,0.0,0.0,17,0.0,0.0,23,0.0,0.0,28
 10174147_1_1,PMC10174147,10174147_1_1,1,1,8095,674,326,2_to_3,angiography_fluoroscopy,brain_intracranial,vascular_malformation_or_fistula,no,,0.0,0.0,21,0.0,0.0,28,0.0,0.0,18,1.0,1.0,9
-10175029_1_1,PMC10175029,10175029_1_1,1,1,8094,630,635,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1,1.0,1.0,5
+10175029_1_1,PMC10175029,10175029_1_1,1,1,8094,630,635,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1,1.0,1.0,5
 10181810_1_1,PMC10181810,10010872_1_1,1,1,8093,750,571,up_to_2,radiography,thorax_respiratory,infection_or_abscess,yes,,1.0,1.0,5,1.0,1.0,1,1.0,1.0,2,1.0,1.0,1
 10182006_1_2,PMC10182006,10182006_1_2,1,1,8095,709,358,up_to_2,ct|nuclear_medicine,ear_nose_throat|endocrine|musculoskeletal,mass_or_lesion,yes,,0.0,0.0,80,0.0,0.0,87,0.0,0.0,34,0.0,0.0,16
 10182777_1_1,PMC10182777,10182777_1_1,1,1,8095,750,731,up_to_2,mri,endocrine,neurologic_disorder,yes,,1.0,1.0,2,1.0,1.0,3,1.0,1.0,3,0.0,0.0,11
@@ -334,7 +334,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 10368102_1_1,PMC10368102,10368102_1_1,3,2,8094,757,528,up_to_2,optical_imaging|ultrasound,eye_orbit,mass_or_lesion,no,,0.0,0.0,72,0.0,0.0,25,0.0,0.0,16,0.0,0.0,26
 10368165_1_4,PMC10368165,10368165_1_4,1,1,8094,781,500,up_to_2,ct,ear_nose_throat|musculoskeletal,infection_or_abscess,yes,,0.0,0.0,28,0.0,0.0,24,0.0,0.0,25,0.0,0.0,21
 10368649_1_2,PMC10368649,10368649_1_2,2,2,8095,709,525,up_to_2,ct,thorax_respiratory,mass_or_lesion|respiratory_disorder,yes,,0.0,0.0,272,0.0,0.0,18,0.0,0.0,60,0.5,1.0,10
-10372127_1_1,PMC10372127,10372127_1_1,1,1,8083,749,1125,up_to_2,mri,musculoskeletal|skin_soft_tissue,mass_or_lesion,yes,,0.0,0.0,27,0.0,0.0,37,0.0,0.0,20,0.0,0.0,20
+10372127_1_1,PMC10372127,10372127_1_1,1,1,8083,749,1125,up_to_2,mri|nuclear_medicine,musculoskeletal|skin_soft_tissue,mass_or_lesion,yes,,0.0,0.0,27,0.0,0.0,37,0.0,0.0,20,0.0,0.0,20
 10374898_1_2,PMC10374898,10372127_1_1,1,1,8083,688,482,up_to_2,mri,reproductive_pelvic|skin_soft_tissue,mass_or_lesion,yes,,0.0,0.0,13,1.0,1.0,1,1.0,1.0,2,1.0,1.0,1
 10374898_1_4,PMC10374898,10372127_1_1,2,2,8084,687,610,up_to_2,mri,reproductive_pelvic|skin_soft_tissue,mass_or_lesion,yes,,0.5,1.0,1,0.5,1.0,3,0.5,1.0,1,0.5,1.0,1
 10375352_1_1,PMC10375352,10375352_1_1,1,1,8095,660,367,up_to_2,radiography,spine_spinal_cord,other,yes,,1.0,1.0,5,1.0,1.0,8,1.0,1.0,9,1.0,1.0,5
@@ -428,7 +428,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 10500058_1_1,PMC10500058,10500058_1_1,5,4,8069,742,635,up_to_2,ct,abdomen_retroperitoneum|renal_urinary|reproductive_pelvic|thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,218,0.0,0.0,31,0.0,0.0,222,0.20000000298023224,1.0,10
 10505022_1_1,PMC10505022,10505022_1_1,1,1,8095,750,1123,up_to_2,mri,spine_spinal_cord,cystic_disorder,no,,0.0,0.0,71,0.0,0.0,55,0.0,0.0,72,0.0,0.0,36
 10505058_1_1,PMC10505058,10240851_1_1,1,1,8005,750,818,up_to_2,ct,brain_intracranial,stone_or_calcification,yes,,1.0,1.0,10,1.0,1.0,1,1.0,1.0,3,1.0,1.0,1
-10506038_1_1,PMC10506038,10506038_1_1,1,1,8095,703,444,up_to_2,mri,brain_intracranial,neurologic_disorder,no,,0.0,0.0,24,0.0,0.0,53,0.0,0.0,14,0.0,0.0,24
+10506038_1_1,PMC10506038,10506038_1_1,1,1,8095,703,444,up_to_2,mri|nuclear_medicine,brain_intracranial,neurologic_disorder,no,,0.0,0.0,24,0.0,0.0,53,0.0,0.0,14,0.0,0.0,24
 10507508_1_1,PMC10507508,10353324_1_2,1,1,8095,737,404,up_to_2,radiography,thorax_respiratory,edema_or_effusion,no,,0.0,0.0,392,0.0,0.0,238,0.0,0.0,128,0.0,0.0,42
 10507508_1_2,PMC10507508,10353324_1_2,1,1,8091,759,595,up_to_2,ct,thorax_respiratory,mass_or_lesion,no,,0.0,0.0,455,0.0,0.0,40,0.0,0.0,175,0.0,0.0,14
 10507657_1_1,PMC10507657,10240851_1_1,1,1,8005,750,891,up_to_2,ct,brain_intracranial,stone_or_calcification,yes,,1.0,1.0,4,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1
@@ -547,7 +547,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 10621312_1_1,PMC10621312,10621312_1_1,1,1,8095,717,771,up_to_2,mri,brain_intracranial,congenital_or_developmental_disorder,no,,1.0,1.0,2,0.0,0.0,12,0.0,0.0,31,1.0,1.0,6
 10621586_1_2,PMC10621586,10621586_1_2,4,2,8092,716,364,up_to_2,ct,thorax_respiratory,respiratory_disorder,yes,,0.0,0.0,42,0.0,0.0,191,0.25,1.0,8,0.25,1.0,3
 10621586_1_3,PMC10621586,10621586_1_2,4,2,8092,705,762,up_to_2,ct,thorax_respiratory,respiratory_disorder,yes,,0.0,0.0,212,0.0,0.0,286,0.0,0.0,24,0.25,1.0,5
-10622950_1_3,PMC10622950,10244673_1_1,2,2,8093,637,315,2_to_3,ct,thorax_respiratory,mass_or_lesion,no,,0.0,0.0,157,0.0,0.0,492,0.0,0.0,131,0.0,0.0,99
+10622950_1_3,PMC10622950,10244673_1_1,2,2,8093,637,315,2_to_3,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,no,,0.0,0.0,157,0.0,0.0,492,0.0,0.0,131,0.0,0.0,99
 10622954_1_1,PMC10622954,10622954_1_1,2,1,8095,635,336,up_to_2,ct,eye_orbit|head_neck|musculoskeletal,congenital_or_developmental_disorder,no,,0.0,0.0,24,0.0,0.0,57,0.0,0.0,15,1.0,1.0,5
 10623810_1_3,PMC10623810,10010872_1_1,3,2,8022,689,581,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,0.0,0.0,25,0.0,0.0,28,0.0,0.0,30,0.0,0.0,45
 10623810_1_4,PMC10623810,10010872_1_1,1,1,8020,689,445,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1
@@ -668,7 +668,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 10774325_1_2,PMC10774325,10774325_1_1,1,1,8093,784,230,over_3,ct,gastrointestinal,mass_or_lesion,yes,,0.0,0.0,23,0.0,0.0,557,0.0,0.0,181,0.0,0.0,159
 10774325_1_3,PMC10774325,10774325_1_1,1,1,8093,784,445,up_to_2,ct,gastrointestinal,mass_or_lesion,yes,,0.0,0.0,451,0.0,0.0,723,0.0,0.0,384,0.0,0.0,253
 10782725_1_1,PMC10782725,10393912_1_1,2,1,8086,896,1035,up_to_2,ct,head_neck|hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,34,0.0,0.0,21,0.0,0.0,36,0.0,0.0,41
-10782725_1_3,PMC10782725,10393912_1_1,2,1,8086,896,1141,up_to_2,ct,head_neck|hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,490,0.0,0.0,60,0.0,0.0,79,0.0,0.0,36
+10782725_1_3,PMC10782725,10393912_1_1,2,1,8086,896,1141,up_to_2,ct|nuclear_medicine,head_neck|hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,490,0.0,0.0,60,0.0,0.0,79,0.0,0.0,36
 10783662_1_1,PMC10783662,10485941_1_3,1,1,8083,675,659,up_to_2,angiography_fluoroscopy,brain_intracranial|vasculature,aneurysm_or_dissection,no,,0.0,0.0,16,0.0,0.0,47,0.0,0.0,33,0.0,0.0,41
 10783662_1_2,PMC10783662,10485941_1_3,2,2,8084,757,501,up_to_2,angiography_fluoroscopy,brain_intracranial|vasculature,aneurysm_or_dissection,no,,0.0,0.0,12,0.5,1.0,4,0.5,1.0,5,0.5,1.0,5
 10787942_1_1,PMC10787942,10787942_1_1,4,2,8092,750,653,up_to_2,ct,gastrointestinal,inflammatory_or_autoimmune_disorder,yes,,0.25,1.0,10,0.5,1.0,1,0.5,1.0,1,0.5,1.0,1
@@ -893,7 +893,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 10985961_1_2,PMC10985961,10131255_1_6,3,3,8061,744,866,up_to_2,ct|radiography,dental_oral,dental_or_oral_disorder|necrosis_or_tissue_damage|postoperative_or_resolved_state,yes,,0.0,0.0,108,0.0,0.0,102,0.0,0.0,34,0.0,0.0,31
 10988175_1_3,PMC10988175,10064447_1_1,3,3,8042,754,428,up_to_2,ct|mri,vasculature,aneurysm_or_dissection|infection_or_abscess|inflammatory_or_autoimmune_disorder,no,,0.0,0.0,578,0.0,0.0,929,0.0,0.0,412,0.0,0.0,493
 10988546_1_1,PMC10988546,10988546_1_1,1,1,8092,750,806,up_to_2,mri,brain_intracranial,edema_or_effusion,yes,,0.0,0.0,24,1.0,1.0,6,1.0,1.0,6,1.0,1.0,10
-10989443_1_1,PMC10989443,10175029_1_1,2,2,8095,788,588,up_to_2,ct,thorax_respiratory,mass_or_lesion,no,,0.5,1.0,1,0.5,1.0,3,0.5,1.0,1,0.5,1.0,7
+10989443_1_1,PMC10989443,10175029_1_1,2,2,8095,788,588,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,no,,0.5,1.0,1,0.5,1.0,3,0.5,1.0,1,0.5,1.0,7
 10989451_1_3,PMC10989451,10989451_1_3,4,2,8095,792,262,over_3,mri,hepatobiliary_pancreatic,normal_or_negative_report,no,,0.25,1.0,8,0.25,1.0,8,0.25,1.0,1,0.25,1.0,1
 10989451_1_4,PMC10989451,10989451_1_3,1,1,8095,792,532,up_to_2,mri,hepatobiliary_pancreatic,cystic_disorder,no,,0.0,0.0,452,0.0,0.0,111,0.0,0.0,53,0.0,0.0,17
 10989451_1_7,PMC10989451,10989451_1_3,1,1,8095,793,263,over_3,angiography_fluoroscopy,hepatobiliary_pancreatic,enlargement_or_atrophy,no,,0.0,0.0,11,1.0,1.0,4,0.0,0.0,16,1.0,1.0,8
@@ -969,7 +969,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11057579_1_2,PMC11057579,10244673_1_1,4,4,8072,800,524,up_to_2,ct,thorax_respiratory,mass_or_lesion,no,,0.25,1.0,7,0.25,1.0,6,0.25,1.0,3,0.0,0.0,15
 11059476_1_2,PMC11059476,10265328_1_1,1,1,8087,793,566,up_to_2,radiography,musculoskeletal,device_or_treatment_complication|necrosis_or_tissue_damage,no,,1.0,1.0,7,0.0,0.0,12,1.0,1.0,7,1.0,1.0,9
 11061346_1_1,PMC11061346,11061346_1_1,3,2,8095,708,280,2_to_3,ct,thorax_respiratory,infection_or_abscess,yes,,0.0,0.0,35,0.0,0.0,67,0.0,0.0,16,0.0,0.0,20
-11062855_1_1,PMC11062855,11062855_1_1,1,1,8095,709,457,up_to_2,ct,lymphatic_splenic|thorax_respiratory,enlargement_or_atrophy,yes,,0.0,0.0,380,0.0,0.0,602,0.0,0.0,462,0.0,0.0,522
+11062855_1_1,PMC11062855,11062855_1_1,1,1,8095,709,457,up_to_2,ct|nuclear_medicine,lymphatic_splenic|thorax_respiratory,enlargement_or_atrophy,yes,,0.0,0.0,380,0.0,0.0,602,0.0,0.0,462,0.0,0.0,522
 11063008_1_3,PMC11063008,11063008_1_3,1,1,8095,669,305,2_to_3,ct,dental_oral,other,yes,,0.0,0.0,6619,0.0,0.0,479,0.0,0.0,3368,0.0,0.0,201
 11063570_1_1,PMC11063570,10898694_1_1,2,2,8080,750,938,up_to_2,radiography,musculoskeletal,mass_or_lesion,yes,,0.5,1.0,6,0.0,0.0,21,0.5,1.0,9,0.0,0.0,29
 11063570_1_2,PMC11063570,10898694_1_1,2,2,8095,750,530,up_to_2,mri,musculoskeletal,mass_or_lesion,yes,,0.5,1.0,8,0.5,1.0,5,0.0,0.0,15,0.5,1.0,9
@@ -1226,7 +1226,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11287043_1_1,PMC11287043,10497086_1_1,3,2,8071,743,417,up_to_2,radiography,dental_oral,dislocation_or_instability|fracture_or_traumatic_injury,no,,0.3333333432674408,1.0,1,0.6666666865348816,1.0,2,0.3333333432674408,1.0,1,0.3333333432674408,1.0,4
 11287488_1_1,PMC11287488,11287488_1_1,1,1,8095,750,563,up_to_2,radiography,spine_spinal_cord,fracture_or_traumatic_injury,yes,,0.0,0.0,15,0.0,0.0,37,0.0,0.0,24,0.0,0.0,42
 11287488_1_5,PMC11287488,11287488_1_1,1,1,8094,750,665,up_to_2,mri,spine_spinal_cord,infection_or_abscess|inflammatory_or_autoimmune_disorder|neurologic_disorder,yes,,0.0,0.0,142,0.0,0.0,297,0.0,0.0,223,0.0,0.0,246
-11289832_1_1,PMC11289832,10517217_1_3,3,1,8084,656,325,2_to_3,ct,vasculature,aneurysm_or_dissection|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,201,0.0,0.0,49,0.0,0.0,101,0.0,0.0,100
+11289832_1_1,PMC11289832,10517217_1_3,3,1,8084,656,325,2_to_3,ct|nuclear_medicine,vasculature,aneurysm_or_dissection|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,201,0.0,0.0,49,0.0,0.0,101,0.0,0.0,100
 11293879_1_4,PMC11293879,10010872_1_1,2,1,7845,750,392,up_to_2,ct,lymphatic_splenic,hemorrhage_or_hematoma|mass_or_lesion|perforation_or_rupture,yes,,0.0,0.0,1839,0.0,0.0,577,0.0,0.0,1576,0.0,0.0,330
 11293879_1_5,PMC11293879,10010872_1_1,3,2,7846,750,392,up_to_2,ct,lymphatic_splenic,hemorrhage_or_hematoma|mass_or_lesion|perforation_or_rupture,yes,,0.0,0.0,227,0.0,0.0,749,0.0,0.0,72,0.0,0.0,85
 11294837_1_1,PMC11294837,11294837_1_1,1,1,8094,750,645,up_to_2,ct,vasculature,stone_or_calcification,yes,,0.0,0.0,173,0.0,0.0,255,0.0,0.0,551,0.0,0.0,451
@@ -1246,9 +1246,9 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11311693_1_1,PMC11311693,11311693_1_1,1,1,8094,759,855,up_to_2,radiography,thorax_respiratory,musculoskeletal_disorder,yes,,1.0,1.0,3,1.0,1.0,6,1.0,1.0,1,1.0,1.0,7
 11311693_1_2,PMC11311693,11311693_1_1,1,1,8094,759,927,up_to_2,radiography,musculoskeletal,fracture_or_traumatic_injury,yes,,1.0,1.0,3,1.0,1.0,3,1.0,1.0,2,1.0,1.0,4
 11312023_1_1,PMC11312023,11312023_1_1,2,1,8092,750,433,up_to_2,ultrasound,heart,other,yes,,0.0,0.0,122,0.0,0.0,70,0.0,0.0,38,0.5,1.0,5
-11312400_1_1,PMC11312400,10417103_1_2,1,1,8094,747,277,2_to_3,ultrasound,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,5,0.0,0.0,769,1.0,1.0,3,1.0,1.0,3
-11312400_1_2,PMC11312400,10417103_1_2,1,1,8094,758,324,2_to_3,ultrasound,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,4,0.0,0.0,592,1.0,1.0,3,1.0,1.0,3
-11312400_1_3,PMC11312400,10417103_1_2,1,1,8095,747,332,2_to_3,ultrasound,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,4,0.0,0.0,309,1.0,1.0,3,1.0,1.0,3
+11312400_1_1,PMC11312400,10417103_1_2,1,1,8094,747,277,2_to_3,nuclear_medicine|ultrasound,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,5,0.0,0.0,769,1.0,1.0,3,1.0,1.0,3
+11312400_1_2,PMC11312400,10417103_1_2,1,1,8094,758,324,2_to_3,nuclear_medicine|ultrasound,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,4,0.0,0.0,592,1.0,1.0,3,1.0,1.0,3
+11312400_1_3,PMC11312400,10417103_1_2,1,1,8095,747,332,2_to_3,nuclear_medicine|ultrasound,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,4,0.0,0.0,309,1.0,1.0,3,1.0,1.0,3
 11314692_1_2,PMC11314692,10226226_1_2,1,1,8091,750,875,up_to_2,ct,abdomen_retroperitoneum,normal_or_negative_report,yes,,0.0,0.0,726,0.0,0.0,568,0.0,0.0,251,0.0,0.0,68
 11315418_1_2,PMC11315418,10698449_1_1,3,1,8043,750,513,up_to_2,ct,dental_oral,mass_or_lesion,yes,,0.0,0.0,20,0.0,0.0,61,0.3333333432674408,1.0,9,0.0,0.0,17
 11316347_1_2,PMC11316347,11316347_1_2,1,1,8095,750,403,up_to_2,mri,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,136,0.0,0.0,21,0.0,0.0,33,1.0,1.0,8
@@ -1269,7 +1269,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11327670_1_1,PMC11327670,11327670_1_1,1,1,8094,563,478,up_to_2,radiography,musculoskeletal,necrosis_or_tissue_damage,no,,0.0,0.0,43,1.0,1.0,7,0.0,0.0,18,1.0,1.0,3
 11327670_1_2,PMC11327670,11327670_1_1,1,1,8094,555,478,up_to_2,radiography,musculoskeletal,device_or_treatment_complication,no,,0.0,0.0,148,0.0,0.0,15,0.0,0.0,38,1.0,1.0,2
 11328156_1_4,PMC11328156,10098059_1_1,2,1,8078,750,635,up_to_2,ct,thorax_respiratory,cystic_disorder|respiratory_disorder,yes,,0.0,0.0,274,0.0,0.0,730,0.0,0.0,65,0.0,0.0,11
-11329188_1_5,PMC11329188,11329188_1_5,1,1,8094,750,262,2_to_3,ultrasound,heart,cardiac_disorder|congenital_or_developmental_disorder,yes,,0.0,0.0,621,0.0,0.0,177,0.0,0.0,418,0.0,0.0,214
+11329188_1_5,PMC11329188,11329188_1_5,1,1,8094,750,262,2_to_3,nuclear_medicine|ultrasound,heart,cardiac_disorder|congenital_or_developmental_disorder,yes,,0.0,0.0,621,0.0,0.0,177,0.0,0.0,418,0.0,0.0,214
 11329959_1_1,PMC11329959,10257436_1_1,2,2,8014,730,648,up_to_2,ct,musculoskeletal|vasculature,thrombosis_or_embolism|vascular_stenosis_or_vasospasm,no,,0.0,0.0,621,0.0,0.0,1298,0.0,0.0,117,0.0,0.0,121
 11329959_1_2,PMC11329959,10257436_1_1,2,2,8014,667,592,up_to_2,ct,musculoskeletal|vasculature,thrombosis_or_embolism|vascular_stenosis_or_vasospasm,no,,0.0,0.0,866,0.0,0.0,362,0.0,0.0,92,0.0,0.0,76
 11329959_1_3,PMC11329959,10257436_1_1,2,2,8014,667,652,up_to_2,ct,musculoskeletal|vasculature,thrombosis_or_embolism|vascular_stenosis_or_vasospasm,no,,0.0,0.0,111,0.0,0.0,101,0.0,0.0,22,0.0,0.0,46
@@ -1300,7 +1300,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11364958_1_4,PMC11364958,11364958_1_2,1,1,8094,750,660,up_to_2,radiography,musculoskeletal,fracture_or_traumatic_injury,yes,,1.0,1.0,4,0.0,0.0,11,1.0,1.0,1,1.0,1.0,2
 11366425_1_2,PMC11366425,11366425_1_2,1,1,8094,709,742,up_to_2,ct|mri,abdomen_retroperitoneum|renal_urinary,mass_or_lesion,yes,,0.0,0.0,455,0.0,0.0,175,0.0,0.0,494,0.0,0.0,160
 11366630_1_1,PMC11366630,10067725_1_1,3,3,8091,787,903,up_to_2,ct|nuclear_medicine,ear_nose_throat|endocrine,mass_or_lesion,yes,,0.0,0.0,11,0.0,0.0,17,0.6666666865348816,1.0,5,0.6666666865348816,1.0,4
-11374928_1_1,PMC11374928,11374928_1_1,1,1,8094,781,812,up_to_2,mri,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,351,0.0,0.0,160,0.0,0.0,33,1.0,1.0,9
+11374928_1_1,PMC11374928,11374928_1_1,1,1,8094,781,812,up_to_2,mri|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,351,0.0,0.0,160,0.0,0.0,33,1.0,1.0,9
 11375434_1_1,PMC11375434,11144419_1_1,1,1,8095,750,400,up_to_2,radiography,spine_spinal_cord,neurologic_disorder,yes,,0.0,0.0,30,0.0,0.0,12,0.0,0.0,40,0.0,0.0,23
 11378186_1_2,PMC11378186,10455385_1_2,2,2,8093,750,365,2_to_3,ct|mri,ear_nose_throat,inflammatory_or_autoimmune_disorder,no,,0.0,0.0,21,0.5,1.0,9,0.0,0.0,38,0.5,1.0,3
 11378706_1_3,PMC11378706,11378706_1_3,3,2,8077,400,430,up_to_2,ct,dental_oral|ear_nose_throat,mass_or_lesion|necrosis_or_tissue_damage,yes,,0.0,0.0,317,0.0,0.0,73,0.0,0.0,128,0.0,0.0,163
@@ -1500,7 +1500,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11587892_1_2,PMC11587892,10455523_1_1,2,2,8092,567,879,up_to_2,ct,abdomen_retroperitoneum|vasculature,aneurysm_or_dissection|hemorrhage_or_hematoma|perforation_or_rupture,yes,,0.0,0.0,117,0.0,0.0,39,0.0,0.0,48,0.5,1.0,8
 11587986_1_1,PMC11587986,11587986_1_1,1,1,8095,505,221,2_to_3,ct,head_neck,fracture_or_traumatic_injury,no,,1.0,1.0,8,0.0,0.0,28,0.0,0.0,79,0.0,0.0,235
 11596903_1_2,PMC11596903,11596903_1_2,1,1,8095,712,340,2_to_3,ct,reproductive_pelvic,mass_or_lesion,yes,,0.0,0.0,1320,0.0,0.0,262,0.0,0.0,39,1.0,1.0,1
-11598692_1_1,PMC11598692,11598692_1_1,1,1,8095,799,427,up_to_2,ct|radiography,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,4576,0.0,0.0,2136,0.0,0.0,902,0.0,0.0,62
+11598692_1_1,PMC11598692,11598692_1_1,1,1,8095,799,427,up_to_2,ct|nuclear_medicine|radiography,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,4576,0.0,0.0,2136,0.0,0.0,902,0.0,0.0,62
 11600358_1_1,PMC11600358,11600358_1_1,1,1,8095,607,530,up_to_2,angiography_fluoroscopy|radiography,gastrointestinal,congenital_or_developmental_disorder|obstruction_or_volvulus,no,,0.0,0.0,164,0.0,0.0,26,0.0,0.0,52,0.0,0.0,11
 11601964_1_1,PMC11601964,10565598_1_1,1,1,8085,539,197,2_to_3,ct,abdomen_retroperitoneum|gastrointestinal,obstruction_or_volvulus,no,,0.0,0.0,3724,0.0,0.0,544,0.0,0.0,2063,0.0,0.0,119
 11602178_1_1,PMC11602178,11602178_1_1,1,1,8095,708,413,up_to_2,mri,brain_intracranial,inflammatory_or_autoimmune_disorder,no,,0.0,0.0,544,0.0,0.0,235,0.0,0.0,169,0.0,0.0,15
@@ -1572,7 +1572,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11664112_1_2,PMC11664112,10299875_1_1,2,2,8073,750,422,up_to_2,ultrasound,reproductive_pelvic,pregnancy_related_disorder,yes,,0.0,0.0,12,0.0,0.0,28,0.5,1.0,8,0.5,1.0,7
 11664613_1_1,PMC11664613,11664613_1_1,2,2,8095,771,301,2_to_3,ct,hepatobiliary_pancreatic,infection_or_abscess|mass_or_lesion,no,,0.0,0.0,237,0.0,0.0,281,0.0,0.0,326,0.0,0.0,159
 11666329_1_1,PMC11666329,10658215_1_2,1,1,8086,750,376,up_to_2,ct,hepatobiliary_pancreatic,device_or_treatment_complication|obstruction_or_volvulus,yes,,0.0,0.0,35,1.0,1.0,6,0.0,0.0,25,1.0,1.0,5
-11668641_1_1,PMC11668641,10234330_1_1,1,1,8094,709,555,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,413,0.0,0.0,384,0.0,0.0,309,0.0,0.0,217
+11668641_1_1,PMC11668641,10234330_1_1,1,1,8094,709,555,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,413,0.0,0.0,384,0.0,0.0,309,0.0,0.0,217
 11670260_1_2,PMC11670260,10089643_1_1,1,1,8049,750,371,2_to_3,mri,hepatobiliary_pancreatic,enlargement_or_atrophy|mass_or_lesion,yes,,0.0,0.0,103,0.0,0.0,96,0.0,0.0,68,0.0,0.0,57
 11672386_1_3,PMC11672386,11672386_1_3,1,1,8095,777,483,up_to_2,angiography_fluoroscopy,vasculature,vascular_stenosis_or_vasospasm,yes,,1.0,1.0,1,1.0,1.0,3,1.0,1.0,1,0.0,0.0,26
 11674750_1_2,PMC11674750,10044953_1_1,1,1,8089,564,275,2_to_3,mri,reproductive_pelvic,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,77,0.0,0.0,28,0.0,0.0,69,1.0,1.0,10
@@ -1621,7 +1621,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11724728_1_5,PMC11724728,11724728_1_2,2,1,8095,594,243,2_to_3,radiography,dental_oral|head_neck,dental_or_oral_disorder,yes,,0.0,0.0,38,0.0,0.0,43,0.0,0.0,29,0.5,1.0,10
 11732285_1_1,PMC11732285,10010872_1_1,3,1,7846,547,213,2_to_3,ct,lymphatic_splenic,hemorrhage_or_hematoma|perforation_or_rupture,yes,,0.0,0.0,193,0.0,0.0,85,0.0,0.0,87,0.0,0.0,103
 11733904_1_3,PMC11733904,11733904_1_3,1,1,8092,640,353,up_to_2,radiography,dental_oral,congenital_or_developmental_disorder|dental_or_oral_disorder,yes,,0.0,0.0,92,0.0,0.0,57,0.0,0.0,57,1.0,1.0,8
-11735377_1_1,PMC11735377,11735377_1_1,2,2,8095,709,318,2_to_3,mri|radiography,musculoskeletal,mass_or_lesion|necrosis_or_tissue_damage,yes,,0.0,0.0,107,0.0,0.0,40,0.0,0.0,45,0.0,0.0,17
+11735377_1_1,PMC11735377,11735377_1_1,2,2,8095,709,318,2_to_3,mri|nuclear_medicine|radiography,musculoskeletal,mass_or_lesion|necrosis_or_tissue_damage,yes,,0.0,0.0,107,0.0,0.0,40,0.0,0.0,45,0.0,0.0,17
 11735702_1_3,PMC11735702,11735702_1_3,1,1,8095,783,264,2_to_3,angiography_fluoroscopy,vasculature,normal_or_negative_report,yes,,1.0,1.0,9,1.0,1.0,5,1.0,1.0,3,0.0,0.0,20
 11737896_1_1,PMC11737896,10612437_1_1,1,1,8080,750,365,2_to_3,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,170,0.0,0.0,330,0.0,0.0,107,0.0,0.0,311
 11739105_1_1,PMC11739105,11739105_1_1,2,1,8095,708,896,up_to_2,ct|nuclear_medicine,musculoskeletal,mass_or_lesion,yes,,0.0,0.0,180,0.5,1.0,10,0.0,0.0,16,1.0,1.0,5
@@ -1667,7 +1667,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11791343_1_1,PMC11791343,11791343_1_1,1,1,8091,789,355,2_to_3,ct,renal_urinary,mass_or_lesion|obstruction_or_volvulus,yes,,0.0,0.0,200,0.0,0.0,121,0.0,0.0,135,0.0,0.0,36
 11791343_1_2,PMC11791343,11791343_1_1,1,1,8095,790,778,up_to_2,angiography_fluoroscopy,renal_urinary,mass_or_lesion,yes,,1.0,1.0,2,1.0,1.0,2,1.0,1.0,2,1.0,1.0,2
 11794448_1_1,PMC11794448,11794448_1_1,1,1,8095,760,407,up_to_2,radiography,musculoskeletal,mass_or_lesion|necrosis_or_tissue_damage,yes,,1.0,1.0,3,1.0,1.0,7,1.0,1.0,8,0.0,0.0,15
-11798534_1_1,PMC11798534,10356179_1_1,1,1,8089,3947,3315,up_to_2,ct,thorax_respiratory|vasculature,aneurysm_or_dissection|perforation_or_rupture,no,,0.0,0.0,71,0.0,0.0,304,0.0,0.0,53,0.0,0.0,186
+11798534_1_1,PMC11798534,10356179_1_1,1,1,8089,3947,3315,up_to_2,ct|nuclear_medicine,thorax_respiratory|vasculature,aneurysm_or_dissection|perforation_or_rupture,no,,0.0,0.0,71,0.0,0.0,304,0.0,0.0,53,0.0,0.0,186
 11808132_1_1,PMC11808132,10098014_1_3,4,3,8057,779,802,up_to_2,ct|mri,abdomen_retroperitoneum|gastrointestinal|hepatobiliary_pancreatic|lymphatic_splenic,mass_or_lesion,yes,,0.25,1.0,2,0.25,1.0,1,0.0,0.0,19,0.25,1.0,9
 11808609_1_2,PMC11808609,10628107_1_4,1,1,8094,733,735,up_to_2,mri,musculoskeletal|skin_soft_tissue|spine_spinal_cord,ischemia_or_infarction,yes,,0.0,0.0,11,0.0,0.0,14,1.0,1.0,7,1.0,1.0,9
 11808609_1_3,PMC11808609,10628107_1_4,1,1,8094,625,573,up_to_2,mri,musculoskeletal|skin_soft_tissue|spine_spinal_cord,ischemia_or_infarction,yes,,0.0,0.0,12,1.0,1.0,2,1.0,1.0,8,1.0,1.0,6
@@ -1777,7 +1777,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 11952275_1_1,PMC11952275,11952275_1_1,3,3,8095,750,257,2_to_3,ct,brain_intracranial,infection_or_abscess|stone_or_calcification,yes,,0.3333333432674408,1.0,4,0.6666666865348816,1.0,1,0.3333333432674408,1.0,1,0.6666666865348816,1.0,1
 11952890_1_1,PMC11952890,11952890_1_1,1,1,8094,800,441,up_to_2,mri,brain_intracranial|vasculature,aneurysm_or_dissection|inflammatory_or_autoimmune_disorder,no,,0.0,0.0,372,0.0,0.0,122,0.0,0.0,716,0.0,0.0,146
 11952890_1_2,PMC11952890,11952890_1_1,1,1,8094,750,415,up_to_2,mri,brain_intracranial|vasculature,aneurysm_or_dissection|inflammatory_or_autoimmune_disorder,no,,0.0,0.0,2694,0.0,0.0,1171,0.0,0.0,1845,0.0,0.0,477
-11954152_1_1,PMC11954152,10244673_1_1,1,1,8069,750,732,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,160,0.0,0.0,151,0.0,0.0,213,0.0,0.0,19
+11954152_1_1,PMC11954152,10244673_1_1,1,1,8069,750,732,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,160,0.0,0.0,151,0.0,0.0,213,0.0,0.0,19
 11954648_1_1,PMC11954648,10916164_1_2,1,1,8095,750,422,up_to_2,mri,reproductive_pelvic,mass_or_lesion,yes,,0.0,0.0,38,0.0,0.0,20,0.0,0.0,37,0.0,0.0,58
 11955197_1_1,PMC11955197,11955197_1_1,1,1,8094,750,305,2_to_3,radiography,abdomen_retroperitoneum,abnormal_gas,yes,,0.0,0.0,94,1.0,1.0,2,0.0,0.0,37,1.0,1.0,2
 11955197_1_2,PMC11955197,11955197_1_1,1,1,8094,750,528,up_to_2,radiography,thorax_respiratory,abnormal_gas,yes,,0.0,0.0,137,0.0,0.0,39,0.0,0.0,89,0.0,0.0,32
@@ -2258,7 +2258,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 12451575_1_5,PMC12451575,10675844_1_8,1,1,8094,680,403,up_to_2,radiography,head_neck|musculoskeletal,dental_or_oral_disorder,no,,0.0,0.0,12,1.0,1.0,3,1.0,1.0,4,1.0,1.0,5
 12452293_1_2,PMC12452293,10518735_1_2,1,1,8093,771,729,up_to_2,mri,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,99,0.0,0.0,199,0.0,0.0,62,0.0,0.0,124
 12452293_1_3,PMC12452293,10518735_1_2,1,1,8093,713,783,up_to_2,mri,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,54,0.0,0.0,97,0.0,0.0,44,0.0,0.0,76
-12452490_1_1,PMC12452490,12452490_1_1,2,1,8095,755,548,up_to_2,ct,endocrine|head_neck,mass_or_lesion,yes,,0.0,0.0,888,0.0,0.0,41,0.0,0.0,112,0.0,0.0,14
+12452490_1_1,PMC12452490,12452490_1_1,2,1,8095,755,548,up_to_2,ct|nuclear_medicine,endocrine|head_neck,mass_or_lesion,yes,,0.0,0.0,888,0.0,0.0,41,0.0,0.0,112,0.0,0.0,14
 12452574_1_2,PMC12452574,11311322_1_1,1,1,8095,706,620,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,776,0.0,0.0,836,0.0,0.0,369,0.0,0.0,117
 12454255_1_1,PMC12454255,12454255_1_1,1,1,8095,670,504,up_to_2,ct,other,device_or_treatment_complication,yes,,0.0,0.0,1755,0.0,0.0,492,0.0,0.0,774,0.0,0.0,22
 12456287_1_1,PMC12456287,10089643_1_1,1,1,8049,700,355,up_to_2,ct,gastrointestinal|hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,230,0.0,0.0,77,0.0,0.0,56,1.0,1.0,8
@@ -2279,7 +2279,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 12476276_1_1,PMC12476276,12476276_1_1,3,2,8094,750,750,square,ct,renal_urinary|reproductive_pelvic,congenital_or_developmental_disorder|cystic_disorder,yes,,0.0,0.0,85,0.3333333432674408,1.0,6,0.3333333432674408,1.0,10,0.6666666865348816,1.0,3
 12476276_1_2,PMC12476276,12476276_1_1,1,1,8092,750,822,up_to_2,ct,renal_urinary,congenital_or_developmental_disorder,yes,,0.0,0.0,575,0.0,0.0,46,0.0,0.0,222,1.0,1.0,7
 12477952_1_3,PMC12477952,12477952_1_3,2,2,8095,674,434,up_to_2,angiography_fluoroscopy,vasculature,congenital_or_developmental_disorder,no,,0.0,0.0,21,0.0,0.0,14,0.5,1.0,10,1.0,1.0,1
-12478264_1_1,PMC12478264,10467026_1_2,1,1,8095,739,418,up_to_2,mri,brain_intracranial,infection_or_abscess,no,,0.0,0.0,1581,0.0,0.0,676,0.0,0.0,286,0.0,0.0,21
+12478264_1_1,PMC12478264,10467026_1_2,1,1,8095,739,418,up_to_2,mri|nuclear_medicine,brain_intracranial,infection_or_abscess,no,,0.0,0.0,1581,0.0,0.0,676,0.0,0.0,286,0.0,0.0,21
 12480211_1_1,PMC12480211,12183348_1_1,2,2,8087,777,830,up_to_2,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,73,0.0,0.0,28,0.0,0.0,200,0.0,0.0,72
 12480439_1_3,PMC12480439,10031588_1_1,2,1,8092,661,571,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.5,1.0,10,0.5,1.0,4,0.5,1.0,2,0.5,1.0,8
 12482782_1_1,PMC12482782,12482782_1_1,3,2,8086,674,378,up_to_2,mri,spine_spinal_cord,mass_or_lesion,no,,0.3333333432674408,1.0,3,0.3333333432674408,1.0,4,0.3333333432674408,1.0,5,0.3333333432674408,1.0,6
@@ -2307,7 +2307,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 12523674_1_6,PMC12523674,11160347_1_2,3,3,8093,765,213,over_3,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,33,0.3333333432674408,1.0,4,0.0,0.0,39,0.3333333432674408,1.0,7
 12523674_1_7,PMC12523674,11160347_1_2,3,3,8093,752,206,over_3,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,43,0.3333333432674408,1.0,8,0.0,0.0,38,0.3333333432674408,1.0,10
 12527888_1_2,PMC12527888,10098014_1_3,5,5,8058,722,558,up_to_2,ct|mri,gastrointestinal|hepatobiliary_pancreatic|lymphatic_splenic,mass_or_lesion,yes,,0.20000000298023224,1.0,1,0.4000000059604645,1.0,1,0.20000000298023224,1.0,1,0.4000000059604645,1.0,1
-12528856_1_1,PMC12528856,12528856_1_1,1,1,8095,752,611,up_to_2,ct,gastrointestinal,mass_or_lesion,yes,,0.0,0.0,434,0.0,0.0,207,0.0,0.0,31,0.0,0.0,81
+12528856_1_1,PMC12528856,12528856_1_1,1,1,8095,752,611,up_to_2,ct|nuclear_medicine,gastrointestinal,mass_or_lesion,yes,,0.0,0.0,434,0.0,0.0,207,0.0,0.0,31,0.0,0.0,81
 12528856_1_4,PMC12528856,12528856_1_1,2,1,8095,722,598,up_to_2,angiography_fluoroscopy|radiography,other,postoperative_or_resolved_state,yes,,0.5,1.0,8,1.0,1.0,3,1.0,1.0,1,1.0,1.0,1
 12530715_1_1,PMC12530715,12420930_1_4,2,2,8094,539,350,up_to_2,ultrasound,heart,infection_or_abscess|mass_or_lesion,no,,0.0,0.0,72,0.0,0.0,76,0.0,0.0,46,0.5,1.0,9
 12531407_1_3,PMC12531407,10042513_1_1,3,3,8084,750,474,up_to_2,radiography,musculoskeletal,dislocation_or_instability,yes,,0.0,0.0,21,0.0,0.0,16,0.3333333432674408,1.0,8,0.3333333432674408,1.0,2
@@ -2317,7 +2317,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 12531688_1_2,PMC12531688,10209917_1_1,5,3,8077,771,371,2_to_3,ct,gastrointestinal,obstruction_or_volvulus,no,,0.4000000059604645,1.0,1,0.20000000298023224,1.0,1,0.6000000238418579,1.0,1,1.0,1.0,1
 12535744_1_1,PMC12535744,10896691_1_1,1,1,8091,750,405,up_to_2,mri,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,3164,0.0,0.0,238,0.0,0.0,2102,0.0,0.0,92
 12535744_1_3,PMC12535744,10896691_1_1,1,1,8091,750,372,2_to_3,mri,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,2110,0.0,0.0,134,0.0,0.0,1503,0.0,0.0,88
-12535914_1_2,PMC12535914,10774325_1_1,3,1,8095,660,222,2_to_3,ct,gastrointestinal,mass_or_lesion,yes,,0.0,0.0,178,0.0,0.0,947,0.0,0.0,49,0.3333333432674408,1.0,3
+12535914_1_2,PMC12535914,10774325_1_1,3,1,8095,660,222,2_to_3,ct|nuclear_medicine,gastrointestinal,mass_or_lesion,yes,,0.0,0.0,178,0.0,0.0,947,0.0,0.0,49,0.3333333432674408,1.0,3
 12536736_1_1,PMC12536736,10064447_1_1,2,2,8041,660,905,up_to_2,ct|mri,abdomen_retroperitoneum|vasculature,aneurysm_or_dissection,yes,,0.0,0.0,554,0.0,0.0,848,0.0,0.0,169,0.5,1.0,9
 12536736_1_2,PMC12536736,10064447_1_1,4,3,8043,719,738,up_to_2,ct|mri,vasculature,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,798,0.0,0.0,424,0.0,0.0,507,0.0,0.0,162
 12536736_1_3,PMC12536736,10064447_1_1,2,2,8041,735,450,up_to_2,ct,vasculature,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,70,0.0,0.0,91,0.0,0.0,22,0.5,1.0,1
@@ -2457,7 +2457,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 12687392_1_1,PMC12687392,12687392_1_1,1,1,8095,750,692,up_to_2,ct,gastrointestinal,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,59,0.0,0.0,140,0.0,0.0,22,0.0,0.0,24
 12689301_1_1,PMC12689301,10655897_1_1,5,3,8062,708,293,2_to_3,mri,brain_intracranial,neurologic_disorder,yes,,0.6000000238418579,1.0,3,0.800000011920929,1.0,2,0.6000000238418579,1.0,2,0.20000000298023224,1.0,4
 12689301_1_2,PMC12689301,10655897_1_1,5,3,8062,708,270,2_to_3,mri,brain_intracranial,neurologic_disorder,yes,,0.20000000298023224,1.0,10,0.0,0.0,23,0.20000000298023224,1.0,4,0.20000000298023224,1.0,7
-12689474_1_1,PMC12689474,10064545_1_1,1,1,8095,750,224,over_3,ct,lymphatic_splenic|thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,77,0.0,0.0,140,0.0,0.0,45,0.0,0.0,29
+12689474_1_1,PMC12689474,10064545_1_1,1,1,8095,750,224,over_3,ct|nuclear_medicine,lymphatic_splenic|thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,77,0.0,0.0,140,0.0,0.0,45,0.0,0.0,29
 12702721_1_2,PMC12702721,12140100_1_2,3,2,8094,697,367,up_to_2,ct,dental_oral,mass_or_lesion,yes,,0.0,0.0,70,0.0,0.0,32,0.0,0.0,32,0.0,0.0,36
 12703642_1_1,PMC12703642,12703642_1_1,2,1,8095,750,814,up_to_2,ct,gastrointestinal,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,83,0.0,0.0,61,0.0,0.0,31,0.0,0.0,99
 12706711_1_1,PMC12706711,10222727_1_1,1,1,8092,750,677,up_to_2,ultrasound,endocrine,endocrine_or_metabolic_disorder,yes,,0.0,0.0,1007,0.0,0.0,261,0.0,0.0,610,0.0,0.0,209
@@ -2520,7 +2520,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 12776548_1_3,PMC12776548,10980318_1_1,2,2,8090,636,529,up_to_2,ct,gastrointestinal,congenital_or_developmental_disorder|inflammatory_or_autoimmune_disorder|perforation_or_rupture,yes,,0.0,0.0,86,0.0,0.0,18,0.0,0.0,45,0.0,0.0,16
 12778937_1_1,PMC12778937,11126650_1_2,1,1,8094,778,467,up_to_2,radiography,musculoskeletal,other,no,,0.0,0.0,87,1.0,1.0,5,0.0,0.0,48,1.0,1.0,9
 12779289_1_1,PMC12779289,10696619_1_1,1,1,8095,750,333,2_to_3,ct,head_neck,infection_or_abscess,yes,,1.0,1.0,2,1.0,1.0,2,1.0,1.0,1,1.0,1.0,1
-12779355_1_1,PMC12779355,10359865_1_1,3,2,8084,690,1377,up_to_2,ct|mri,abdomen_retroperitoneum|thorax_respiratory|vasculature,mass_or_lesion,yes,,0.0,0.0,41,0.0,0.0,42,0.0,0.0,59,0.0,0.0,24
+12779355_1_1,PMC12779355,10359865_1_1,3,2,8084,690,1377,up_to_2,ct|mri|nuclear_medicine,abdomen_retroperitoneum|thorax_respiratory|vasculature,mass_or_lesion,yes,,0.0,0.0,41,0.0,0.0,42,0.0,0.0,59,0.0,0.0,24
 12779472_1_1,PMC12779472,12779472_1_1,1,1,8095,800,969,up_to_2,ct,other,mass_or_lesion,yes,,0.0,0.0,922,0.0,0.0,114,0.0,0.0,772,1.0,1.0,3
 12780815_1_4,PMC12780815,10698449_1_1,1,1,8041,750,314,2_to_3,ct,dental_oral,mass_or_lesion,yes,,0.0,0.0,23,0.0,0.0,11,1.0,1.0,9,1.0,1.0,8
 12782516_1_3,PMC12782516,12782516_1_3,1,1,8093,539,300,up_to_2,optical_imaging,eye_orbit,fracture_or_traumatic_injury,no,,0.0,0.0,24,0.0,0.0,36,0.0,0.0,19,0.0,0.0,67
@@ -2588,7 +2588,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 2292200_1_1,PMC2292200,10829376_1_2,1,1,8094,600,469,up_to_2,ultrasound,heart,perforation_or_rupture,yes,,0.0,0.0,78,0.0,0.0,88,0.0,0.0,33,0.0,0.0,13
 2292200_1_2,PMC2292200,10829376_1_2,1,1,8094,600,377,up_to_2,ultrasound,heart,perforation_or_rupture,yes,,0.0,0.0,279,0.0,0.0,114,0.0,0.0,96,0.0,0.0,22
 2390578_1_2,PMC2390578,10008126_1_1,1,1,8072,600,450,up_to_2,ct,musculoskeletal,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,32,1.0,1.0,4,0.0,0.0,31,1.0,1.0,8
-2394385_1_1,PMC2394385,2394385_1_1,1,1,8093,752,815,up_to_2,ct,abdomen_retroperitoneum,mass_or_lesion,yes,,0.0,0.0,416,0.0,0.0,227,0.0,0.0,15,0.0,0.0,16
+2394385_1_1,PMC2394385,2394385_1_1,1,1,8093,752,815,up_to_2,ct|nuclear_medicine,abdomen_retroperitoneum,mass_or_lesion,yes,,0.0,0.0,416,0.0,0.0,227,0.0,0.0,15,0.0,0.0,16
 2475533_1_3,PMC2475533,11972931_1_2,1,1,8095,600,514,up_to_2,ultrasound,heart,mass_or_lesion,yes,,0.0,0.0,66,0.0,0.0,21,0.0,0.0,47,0.0,0.0,20
 2475533_1_4,PMC2475533,11972931_1_2,1,1,8095,600,159,over_3,mri,heart,mass_or_lesion,yes,,0.0,0.0,75,0.0,0.0,30,0.0,0.0,33,0.0,0.0,28
 2491596_1_1,PMC2491596,10101316_1_1,6,5,8084,600,176,over_3,ct,heart|thorax_respiratory,cystic_disorder,yes,,0.3333333432674408,1.0,1,0.3333333432674408,1.0,1,0.3333333432674408,1.0,1,0.5,1.0,1
@@ -2918,7 +2918,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 3230135_1_2,PMC3230135,10450249_1_1,2,2,8087,529,232,2_to_3,ct,gastrointestinal,enlargement_or_atrophy|mass_or_lesion,yes,,0.0,0.0,1527,0.0,0.0,52,0.0,0.0,434,0.5,1.0,3
 3230135_1_3,PMC3230135,10450249_1_1,1,1,8086,534,535,up_to_2,nuclear_medicine,gastrointestinal,mass_or_lesion,yes,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1,1.0,1.0,2
 3236017_1_1,PMC3236017,3236017_1_1,1,1,8094,600,729,up_to_2,optical_imaging,eye_orbit,eye_or_orbit_disorder,yes,,0.0,0.0,31,0.0,0.0,28,1.0,1.0,5,0.0,0.0,32
-3240803_1_1,PMC3240803,3240803_1_1,1,1,8093,473,242,up_to_2,ct,reproductive_pelvic,mass_or_lesion,no,,0.0,0.0,3213,0.0,0.0,184,0.0,0.0,1911,0.0,0.0,31
+3240803_1_1,PMC3240803,3240803_1_1,1,1,8093,473,242,up_to_2,ct|nuclear_medicine,reproductive_pelvic,mass_or_lesion,no,,0.0,0.0,3213,0.0,0.0,184,0.0,0.0,1911,0.0,0.0,31
 3243862_1_1,PMC3243862,10393912_1_1,2,2,8086,526,180,2_to_3,ct,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,26,0.5,1.0,5,0.0,0.0,34,0.5,1.0,3
 3243862_1_2,PMC3243862,10393912_1_1,1,1,8090,526,193,2_to_3,mri,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,535,0.0,0.0,92,0.0,0.0,525,0.0,0.0,134
 3249278_1_2,PMC3249278,10257436_1_1,4,2,8095,649,212,over_3,ct|ultrasound,vasculature,thrombosis_or_embolism,no,,0.0,0.0,213,0.0,0.0,99,0.0,0.0,122,0.0,0.0,147
@@ -2944,7 +2944,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 3283945_1_2,PMC3283945,3122589_1_2,3,3,8085,619,313,up_to_2,radiography,dental_oral,mass_or_lesion,no,,0.3333333432674408,1.0,3,0.3333333432674408,1.0,1,0.3333333432674408,1.0,5,0.3333333432674408,1.0,2
 3285051_1_3,PMC3285051,10698449_1_1,3,1,8043,600,450,up_to_2,ct,ear_nose_throat,mass_or_lesion,yes,,0.0,0.0,13,0.3333333432674408,1.0,9,0.3333333432674408,1.0,10,0.3333333432674408,1.0,8
 3285053_1_1,PMC3285053,10619460_1_2,1,1,8095,600,354,up_to_2,ct,thorax_respiratory,endocrine_or_metabolic_disorder,yes,,0.0,0.0,843,0.0,0.0,456,0.0,0.0,556,0.0,0.0,158
-3295540_1_1,PMC3295540,12596788_1_1,1,1,8095,600,2333,over_3,ct|ultrasound,endocrine|head_neck,mass_or_lesion,yes,,0.0,0.0,3850,0.0,0.0,244,0.0,0.0,1688,0.0,0.0,109
+3295540_1_1,PMC3295540,12596788_1_1,1,1,8095,600,2333,over_3,ct|nuclear_medicine|ultrasound,endocrine|head_neck,mass_or_lesion,yes,,0.0,0.0,3850,0.0,0.0,244,0.0,0.0,1688,0.0,0.0,109
 3307247_1_1,PMC3307247,3307247_1_1,3,2,8094,514,521,up_to_2,ct|mri,brain_intracranial,cystic_disorder,no,,0.0,0.0,11,0.3333333432674408,1.0,1,0.3333333432674408,1.0,7,0.3333333432674408,1.0,2
 3309372_1_1,PMC3309372,10111759_1_1,1,1,8090,473,442,up_to_2,mri,musculoskeletal,inflammatory_or_autoimmune_disorder,no,,0.0,0.0,366,0.0,0.0,66,0.0,0.0,79,0.0,0.0,29
 3313544_1_1,PMC3313544,10064447_1_1,3,2,8042,767,575,up_to_2,ct,vasculature,aneurysm_or_dissection,no,,0.0,0.0,38,0.0,0.0,23,0.0,0.0,78,0.0,0.0,49
@@ -3534,7 +3534,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4023003_1_1,PMC4023003,10008126_1_1,2,2,8064,673,538,up_to_2,mri,musculoskeletal|skin_soft_tissue|spine_spinal_cord,infection_or_abscess,no,,0.0,0.0,240,0.0,0.0,121,0.0,0.0,145,0.0,0.0,24
 4023003_1_2,PMC4023003,10008126_1_1,1,1,8063,598,538,up_to_2,mri,musculoskeletal|spine_spinal_cord,infection_or_abscess,no,,0.0,0.0,294,0.0,0.0,313,0.0,0.0,297,0.0,0.0,149
 4023003_1_3,PMC4023003,10008126_1_1,2,2,8064,742,408,up_to_2,mri,musculoskeletal|skin_soft_tissue|spine_spinal_cord,infection_or_abscess,no,,0.0,0.0,208,0.0,0.0,46,0.0,0.0,102,0.0,0.0,21
-4023058_1_1,PMC4023058,10836450_1_1,3,3,8095,693,801,up_to_2,ct|microscopy|ultrasound,renal_urinary|skin_soft_tissue,mass_or_lesion,no,,0.0,0.0,30,0.0,0.0,93,0.0,0.0,23,0.3333333432674408,1.0,5
+4023058_1_1,PMC4023058,10836450_1_1,3,3,8095,693,801,up_to_2,ct|microscopy|nuclear_medicine|ultrasound,renal_urinary|skin_soft_tissue,mass_or_lesion,no,,0.0,0.0,30,0.0,0.0,93,0.0,0.0,23,0.3333333432674408,1.0,5
 4024817_1_1,PMC4024817,10510930_1_1,1,1,8095,766,404,up_to_2,mri,endocrine,mass_or_lesion,no,,0.0,0.0,106,0.0,0.0,94,0.0,0.0,94,0.0,0.0,41
 4025055_1_1,PMC4025055,4025055_1_1,4,4,8095,716,273,2_to_3,optical_imaging|photography,eye_orbit,vascular_stenosis_or_vasospasm,no,,0.0,0.0,56,0.0,0.0,67,0.0,0.0,47,0.0,0.0,58
 4027656_1_1,PMC4027656,10419738_1_1,3,2,8095,718,388,up_to_2,mri,brain_intracranial,ischemia_or_infarction|obstruction_or_volvulus,no,,0.0,0.0,96,0.0,0.0,40,0.0,0.0,51,0.0,0.0,23
@@ -3617,7 +3617,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4144059_1_3,PMC4144059,10306379_1_1,2,2,8085,720,224,over_3,radiography,dental_oral,congenital_or_developmental_disorder|cystic_disorder,yes,,0.0,0.0,30,0.0,0.0,24,0.0,0.0,30,0.0,0.0,30
 4145153_1_1,PMC4145153,4145153_1_1,1,1,8095,485,703,up_to_2,radiography,musculoskeletal,infection_or_abscess,no,,0.0,0.0,32,0.0,0.0,90,0.0,0.0,29,0.0,0.0,78
 4145153_1_3,PMC4145153,4145153_1_1,2,1,8095,704,704,square,ct,musculoskeletal,infection_or_abscess,no,,0.5,1.0,4,0.5,1.0,10,0.5,1.0,4,0.5,1.0,7
-4145153_1_4,PMC4145153,4145153_1_1,1,1,8095,541,703,up_to_2,radiography,musculoskeletal,infection_or_abscess|inflammatory_or_autoimmune_disorder,no,,1.0,1.0,9,0.0,0.0,66,0.0,0.0,24,0.0,0.0,36
+4145153_1_4,PMC4145153,4145153_1_1,1,1,8095,541,703,up_to_2,nuclear_medicine|radiography,musculoskeletal,infection_or_abscess|inflammatory_or_autoimmune_disorder,no,,1.0,1.0,9,0.0,0.0,66,0.0,0.0,24,0.0,0.0,36
 4145834_1_2,PMC4145834,3326941_1_1,2,1,8094,600,516,up_to_2,ct,brain_intracranial|ear_nose_throat|head_neck,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,94,0.0,0.0,219,0.0,0.0,36,0.0,0.0,11
 4147288_1_1,PMC4147288,11791343_1_1,3,3,8093,600,610,up_to_2,ct,renal_urinary,mass_or_lesion|obstruction_or_volvulus,yes,,0.0,0.0,22,0.0,0.0,68,0.3333333432674408,1.0,8,0.0,0.0,25
 4149996_1_1,PMC4149996,10359865_1_1,2,2,8083,744,822,up_to_2,mri,abdomen_retroperitoneum|spine_spinal_cord,mass_or_lesion,no,,0.0,0.0,52,0.0,0.0,65,0.5,1.0,5,1.0,1.0,1
@@ -3731,7 +3731,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4281469_1_3,PMC4281469,10814903_1_3,5,2,8084,703,785,up_to_2,ct,dental_oral,congenital_or_developmental_disorder,yes,,0.0,0.0,12,0.4000000059604645,1.0,1,0.0,0.0,11,0.800000011920929,1.0,1
 4282195_1_1,PMC4282195,12400784_1_2,1,1,8095,600,690,up_to_2,ct,thorax_respiratory,cystic_disorder,yes,,0.0,0.0,23,1.0,1.0,10,1.0,1.0,4,1.0,1.0,1
 4283420_1_2,PMC4283420,4283420_1_2,1,1,8095,795,243,over_3,ct,abdomen_retroperitoneum|reproductive_pelvic,mass_or_lesion,yes,,0.0,0.0,1903,0.0,0.0,990,0.0,0.0,809,0.0,0.0,458
-4284493_1_1,PMC4284493,10089643_1_1,1,1,8049,635,561,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,242,0.0,0.0,62,0.0,0.0,26,0.0,0.0,64
+4284493_1_1,PMC4284493,10089643_1_1,1,1,8049,635,561,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,242,0.0,0.0,62,0.0,0.0,26,0.0,0.0,64
 4284493_1_2,PMC4284493,10089643_1_1,3,2,8094,793,861,up_to_2,microscopy,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,77,0.0,0.0,23,0.0,0.0,26,0.0,0.0,13
 4285068_1_2,PMC4285068,10988546_1_1,2,2,8093,787,805,up_to_2,mri,brain_intracranial,edema_or_effusion,yes,,0.0,0.0,112,0.0,0.0,27,0.0,0.0,144,0.0,0.0,21
 4286777_1_1,PMC4286777,4286777_1_1,1,1,8095,773,344,2_to_3,ct,brain_intracranial,normal_or_negative_report,no,,1.0,1.0,4,0.0,0.0,12,1.0,1.0,2,1.0,1.0,2
@@ -4011,7 +4011,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4602527_1_1,PMC4602527,10698449_1_1,3,1,8043,800,545,up_to_2,ct,ear_nose_throat|eye_orbit,mass_or_lesion,no,,0.0,0.0,103,0.0,0.0,68,0.0,0.0,34,0.3333333432674408,1.0,9
 4602636_1_1,PMC4602636,10867707_1_1,2,1,8094,800,830,up_to_2,ct,hepatobiliary_pancreatic,congenital_or_developmental_disorder,yes,,0.0,0.0,204,0.0,0.0,207,0.0,0.0,58,0.5,1.0,8
 4602636_1_2,PMC4602636,10867707_1_1,2,1,8094,800,933,up_to_2,ct,hepatobiliary_pancreatic,congenital_or_developmental_disorder,yes,,0.0,0.0,185,0.0,0.0,201,0.0,0.0,180,0.0,0.0,30
-4602863_1_4,PMC4602863,10064447_1_1,1,1,8070,800,487,up_to_2,ct,vasculature,aneurysm_or_dissection,yes,,0.0,0.0,648,0.0,0.0,792,0.0,0.0,385,0.0,0.0,38
+4602863_1_4,PMC4602863,10064447_1_1,1,1,8070,800,487,up_to_2,ct|nuclear_medicine,vasculature,aneurysm_or_dissection,yes,,0.0,0.0,648,0.0,0.0,792,0.0,0.0,385,0.0,0.0,38
 4603055_1_3,PMC4603055,4603055_1_3,1,1,8095,800,814,up_to_2,ct,ear_nose_throat,enlargement_or_atrophy|mass_or_lesion,no,,1.0,1.0,1,1.0,1.0,10,1.0,1.0,1,1.0,1.0,4
 4603318_1_1,PMC4603318,11925473_1_1,1,1,8095,780,906,up_to_2,ct|mri,brain_intracranial,hemorrhage_or_hematoma,yes,,0.0,0.0,117,0.0,0.0,184,0.0,0.0,145,0.0,0.0,175
 4604338_1_1,PMC4604338,12597401_1_1,1,1,8095,721,521,up_to_2,ct,gastrointestinal,mass_or_lesion,no,,0.0,0.0,275,0.0,0.0,152,0.0,0.0,229,0.0,0.0,66
@@ -4095,7 +4095,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4701074_1_2,PMC4701074,10064447_1_1,1,1,8040,708,486,up_to_2,ct,vasculature,aneurysm_or_dissection|infection_or_abscess,yes,,0.0,0.0,1401,0.0,0.0,995,0.0,0.0,344,0.0,0.0,279
 4701074_1_3,PMC4701074,10064447_1_1,2,2,8041,708,425,up_to_2,ct,vasculature,aneurysm_or_dissection|infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,1287,0.0,0.0,1273,0.0,0.0,715,0.0,0.0,344
 4703918_1_2,PMC4703918,4703918_1_2,3,1,8095,500,289,up_to_2,ct,skin_soft_tissue,mass_or_lesion,no,,0.0,0.0,881,0.0,0.0,518,0.0,0.0,335,0.0,0.0,79
-4706535_1_1,PMC4706535,10244673_1_1,4,3,8072,473,577,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,136,0.0,0.0,88,0.0,0.0,18,0.0,0.0,32
+4706535_1_1,PMC4706535,10244673_1_1,4,3,8072,473,577,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,136,0.0,0.0,88,0.0,0.0,18,0.0,0.0,32
 4706726_1_1,PMC4706726,3850938_1_3,3,2,8095,778,462,up_to_2,ct,hepatobiliary_pancreatic|thorax_respiratory,inflammatory_or_autoimmune_disorder|mass_or_lesion,yes,,0.0,0.0,696,0.0,0.0,306,0.0,0.0,266,0.0,0.0,443
 4706726_1_2,PMC4706726,3850938_1_3,1,1,8095,567,342,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic|lymphatic_splenic,mass_or_lesion,yes,,0.0,0.0,13,0.0,0.0,70,0.0,0.0,18,0.0,0.0,30
 4706726_1_3,PMC4706726,3850938_1_3,1,1,8095,778,343,2_to_3,ct|nuclear_medicine,lymphatic_splenic,enlargement_or_atrophy|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,16,0.0,0.0,42,0.0,0.0,40,0.0,0.0,51
@@ -4163,7 +4163,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4777962_1_3,PMC4777962,4777962_1_1,3,3,8092,703,547,up_to_2,optical_imaging|photography,eye_orbit,vascular_stenosis_or_vasospasm,no,,0.6666666865348816,1.0,3,0.6666666865348816,1.0,3,0.3333333432674408,1.0,2,0.6666666865348816,1.0,1
 4778145_1_3,PMC4778145,3335446_1_5,1,1,8094,358,532,up_to_2,radiography,dental_oral|musculoskeletal,fibrosis_or_scarring,yes,,0.0,0.0,131,0.0,0.0,16,0.0,0.0,149,0.0,0.0,105
 4781919_1_2,PMC4781919,12477952_1_3,2,2,8095,709,695,up_to_2,angiography_fluoroscopy,vasculature,congenital_or_developmental_disorder,no,,0.0,0.0,22,0.5,1.0,2,0.5,1.0,7,1.0,1.0,1
-4781945_1_1,PMC4781945,4781945_1_1,1,1,8095,752,316,2_to_3,ct,renal_urinary,mass_or_lesion,yes,,0.0,0.0,19,0.0,0.0,134,1.0,1.0,10,0.0,0.0,202
+4781945_1_1,PMC4781945,4781945_1_1,1,1,8095,752,316,2_to_3,ct|nuclear_medicine,renal_urinary,mass_or_lesion,yes,,0.0,0.0,19,0.0,0.0,134,1.0,1.0,10,0.0,0.0,202
 4782297_1_1,PMC4782297,10240851_1_1,5,5,8009,472,162,2_to_3,ct,brain_intracranial,stone_or_calcification,yes,,0.4000000059604645,1.0,7,0.800000011920929,1.0,1,0.4000000059604645,1.0,1,0.800000011920929,1.0,1
 4782297_1_2,PMC4782297,10240851_1_1,6,5,8010,472,166,2_to_3,mri,brain_intracranial,ischemia_or_infarction|stone_or_calcification,yes,,0.0,0.0,38,0.0,0.0,29,0.0,0.0,29,0.0,0.0,17
 4784233_1_1,PMC4784233,3110299_1_1,1,1,8094,755,243,over_3,radiography,thorax_respiratory,abnormal_gas,yes,,0.0,0.0,41,0.0,0.0,29,0.0,0.0,62,1.0,1.0,6
@@ -4196,7 +4196,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 4820911_1_1,PMC4820911,12799971_1_2,2,2,8095,567,435,up_to_2,mri,abdomen_retroperitoneum|musculoskeletal|skin_soft_tissue,mass_or_lesion,yes,,0.0,0.0,67,0.0,0.0,223,0.0,0.0,66,0.5,1.0,2
 4820911_1_3,PMC4820911,12799971_1_2,1,1,8095,778,415,up_to_2,microscopy,abdomen_retroperitoneum|musculoskeletal|skin_soft_tissue,mass_or_lesion,yes,,0.0,0.0,47,0.0,0.0,30,0.0,0.0,46,1.0,1.0,4
 4821151_1_1,PMC4821151,10244673_1_1,1,1,8069,746,267,2_to_3,ct,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,966,0.0,0.0,454,0.0,0.0,561,0.0,0.0,12
-4826359_1_3,PMC4826359,3168566_1_2,1,1,8095,358,247,up_to_2,ct,gastrointestinal,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,303,0.0,0.0,460,0.0,0.0,57,0.0,0.0,97
+4826359_1_3,PMC4826359,3168566_1_2,1,1,8095,358,247,up_to_2,ct|nuclear_medicine,gastrointestinal,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,303,0.0,0.0,460,0.0,0.0,57,0.0,0.0,97
 4826675_1_1,PMC4826675,10010872_1_1,4,2,7847,748,740,up_to_2,ct,vasculature,aneurysm_or_dissection,yes,,0.0,0.0,231,0.0,0.0,174,0.0,0.0,67,0.25,1.0,4
 4826675_1_2,PMC4826675,10010872_1_1,4,3,7847,748,586,up_to_2,angiography_fluoroscopy,lymphatic_splenic|vasculature,aneurysm_or_dissection,yes,,0.75,1.0,3,0.25,1.0,1,0.75,1.0,2,0.25,1.0,4
 4826675_1_3,PMC4826675,10010872_1_1,1,1,7844,748,571,up_to_2,ct,hepatobiliary_pancreatic,aneurysm_or_dissection,yes,,0.0,0.0,1380,0.0,0.0,716,0.0,0.0,874,0.0,0.0,677
@@ -4443,7 +4443,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5120971_1_2,PMC5120971,5120971_1_2,1,1,8095,682,682,square,mri,spine_spinal_cord,degenerative_disorder|herniation_or_prolapse,yes,,0.0,0.0,243,0.0,0.0,255,0.0,0.0,164,0.0,0.0,172
 5121982_1_1,PMC5121982,12126657_1_2,3,2,8095,567,805,up_to_2,ct,brain_intracranial,fracture_or_traumatic_injury|ischemia_or_infarction,yes,,0.3333333432674408,1.0,9,0.0,0.0,13,0.0,0.0,13,0.0,0.0,14
 5122815_1_3,PMC5122815,5122815_1_3,1,1,8095,605,130,over_3,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,0.0,0.0,1488,0.0,0.0,92,0.0,0.0,190,0.0,0.0,81
-5124016_1_1,PMC5124016,10089643_1_1,5,5,8053,472,155,over_3,ct,hepatobiliary_pancreatic|thorax_respiratory,enlargement_or_atrophy|mass_or_lesion,yes,,0.0,0.0,14,0.0,0.0,46,0.4000000059604645,1.0,1,0.20000000298023224,1.0,1
+5124016_1_1,PMC5124016,10089643_1_1,5,5,8053,472,155,over_3,ct|nuclear_medicine,hepatobiliary_pancreatic|thorax_respiratory,enlargement_or_atrophy|mass_or_lesion,yes,,0.0,0.0,14,0.0,0.0,46,0.4000000059604645,1.0,1,0.20000000298023224,1.0,1
 5124016_1_2,PMC5124016,10089643_1_1,3,3,8092,358,340,up_to_2,angiography_fluoroscopy,hepatobiliary_pancreatic,mass_or_lesion|obstruction_or_volvulus,yes,,0.6666666865348816,1.0,1,0.6666666865348816,1.0,1,0.6666666865348816,1.0,2,0.6666666865348816,1.0,5
 5125125_1_1,PMC5125125,4777962_1_1,1,1,8090,767,666,up_to_2,optical_imaging,eye_orbit,vascular_stenosis_or_vasospasm,no,,1.0,1.0,5,1.0,1.0,7,0.0,0.0,43,0.0,0.0,13
 5125125_1_2,PMC5125125,4777962_1_1,1,1,8094,598,924,up_to_2,optical_imaging,eye_orbit|vasculature,vascular_stenosis_or_vasospasm,no,,0.0,0.0,12,1.0,1.0,7,0.0,0.0,19,1.0,1.0,9
@@ -4572,7 +4572,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5366792_1_1,PMC5366792,11378706_1_3,1,1,8075,752,527,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,123,0.0,0.0,121,0.0,0.0,84,0.0,0.0,96
 5368679_1_2,PMC5368679,10946172_1_1,1,1,8090,716,918,up_to_2,angiography_fluoroscopy,vasculature,device_or_treatment_complication,no,,0.0,0.0,47,0.0,0.0,362,1.0,1.0,10,0.0,0.0,18
 5375952_1_3,PMC5375952,10486536_1_1,3,1,8091,640,480,up_to_2,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,29,0.0,0.0,48,0.0,0.0,88,0.3333333432674408,1.0,5
-5379232_1_1,PMC5379232,10292173_1_1,1,1,8095,233,500,2_to_3,ct,ear_nose_throat|head_neck,mass_or_lesion,no,,0.0,0.0,739,0.0,0.0,430,0.0,0.0,134,0.0,0.0,35
+5379232_1_1,PMC5379232,10292173_1_1,1,1,8095,233,500,2_to_3,ct|nuclear_medicine,ear_nose_throat|head_neck,mass_or_lesion,no,,0.0,0.0,739,0.0,0.0,430,0.0,0.0,134,0.0,0.0,35
 5379786_1_1,PMC5379786,3393866_1_1,3,1,8095,539,306,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,0.0,0.0,26,0.3333333432674408,1.0,5,0.0,0.0,13,0.3333333432674408,1.0,10
 5379803_1_1,PMC5379803,10628107_1_4,1,1,8087,586,587,up_to_2,ct,brain_intracranial|skin_soft_tissue,hemorrhage_or_hematoma,no,,0.0,0.0,41,0.0,0.0,106,1.0,1.0,2,0.0,0.0,21
 5379803_1_2,PMC5379803,10628107_1_4,5,4,8091,712,587,up_to_2,ct,brain_intracranial|head_neck,hemorrhage_or_hematoma,no,,0.20000000298023224,1.0,5,0.20000000298023224,1.0,4,0.20000000298023224,1.0,2,0.4000000059604645,1.0,2
@@ -4744,7 +4744,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5607595_1_1,PMC5607595,10064447_1_1,4,4,8043,358,195,up_to_2,ct,vasculature,aneurysm_or_dissection|infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,377,0.0,0.0,714,0.0,0.0,390,0.0,0.0,187
 5608682_1_1,PMC5608682,11380166_1_1,1,1,8095,735,806,up_to_2,ct,musculoskeletal|vasculature,vascular_stenosis_or_vasospasm,no,,0.0,0.0,45,0.0,0.0,131,0.0,0.0,45,0.0,0.0,152
 5613361_1_1,PMC5613361,10580689_1_1,1,1,8095,641,288,2_to_3,mri,abdomen_retroperitoneum|reproductive_pelvic,mass_or_lesion,yes,,0.0,0.0,61,0.0,0.0,167,1.0,1.0,10,0.0,0.0,58
-5613449_1_1,PMC5613449,10884728_1_1,1,1,8090,695,611,up_to_2,ct,gastrointestinal,mass_or_lesion|obstruction_or_volvulus,yes,,0.0,0.0,423,0.0,0.0,152,0.0,0.0,26,1.0,1.0,4
+5613449_1_1,PMC5613449,10884728_1_1,1,1,8090,695,611,up_to_2,ct|nuclear_medicine,gastrointestinal,mass_or_lesion|obstruction_or_volvulus,yes,,0.0,0.0,423,0.0,0.0,152,0.0,0.0,26,1.0,1.0,4
 5615178_1_1,PMC5615178,11892972_1_2,1,1,8095,706,671,up_to_2,mri,brain_intracranial,neurologic_disorder,no,,0.0,0.0,162,0.0,0.0,117,0.0,0.0,142,0.0,0.0,203
 5618746_1_2,PMC5618746,10658215_1_2,3,3,8080,750,752,up_to_2,angiography_fluoroscopy,heart|hepatobiliary_pancreatic,device_or_treatment_complication|stone_or_calcification,yes,,0.3333333432674408,1.0,10,0.3333333432674408,1.0,9,0.3333333432674408,1.0,8,0.3333333432674408,1.0,2
 5621282_1_6,PMC5621282,12531683_1_1,1,1,8095,539,365,up_to_2,ct,eye_orbit,mass_or_lesion,no,,0.0,0.0,1709,0.0,0.0,294,0.0,0.0,528,0.0,0.0,39
@@ -4792,7 +4792,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5687698_1_3,PMC5687698,3970354_1_1,2,2,8095,745,722,up_to_2,mri,brain_intracranial,ischemia_or_infarction,yes,,0.0,0.0,56,0.0,0.0,11,0.0,0.0,26,0.0,0.0,19
 5694202_1_1,PMC5694202,10583736_1_3,1,1,8093,578,515,up_to_2,ultrasound,breast,mass_or_lesion,no,,1.0,1.0,7,0.0,0.0,25,1.0,1.0,1,1.0,1.0,1
 5697341_1_1,PMC5697341,10081915_1_2,2,2,8095,472,400,up_to_2,optical_imaging|photography,eye_orbit,ischemia_or_infarction|thrombosis_or_embolism,yes,,0.0,0.0,139,0.0,0.0,92,0.0,0.0,34,0.0,0.0,15
-5698235_1_1,PMC5698235,11835984_1_1,1,1,8093,567,326,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,24,0.0,0.0,224,0.0,0.0,78,0.0,0.0,295
+5698235_1_1,PMC5698235,11835984_1_1,1,1,8093,567,326,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,24,0.0,0.0,224,0.0,0.0,78,0.0,0.0,295
 5700025_1_1,PMC5700025,10966319_1_1,5,3,8067,740,637,up_to_2,mri,brain_intracranial,mass_or_lesion,no,,0.0,0.0,20,0.20000000298023224,1.0,9,0.0,0.0,32,0.20000000298023224,1.0,4
 5702704_1_3,PMC5702704,10918503_1_2,1,1,8093,384,241,up_to_2,mri,musculoskeletal,infection_or_abscess,no,,0.0,0.0,2117,0.0,0.0,427,0.0,0.0,773,0.0,0.0,165
 5702752_1_1,PMC5702752,10528771_1_1,1,1,8094,761,259,2_to_3,ct,brain_intracranial,edema_or_effusion,no,,1.0,1.0,4,1.0,1.0,3,1.0,1.0,1,1.0,1.0,5
@@ -4816,7 +4816,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5728793_1_2,PMC5728793,10129158_1_1,8,3,8095,800,465,up_to_2,mri,brain_intracranial|head_neck|musculoskeletal|skin_soft_tissue,mass_or_lesion,yes,,0.125,1.0,5,0.125,1.0,6,0.25,1.0,5,0.25,1.0,2
 5728803_1_1,PMC5728803,5728803_1_1,1,1,8093,800,588,up_to_2,ct,abdomen_retroperitoneum|hepatobiliary_pancreatic|vasculature,congenital_or_developmental_disorder,no,,0.0,0.0,1766,0.0,0.0,817,0.0,0.0,1294,0.0,0.0,186
 5728803_1_4,PMC5728803,5728803_1_1,1,1,8093,800,345,2_to_3,ct,abdomen_retroperitoneum|hepatobiliary_pancreatic|vasculature,congenital_or_developmental_disorder,no,,0.0,0.0,472,0.0,0.0,206,0.0,0.0,538,0.0,0.0,243
-5728945_1_1,PMC5728945,10474895_1_1,2,2,8090,800,423,up_to_2,ct,thorax_respiratory,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,485,0.0,0.0,135,0.0,0.0,159,0.0,0.0,68
+5728945_1_1,PMC5728945,10474895_1_1,2,2,8090,800,423,up_to_2,ct|nuclear_medicine,thorax_respiratory,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,485,0.0,0.0,135,0.0,0.0,159,0.0,0.0,68
 5731101_1_1,PMC5731101,11461363_1_2,2,2,8094,689,669,up_to_2,angiography_fluoroscopy|optical_imaging,eye_orbit,infection_or_abscess|inflammatory_or_autoimmune_disorder|necrosis_or_tissue_damage,no,,0.0,0.0,22,0.5,1.0,8,0.0,0.0,15,0.0,0.0,30
 5731101_1_2,PMC5731101,11461363_1_2,1,1,8093,689,597,up_to_2,photography,eye_orbit,infection_or_abscess|inflammatory_or_autoimmune_disorder|necrosis_or_tissue_damage,no,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,3,1.0,1.0,2
 5733213_1_1,PMC5733213,4871944_1_1,1,1,8094,699,566,up_to_2,ultrasound,reproductive_pelvic,fibrosis_or_scarring|pregnancy_related_disorder,yes,,0.0,0.0,31,0.0,0.0,60,0.0,0.0,19,0.0,0.0,59
@@ -4844,7 +4844,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5759665_1_2,PMC5759665,10698449_1_1,1,1,8041,773,1571,2_to_3,ct,brain_intracranial|musculoskeletal,mass_or_lesion,no,,1.0,1.0,2,1.0,1.0,3,1.0,1.0,1,1.0,1.0,2
 5763867_1_2,PMC5763867,10739645_1_1,2,2,8095,570,587,up_to_2,ct,dental_oral|ear_nose_throat,mass_or_lesion,no,,0.0,0.0,166,0.0,0.0,118,0.0,0.0,91,0.0,0.0,72
 5763867_1_3,PMC5763867,10739645_1_1,1,1,8095,539,406,up_to_2,microscopy,dental_oral|musculoskeletal,mass_or_lesion,no,,1.0,1.0,10,1.0,1.0,1,0.0,0.0,21,1.0,1.0,2
-5767848_1_1,PMC5767848,5767848_1_1,1,1,8095,741,646,up_to_2,ct,vasculature,neurologic_disorder|vascular_stenosis_or_vasospasm,no,,0.0,0.0,73,0.0,0.0,30,0.0,0.0,38,0.0,0.0,47
+5767848_1_1,PMC5767848,5767848_1_1,1,1,8095,741,646,up_to_2,ct|nuclear_medicine,vasculature,neurologic_disorder|vascular_stenosis_or_vasospasm,no,,0.0,0.0,73,0.0,0.0,30,0.0,0.0,38,0.0,0.0,47
 5768156_1_1,PMC5768156,10240851_1_1,3,2,8007,729,530,up_to_2,ct,brain_intracranial,stone_or_calcification,no,,0.6666666865348816,1.0,2,1.0,1.0,1,0.6666666865348816,1.0,1,1.0,1.0,1
 5768181_1_1,PMC5768181,10303609_1_1,1,1,8095,639,467,up_to_2,ultrasound,reproductive_pelvic,pregnancy_related_disorder,no,,0.0,0.0,19,1.0,1.0,3,0.0,0.0,19,1.0,1.0,10
 5769987_1_1,PMC5769987,2989527_1_1,1,1,8094,696,897,up_to_2,mri,spine_spinal_cord,cystic_disorder|fracture_or_traumatic_injury,yes,,0.0,0.0,167,0.0,0.0,39,0.0,0.0,44,0.0,0.0,14
@@ -4868,7 +4868,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 5798071_1_1,PMC5798071,10010872_1_1,5,3,7848,644,431,up_to_2,ct,hepatobiliary_pancreatic|lymphatic_splenic|vasculature,aneurysm_or_dissection|perforation_or_rupture,no,,0.0,0.0,129,0.0,0.0,176,0.0,0.0,60,0.0,0.0,72
 5798071_1_2,PMC5798071,10010872_1_1,3,2,7846,642,487,up_to_2,ct,hepatobiliary_pancreatic|lymphatic_splenic|vasculature,aneurysm_or_dissection|perforation_or_rupture,no,,0.3333333432674408,1.0,10,0.0,0.0,27,0.3333333432674408,1.0,8,0.0,0.0,58
 5800752_1_1,PMC5800752,5800752_1_1,1,1,8095,689,1289,up_to_2,radiography,musculoskeletal,other,yes,,0.0,0.0,212,0.0,0.0,380,0.0,0.0,133,0.0,0.0,127
-5803682_1_2,PMC5803682,2040153_1_5,1,1,8094,743,959,up_to_2,mri,heart,mass_or_lesion,no,,0.0,0.0,1695,0.0,0.0,132,0.0,0.0,213,1.0,1.0,10
+5803682_1_2,PMC5803682,2040153_1_5,1,1,8094,743,959,up_to_2,mri|nuclear_medicine,heart,mass_or_lesion,no,,0.0,0.0,1695,0.0,0.0,132,0.0,0.0,213,1.0,1.0,10
 5804657_1_2,PMC5804657,2872891_1_2,1,1,8095,473,193,2_to_3,ct,vasculature,other,yes,,0.0,0.0,666,0.0,0.0,92,0.0,0.0,558,0.0,0.0,101
 5805199_1_1,PMC5805199,10655897_1_1,12,5,8069,748,577,up_to_2,mri,brain_intracranial,endocrine_or_metabolic_disorder|neurologic_disorder,no,,0.0,0.0,60,0.0,0.0,46,0.0,0.0,31,0.0833333358168602,1.0,10
 5805199_1_2,PMC5805199,10655897_1_1,7,1,8064,745,574,up_to_2,mri,brain_intracranial,neurologic_disorder,no,,0.0,0.0,140,0.0,0.0,106,0.0,0.0,129,0.0,0.0,26
@@ -5069,7 +5069,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 6031204_1_1,PMC6031204,10884728_1_1,1,1,8090,678,364,up_to_2,ct,abdomen_retroperitoneum,obstruction_or_volvulus,yes,,0.0,0.0,761,0.0,0.0,118,0.0,0.0,103,1.0,1.0,7
 6033719_1_4,PMC6033719,6033719_1_4,1,1,8095,669,458,up_to_2,angiography_fluoroscopy,gastrointestinal,postoperative_or_resolved_state,no,,0.0,0.0,101,0.0,0.0,77,0.0,0.0,47,0.0,0.0,39
 6033747_1_2,PMC6033747,10013101_1_2,4,4,8095,547,305,up_to_2,radiography,abdomen_retroperitoneum|gastrointestinal,obstruction_or_volvulus,no,,0.0,0.0,11,0.25,1.0,7,0.25,1.0,8,0.25,1.0,10
-6036688_1_1,PMC6036688,11067151_1_1,1,1,8095,787,628,up_to_2,ct,renal_urinary,renal_or_urinary_disorder,yes,,0.0,0.0,1534,0.0,0.0,617,0.0,0.0,303,0.0,0.0,14
+6036688_1_1,PMC6036688,11067151_1_1,1,1,8095,787,628,up_to_2,ct|nuclear_medicine,renal_urinary,renal_or_urinary_disorder,yes,,0.0,0.0,1534,0.0,0.0,617,0.0,0.0,303,0.0,0.0,14
 6037633_1_1,PMC6037633,5295538_1_3,1,1,8087,736,1480,2_to_3,angiography_fluoroscopy,vasculature,congenital_or_developmental_disorder,yes,,1.0,1.0,9,0.0,0.0,53,0.0,0.0,24,1.0,1.0,4
 6039156_1_2,PMC6039156,10655897_1_1,1,1,8058,800,873,up_to_2,mri,brain_intracranial,neurologic_disorder,yes,,1.0,1.0,5,0.0,0.0,23,1.0,1.0,4,0.0,0.0,13
 6041220_1_1,PMC6041220,11644050_1_2,2,2,8094,708,480,up_to_2,ct,lymphatic_splenic,fracture_or_traumatic_injury|hemorrhage_or_hematoma|perforation_or_rupture,yes,,0.0,0.0,38,0.0,0.0,64,0.5,1.0,4,0.5,1.0,4
@@ -5484,7 +5484,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 6535340_1_1,PMC6535340,11875394_1_2,2,2,8093,530,800,up_to_2,ct,thorax_respiratory,fracture_or_traumatic_injury|perforation_or_rupture,yes,,0.0,0.0,305,0.0,0.0,50,0.0,0.0,11,1.0,1.0,1
 6536867_1_1,PMC6536867,3427694_1_2,1,1,8095,745,754,up_to_2,mri,musculoskeletal,perforation_or_rupture,no,,1.0,1.0,3,1.0,1.0,4,1.0,1.0,3,1.0,1.0,3
 6537187_1_1,PMC6537187,10475853_1_1,1,1,8094,778,325,2_to_3,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,3928,0.0,0.0,1881,0.0,0.0,173,0.0,0.0,85
-6541760_1_2,PMC6541760,11383910_1_1,3,3,8093,729,217,over_3,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,915,0.0,0.0,129,0.0,0.0,566,0.0,0.0,37
+6541760_1_2,PMC6541760,11383910_1_1,3,3,8093,729,217,over_3,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,915,0.0,0.0,129,0.0,0.0,566,0.0,0.0,37
 6547025_1_1,PMC6547025,10963632_1_1,3,2,8090,500,526,up_to_2,radiography,gastrointestinal,fracture_or_traumatic_injury|obstruction_or_volvulus,no,,0.0,0.0,23,0.0,0.0,42,0.6666666865348816,1.0,2,0.6666666865348816,1.0,6
 6547025_1_2,PMC6547025,10963632_1_1,3,2,8095,500,518,up_to_2,ct,gastrointestinal,fracture_or_traumatic_injury|obstruction_or_volvulus,no,,0.0,0.0,212,0.0,0.0,58,0.0,0.0,103,0.0,0.0,63
 6551541_1_4,PMC6551541,2762183_1_1,3,1,8095,731,511,up_to_2,radiography,musculoskeletal,fracture_or_traumatic_injury,yes,,0.0,0.0,12,0.0,0.0,21,0.6666666865348816,1.0,6,0.6666666865348816,1.0,1
@@ -5556,7 +5556,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 6656673_1_6,PMC6656673,10240851_1_1,1,1,8005,725,314,2_to_3,ct,brain_intracranial,stone_or_calcification,no,,0.0,0.0,40,1.0,1.0,3,1.0,1.0,10,1.0,1.0,3
 6659196_1_1,PMC6659196,10356179_1_1,1,1,8095,596,629,up_to_2,radiography,thorax_respiratory,enlargement_or_atrophy,yes,,1.0,1.0,2,1.0,1.0,3,1.0,1.0,5,1.0,1.0,4
 6659196_1_2,PMC6659196,10356179_1_1,3,3,8091,596,584,up_to_2,ct,vasculature,aneurysm_or_dissection|perforation_or_rupture,yes,,0.0,0.0,80,0.0,0.0,105,0.0,0.0,41,0.3333333432674408,1.0,8
-6660061_1_1,PMC6660061,3961406_1_3,2,1,8093,475,318,up_to_2,ct,thorax_respiratory,fibrosis_or_scarring,no,,0.0,0.0,65,0.0,0.0,36,0.0,0.0,155,0.0,0.0,16
+6660061_1_1,PMC6660061,3961406_1_3,2,1,8093,475,318,up_to_2,ct|nuclear_medicine,thorax_respiratory,fibrosis_or_scarring,no,,0.0,0.0,65,0.0,0.0,36,0.0,0.0,155,0.0,0.0,16
 6660061_1_2,PMC6660061,3961406_1_3,1,1,8093,475,474,up_to_2,microscopy,thorax_respiratory,fibrosis_or_scarring|mass_or_lesion,no,,0.0,0.0,444,0.0,0.0,94,0.0,0.0,188,0.0,0.0,321
 6663116_1_1,PMC6663116,12420930_1_4,3,2,8094,800,279,2_to_3,ct,thorax_respiratory,infection_or_abscess,yes,,0.0,0.0,160,0.0,0.0,71,0.0,0.0,166,0.0,0.0,119
 6663116_1_6,PMC6663116,12420930_1_4,2,2,8094,800,494,up_to_2,ultrasound,heart,infection_or_abscess|mass_or_lesion,yes,,0.0,0.0,71,0.0,0.0,98,0.0,0.0,57,0.0,0.0,96
@@ -5668,7 +5668,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 6800911_1_2,PMC6800911,10299875_1_1,3,2,8074,750,534,up_to_2,ultrasound,reproductive_pelvic,pregnancy_related_disorder,yes,,0.3333333432674408,1.0,8,0.6666666865348816,1.0,3,0.3333333432674408,1.0,7,0.3333333432674408,1.0,1
 6815553_1_1,PMC6815553,6815553_1_1,1,1,8094,750,613,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,1371,0.0,0.0,388,0.0,0.0,662,0.0,0.0,190
 6815553_1_2,PMC6815553,6815553_1_1,1,1,8094,750,886,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,719,0.0,0.0,528,0.0,0.0,436,0.0,0.0,206
-6817769_1_1,PMC6817769,10244673_1_1,3,3,8071,753,424,up_to_2,ct,thorax_respiratory,enlargement_or_atrophy|mass_or_lesion,no,,0.0,0.0,51,0.0,0.0,18,0.0,0.0,83,0.0,0.0,19
+6817769_1_1,PMC6817769,10244673_1_1,3,3,8071,753,424,up_to_2,ct|nuclear_medicine,thorax_respiratory,enlargement_or_atrophy|mass_or_lesion,no,,0.0,0.0,51,0.0,0.0,18,0.0,0.0,83,0.0,0.0,19
 6820637_1_1,PMC6820637,11150214_1_1,3,3,8093,787,634,up_to_2,ct|mri|nuclear_medicine,heart,mass_or_lesion,yes,,0.0,0.0,26,0.0,0.0,11,0.3333333432674408,1.0,2,0.3333333432674408,1.0,1
 6820688_1_6,PMC6820688,10089643_1_1,1,1,8095,800,800,square,nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,1.0,1.0,9,0.0,0.0,18,0.0,0.0,11,0.0,0.0,58
 6820883_1_2,PMC6820883,10010872_1_1,1,1,8094,800,420,up_to_2,endoscopy,hepatobiliary_pancreatic,hemorrhage_or_hematoma,yes,,0.0,0.0,39,0.0,0.0,56,1.0,1.0,8,0.0,0.0,11
@@ -5680,7 +5680,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 6823094_1_3,PMC6823094,10088559_1_1,1,1,8094,800,277,2_to_3,mri,spine_spinal_cord,mass_or_lesion|neurologic_disorder,yes,,0.0,0.0,16,1.0,1.0,6,0.0,0.0,19,0.0,0.0,28
 6823585_1_1,PMC6823585,4529431_1_1,3,2,8093,450,132,over_3,optical_imaging|photography,eye_orbit,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,23,0.0,0.0,11,0.0,0.0,28,0.0,0.0,23
 6823585_1_2,PMC6823585,4529431_1_1,3,2,8093,450,134,over_3,optical_imaging|photography,eye_orbit,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,12,0.0,0.0,16,0.0,0.0,22,0.0,0.0,17
-6824802_1_3,PMC6824802,12168116_1_1,1,1,8095,800,320,2_to_3,ct,abdomen_retroperitoneum,infection_or_abscess,yes,,0.0,0.0,136,0.0,0.0,321,1.0,1.0,3,0.0,0.0,64
+6824802_1_3,PMC6824802,12168116_1_1,1,1,8095,800,320,2_to_3,ct|nuclear_medicine,abdomen_retroperitoneum,infection_or_abscess,yes,,0.0,0.0,136,0.0,0.0,321,1.0,1.0,3,0.0,0.0,64
 6825440_1_1,PMC6825440,6380150_1_3,1,1,8095,800,800,square,ct,eye_orbit,fracture_or_traumatic_injury,yes,,0.0,0.0,27,0.0,0.0,21,1.0,1.0,5,1.0,1.0,1
 6827548_1_1,PMC6827548,12286125_1_1,2,1,8094,375,465,up_to_2,ct,musculoskeletal|reproductive_pelvic|skin_soft_tissue|spine_spinal_cord,infection_or_abscess,no,,0.0,0.0,1015,0.0,0.0,44,0.0,0.0,380,0.5,1.0,2
 6827548_1_2,PMC6827548,12286125_1_1,2,1,8094,375,406,up_to_2,ct,musculoskeletal|reproductive_pelvic|skin_soft_tissue|spine_spinal_cord,infection_or_abscess,no,,0.0,0.0,287,0.0,0.0,13,0.0,0.0,165,0.5,1.0,3
@@ -5812,7 +5812,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 7015077_1_1,PMC7015077,10010872_1_1,2,1,7845,750,633,up_to_2,ct,vasculature,aneurysm_or_dissection|hemorrhage_or_hematoma|perforation_or_rupture,no,,0.0,0.0,151,0.0,0.0,72,0.0,0.0,54,0.0,0.0,28
 7015077_1_2,PMC7015077,10010872_1_1,4,2,7847,750,531,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection|perforation_or_rupture,no,,0.0,0.0,90,0.0,0.0,20,0.0,0.0,21,0.0,0.0,12
 7015570_1_2,PMC7015570,7015570_1_2,1,1,8095,800,723,up_to_2,mri,dental_oral,mass_or_lesion,yes,,0.0,0.0,200,0.0,0.0,81,0.0,0.0,132,0.0,0.0,36
-7018860_1_1,PMC7018860,11160347_1_2,2,1,8092,787,912,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,692,0.0,0.0,260,0.0,0.0,146,0.0,0.0,65
+7018860_1_1,PMC7018860,11160347_1_2,2,1,8092,787,912,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,692,0.0,0.0,260,0.0,0.0,146,0.0,0.0,65
 7021467_1_4,PMC7021467,3543943_1_1,1,1,8095,748,295,2_to_3,radiography,dental_oral,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,63,0.0,0.0,80,0.0,0.0,24,0.0,0.0,33
 7021515_1_2,PMC7021515,5932491_1_2,2,2,8094,750,722,up_to_2,ct,renal_urinary,obstruction_or_volvulus,yes,,0.0,0.0,49,0.0,0.0,87,0.0,0.0,12,0.0,0.0,43
 7021515_1_3,PMC7021515,5932491_1_2,2,2,8094,750,750,square,ct,renal_urinary,obstruction_or_volvulus,yes,,0.5,1.0,1,0.5,1.0,7,0.5,1.0,1,0.0,0.0,12
@@ -6144,7 +6144,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 7452015_1_4,PMC7452015,3200050_1_1,2,1,8094,746,913,up_to_2,mri,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,26,0.0,0.0,24,0.5,1.0,10,1.0,1.0,1
 7452807_1_10,PMC7452807,10047054_1_2,2,2,8077,660,689,up_to_2,mri,hepatobiliary_pancreatic,congenital_or_developmental_disorder|cystic_disorder|enlargement_or_atrophy,no,,0.5,1.0,1,0.5,1.0,1,0.5,1.0,1,1.0,1.0,1
 7452807_1_3,PMC7452807,10047054_1_2,1,1,8095,698,290,2_to_3,ct,hepatobiliary_pancreatic,infection_or_abscess,no,,0.0,0.0,64,1.0,1.0,6,0.0,0.0,240,0.0,0.0,72
-7452807_1_5,PMC7452807,10047054_1_2,1,1,8095,698,574,up_to_2,ct,hepatobiliary_pancreatic|thorax_respiratory,mass_or_lesion,no,,0.0,0.0,1071,0.0,0.0,369,0.0,0.0,1132,0.0,0.0,102
+7452807_1_5,PMC7452807,10047054_1_2,1,1,8095,698,574,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic|thorax_respiratory,mass_or_lesion,no,,0.0,0.0,1071,0.0,0.0,369,0.0,0.0,1132,0.0,0.0,102
 7457046_1_1,PMC7457046,4895894_1_1,2,2,8094,708,250,2_to_3,mri,brain_intracranial,inflammatory_or_autoimmune_disorder,yes,,0.5,1.0,1,0.5,1.0,1,0.5,1.0,1,0.5,1.0,1
 7460740_1_2,PMC7460740,6610942_1_4,1,1,8095,709,645,up_to_2,optical_imaging,eye_orbit|head_neck,other,yes,,0.0,0.0,120,0.0,0.0,99,0.0,0.0,77,1.0,1.0,5
 7463131_1_2,PMC7463131,10698449_1_1,5,2,8045,592,775,up_to_2,ct,brain_intracranial|head_neck|musculoskeletal,mass_or_lesion,no,,0.20000000298023224,1.0,3,0.20000000298023224,1.0,5,0.20000000298023224,1.0,1,0.20000000298023224,1.0,7
@@ -6161,7 +6161,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 7474725_1_1,PMC7474725,10010872_1_1,2,1,8021,709,530,up_to_2,ct,vasculature,aneurysm_or_dissection,yes,,0.0,0.0,131,0.0,0.0,123,0.0,0.0,90,0.0,0.0,41
 7474725_1_2,PMC7474725,10010872_1_1,1,1,8094,709,629,up_to_2,angiography_fluoroscopy,other,aneurysm_or_dissection,yes,,0.0,0.0,94,0.0,0.0,69,0.0,0.0,144,0.0,0.0,53
 7475778_1_1,PMC7475778,6815553_1_1,2,1,8095,751,264,2_to_3,ct,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,875,0.0,0.0,665,0.0,0.0,268,0.0,0.0,34
-7478308_1_1,PMC7478308,11975547_1_6,1,1,8093,605,313,up_to_2,ct,musculoskeletal,endocrine_or_metabolic_disorder|mass_or_lesion,no,,0.0,0.0,15,0.0,0.0,313,0.0,0.0,31,0.0,0.0,155
+7478308_1_1,PMC7478308,11975547_1_6,1,1,8093,605,313,up_to_2,ct|nuclear_medicine,musculoskeletal,endocrine_or_metabolic_disorder|mass_or_lesion,no,,0.0,0.0,15,0.0,0.0,313,0.0,0.0,31,0.0,0.0,155
 7479454_1_1,PMC7479454,11464615_1_1,1,1,8085,714,372,up_to_2,radiography,thorax_respiratory,edema_or_effusion,yes,,0.0,0.0,16,1.0,1.0,1,1.0,1.0,3,1.0,1.0,4
 7479473_1_1,PMC7479473,10010872_1_1,7,4,8083,532,402,up_to_2,ct,lymphatic_splenic|vasculature,ischemia_or_infarction|thrombosis_or_embolism,yes,,0.0,0.0,15,0.1428571492433548,1.0,10,0.0,0.0,16,0.1428571492433548,1.0,5
 7479473_1_2,PMC7479473,10010872_1_1,7,5,8083,532,402,up_to_2,ct,abdomen_retroperitoneum|lymphatic_splenic|vasculature,ischemia_or_infarction|thrombosis_or_embolism,yes,,0.0,0.0,92,0.0,0.0,36,0.0,0.0,38,0.0,0.0,19
@@ -6278,7 +6278,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 7656042_1_1,PMC7656042,11192444_1_1,6,2,8073,742,733,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,0.3333333432674408,1.0,1,0.5,1.0,1,0.3333333432674408,1.0,1,0.5,1.0,1
 7656042_1_2,PMC7656042,11192444_1_1,6,2,8073,562,733,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,0.3333333432674408,1.0,1,0.3333333432674408,1.0,2,0.3333333432674408,1.0,1,0.5,1.0,1
 7656768_1_2,PMC7656768,5458692_1_1,2,1,8095,784,779,up_to_2,mri,musculoskeletal,mass_or_lesion,yes,,0.0,0.0,466,0.0,0.0,356,0.0,0.0,198,0.0,0.0,265
-7667456_1_2,PMC7667456,2763770_1_1,1,1,8090,679,709,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,1365,0.0,0.0,570,0.0,0.0,190,0.0,0.0,42
+7667456_1_2,PMC7667456,2763770_1_1,1,1,8090,679,709,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,1365,0.0,0.0,570,0.0,0.0,190,0.0,0.0,42
 7670348_1_1,PMC7670348,7670348_1_1,1,1,8095,701,405,up_to_2,ct,gastrointestinal,obstruction_or_volvulus,no,,0.0,0.0,1128,0.0,0.0,190,0.0,0.0,384,0.0,0.0,25
 7670355_1_1,PMC7670355,10098014_1_3,1,1,8095,781,283,2_to_3,ct,hepatobiliary_pancreatic,mass_or_lesion,no,,0.0,0.0,272,0.0,0.0,27,0.0,0.0,157,0.0,0.0,14
 7671806_1_2,PMC7671806,7671806_1_2,1,1,8095,473,286,up_to_2,ultrasound,dental_oral,fracture_or_traumatic_injury|inflammatory_or_autoimmune_disorder,yes,,1.0,1.0,6,0.0,0.0,35,1.0,1.0,3,1.0,1.0,5
@@ -6476,7 +6476,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 7923794_1_2,PMC7923794,10244673_1_1,3,3,8094,788,392,2_to_3,ct|nuclear_medicine,skin_soft_tissue|thorax_respiratory,mass_or_lesion,yes,,0.3333333432674408,1.0,7,0.0,0.0,41,0.3333333432674408,1.0,3,0.0,0.0,13
 7927263_1_3,PMC7927263,10196188_1_2,1,1,8093,1959,716,2_to_3,angiography_fluoroscopy,vasculature,vascular_stenosis_or_vasospasm,yes,,0.0,0.0,497,0.0,0.0,174,0.0,0.0,507,0.0,0.0,188
 7929543_1_1,PMC7929543,10010872_1_1,4,1,8080,800,304,2_to_3,ct,lymphatic_splenic,ischemia_or_infarction,yes,,0.0,0.0,288,0.0,0.0,51,0.0,0.0,61,0.0,0.0,34
-7930754_1_1,PMC7930754,2822337_1_1,1,1,8094,709,326,2_to_3,ct,thorax_respiratory,mass_or_lesion,no,,0.0,0.0,377,0.0,0.0,312,0.0,0.0,36,0.0,0.0,60
+7930754_1_1,PMC7930754,2822337_1_1,1,1,8094,709,326,2_to_3,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,no,,0.0,0.0,377,0.0,0.0,312,0.0,0.0,36,0.0,0.0,60
 7930979_1_2,PMC7930979,10188988_1_1,1,1,8095,762,557,up_to_2,ct,lymphatic_splenic,infection_or_abscess|ischemia_or_infarction,yes,,0.0,0.0,6074,0.0,0.0,1971,0.0,0.0,4682,0.0,0.0,875
 7931661_1_3,PMC7931661,4087251_1_1,1,1,8095,450,900,up_to_2,optical_imaging|photography,eye_orbit,perforation_or_rupture,yes,,0.0,0.0,85,0.0,0.0,15,0.0,0.0,11,1.0,1.0,4
 7933319_1_1,PMC7933319,11464615_1_1,3,1,8087,598,625,up_to_2,radiography,thorax_respiratory,edema_or_effusion,yes,,0.3333333432674408,1.0,1,0.6666666865348816,1.0,4,0.3333333432674408,1.0,1,0.6666666865348816,1.0,2
@@ -6563,7 +6563,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 8024459_1_1,PMC8024459,11283782_1_1,1,1,8093,730,1061,up_to_2,mri,brain_intracranial,hemorrhage_or_hematoma,no,,0.0,0.0,246,0.0,0.0,601,0.0,0.0,383,0.0,0.0,475
 8035581_1_2,PMC8035581,12422397_1_2,3,1,8090,605,202,2_to_3,mri,brain_intracranial|endocrine|musculoskeletal,inflammatory_or_autoimmune_disorder,no,,0.0,0.0,98,0.0,0.0,486,0.0,0.0,60,0.0,0.0,21
 8039165_1_1,PMC8039165,8039165_1_1,1,1,8095,726,598,up_to_2,ct,ear_nose_throat,other,no,,0.0,0.0,87,0.0,0.0,20,0.0,0.0,42,0.0,0.0,15
-8040175_1_1,PMC8040175,10898694_1_1,1,1,8079,625,596,up_to_2,radiography,musculoskeletal,mass_or_lesion,no,,0.0,0.0,31,1.0,1.0,6,1.0,1.0,1,1.0,1.0,3
+8040175_1_1,PMC8040175,10898694_1_1,1,1,8079,625,596,up_to_2,nuclear_medicine|radiography,musculoskeletal,mass_or_lesion,no,,0.0,0.0,31,1.0,1.0,6,1.0,1.0,1,1.0,1.0,3
 8040184_1_3,PMC8040184,11672386_1_3,1,1,8095,648,350,up_to_2,angiography_fluoroscopy,vasculature,vascular_stenosis_or_vasospasm,no,,1.0,1.0,1,1.0,1.0,2,1.0,1.0,3,1.0,1.0,5
 8046439_1_1,PMC8046439,10228027_1_1,1,1,8095,215,242,up_to_2,radiography,spine_spinal_cord,mass_or_lesion,no,,0.0,0.0,92,0.0,0.0,45,0.0,0.0,48,0.0,0.0,26
 8046439_1_2,PMC8046439,10228027_1_1,1,1,8095,545,239,2_to_3,ct,spine_spinal_cord,mass_or_lesion,no,,0.0,0.0,1018,0.0,0.0,26,0.0,0.0,413,0.0,0.0,11
@@ -6645,10 +6645,10 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 8142769_1_1,PMC8142769,5534014_1_1,1,1,8095,590,278,2_to_3,ct,thorax_respiratory,herniation_or_prolapse,yes,,0.0,0.0,588,0.0,0.0,462,0.0,0.0,126,0.0,0.0,18
 8143817_1_1,PMC8143817,10081915_1_2,1,1,8095,201,211,up_to_2,ultrasound,heart,thrombosis_or_embolism,no,,0.0,0.0,165,0.0,0.0,89,0.0,0.0,137,0.0,0.0,114
 8144076_1_2,PMC8144076,10605187_1_2,2,2,8094,750,350,2_to_3,ct,gastrointestinal,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,60,0.5,1.0,5,0.0,0.0,16,0.5,1.0,9
-8145512_1_1,PMC8145512,7947337_1_2,1,1,8095,775,822,up_to_2,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,187,0.0,0.0,12,0.0,0.0,338,0.0,0.0,54
+8145512_1_1,PMC8145512,7947337_1_2,1,1,8095,775,822,up_to_2,mri|nuclear_medicine,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,187,0.0,0.0,12,0.0,0.0,338,0.0,0.0,54
 8154279_1_3,PMC8154279,10131255_1_6,1,1,8059,674,370,up_to_2,radiography,dental_oral,infection_or_abscess,yes,,0.0,0.0,66,0.0,0.0,51,0.0,0.0,54,1.0,1.0,9
 8161780_1_5,PMC8161780,3914171_1_1,1,1,8095,765,754,up_to_2,microscopy,renal_urinary,endocrine_or_metabolic_disorder,yes,,0.0,0.0,4004,0.0,0.0,63,0.0,0.0,139,0.0,0.0,26
-8162330_1_1,PMC8162330,11126650_1_2,2,2,8095,737,440,up_to_2,radiography,musculoskeletal|reproductive_pelvic,fracture_or_traumatic_injury,yes,,0.0,0.0,16,0.5,1.0,1,0.0,0.0,17,0.5,1.0,9
+8162330_1_1,PMC8162330,11126650_1_2,2,2,8095,737,440,up_to_2,nuclear_medicine|radiography,musculoskeletal|reproductive_pelvic,fracture_or_traumatic_injury,yes,,0.0,0.0,16,0.5,1.0,1,0.0,0.0,17,0.5,1.0,9
 8167663_1_1,PMC8167663,3665181_1_1,1,1,8095,769,268,2_to_3,photography,breast,mass_or_lesion,yes,,1.0,1.0,2,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1
 8168005_1_1,PMC8168005,10393912_1_1,1,1,8085,1593,569,2_to_3,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,93,0.0,0.0,104,1.0,1.0,5,1.0,1.0,3
 8175964_1_1,PMC8175964,8175964_1_1,1,1,8095,708,427,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,37,0.0,0.0,89,1.0,1.0,4,0.0,0.0,12
@@ -6745,7 +6745,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 8299399_1_1,PMC8299399,12743231_1_3,1,1,8095,713,496,up_to_2,ct,brain_intracranial,fracture_or_traumatic_injury|ischemia_or_infarction,no,,1.0,1.0,2,1.0,1.0,2,1.0,1.0,1,1.0,1.0,7
 8299447_1_1,PMC8299447,10257436_1_1,2,2,8014,709,539,up_to_2,ct,vasculature,thrombosis_or_embolism,yes,,0.0,0.0,109,0.0,0.0,65,0.0,0.0,37,0.5,1.0,7
 8302456_1_1,PMC8302456,10089643_1_1,4,4,8091,750,539,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.25,1.0,7,0.25,1.0,10,0.5,1.0,1,0.75,1.0,1
-8302456_1_4,PMC8302456,10089643_1_1,2,2,8095,750,377,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,48,0.0,0.0,41,0.0,0.0,74,0.0,0.0,79
+8302456_1_4,PMC8302456,10089643_1_1,2,2,8095,750,377,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,48,0.0,0.0,41,0.0,0.0,74,0.0,0.0,79
 8304196_1_1,PMC8304196,10583736_1_3,1,1,8093,750,747,up_to_2,ultrasound,breast,mass_or_lesion,yes,,1.0,1.0,7,1.0,1.0,2,1.0,1.0,2,1.0,1.0,2
 8305756_1_1,PMC8305756,4145153_1_1,1,1,8095,776,1229,up_to_2,radiography,musculoskeletal,infection_or_abscess|inflammatory_or_autoimmune_disorder,no,,0.0,0.0,22,0.0,0.0,98,0.0,0.0,88,0.0,0.0,37
 8310644_1_1,PMC8310644,4478406_1_1,2,2,8090,609,107,over_3,ct|radiography,musculoskeletal|reproductive_pelvic,fracture_or_traumatic_injury,no,,0.0,0.0,27,0.5,1.0,8,0.0,0.0,32,0.5,1.0,7
@@ -7018,7 +7018,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 8652176_1_1,PMC8652176,10010872_1_1,3,3,8022,754,425,up_to_2,angiography_fluoroscopy|ct,abdomen_retroperitoneum|gastrointestinal|vasculature,aneurysm_or_dissection|hemorrhage_or_hematoma,no,,0.0,0.0,13,0.0,0.0,35,0.3333333432674408,1.0,2,0.0,0.0,28
 8657278_1_1,PMC8657278,11921211_1_1,1,1,8095,750,721,up_to_2,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,191,0.0,0.0,26,0.0,0.0,150,0.0,0.0,16
 8662687_1_1,PMC8662687,5534009_1_2,1,1,8095,763,368,2_to_3,ct,dental_oral|musculoskeletal,other,yes,,0.0,0.0,381,0.0,0.0,82,0.0,0.0,208,0.0,0.0,70
-8664247_1_1,PMC8664247,10008126_1_1,8,4,8070,708,571,up_to_2,mri,spine_spinal_cord,infection_or_abscess,yes,,0.0,0.0,90,0.0,0.0,70,0.0,0.0,42,0.25,1.0,1
+8664247_1_1,PMC8664247,10008126_1_1,8,4,8070,708,571,up_to_2,mri|nuclear_medicine,spine_spinal_cord,infection_or_abscess,yes,,0.0,0.0,90,0.0,0.0,70,0.0,0.0,42,0.25,1.0,1
 8664247_1_2,PMC8664247,10008126_1_1,4,2,8066,630,499,up_to_2,mri,spine_spinal_cord,infection_or_abscess,yes,,0.0,0.0,151,0.0,0.0,165,0.0,0.0,122,0.5,1.0,7
 8664300_1_1,PMC8664300,10010872_1_1,3,2,7846,760,693,up_to_2,ct,lymphatic_splenic|thorax_respiratory|vasculature,aneurysm_or_dissection|mass_or_lesion,no,,0.0,0.0,65,0.0,0.0,22,0.3333333432674408,1.0,5,0.3333333432674408,1.0,8
 8664300_1_2,PMC8664300,10010872_1_1,1,1,7844,647,826,up_to_2,angiography_fluoroscopy,lymphatic_splenic|thorax_respiratory|vasculature,mass_or_lesion,no,,0.0,0.0,388,0.0,0.0,255,0.0,0.0,218,0.0,0.0,217
@@ -7246,7 +7246,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 8956435_1_1,PMC8956435,10973078_1_2,2,2,8092,747,361,2_to_3,mri,brain_intracranial,herniation_or_prolapse|neurologic_disorder,yes,,0.0,0.0,57,0.0,0.0,69,0.0,0.0,32,0.0,0.0,52
 8958407_1_1,PMC8958407,10257436_1_1,4,1,8016,5688,2288,2_to_3,ct,vasculature,thrombosis_or_embolism,no,,0.0,0.0,166,0.0,0.0,385,0.0,0.0,61,0.0,0.0,117
 8960515_1_1,PMC8960515,11875394_1_2,2,2,8093,598,511,up_to_2,ct,thorax_respiratory,fracture_or_traumatic_injury|perforation_or_rupture,yes,,0.0,0.0,436,0.0,0.0,24,0.0,0.0,244,0.5,1.0,4
-8962137_1_1,PMC8962137,10234330_1_1,1,1,8094,778,231,over_3,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,1777,0.0,0.0,53,0.0,0.0,853,0.0,0.0,40
+8962137_1_1,PMC8962137,10234330_1_1,1,1,8094,778,231,over_3,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,1777,0.0,0.0,53,0.0,0.0,853,0.0,0.0,40
 8962948_1_1,PMC8962948,10188988_1_1,2,2,8072,708,503,up_to_2,ultrasound,heart,cardiac_disorder|infection_or_abscess|mass_or_lesion|perforation_or_rupture,yes,,0.0,0.0,24,0.0,0.0,39,0.0,0.0,22,0.0,0.0,30
 8963141_1_1,PMC8963141,11463717_1_1,1,1,8095,500,306,up_to_2,ct,abdomen_retroperitoneum|gastrointestinal,mass_or_lesion,no,,0.0,0.0,2520,0.0,0.0,92,0.0,0.0,1885,0.0,0.0,46
 8963157_1_1,PMC8963157,11664613_1_1,1,1,8094,666,302,2_to_3,ct,hepatobiliary_pancreatic,infection_or_abscess|mass_or_lesion,yes,,0.0,0.0,772,0.0,0.0,619,0.0,0.0,410,0.0,0.0,87
@@ -7270,7 +7270,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 8982527_1_3,PMC8982527,10419204_1_1,3,2,8076,630,758,up_to_2,ct,endocrine,mass_or_lesion,yes,,0.0,0.0,131,0.0,0.0,384,0.0,0.0,196,0.0,0.0,358
 8985614_1_3,PMC8985614,11322469_1_2,1,1,8095,698,698,square,angiography_fluoroscopy,gastrointestinal,perforation_or_rupture,no,,0.0,0.0,903,0.0,0.0,455,0.0,0.0,378,0.0,0.0,72
 8986758_1_2,PMC8986758,3003981_1_2,4,3,8095,674,667,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection|device_or_treatment_complication|fracture_or_traumatic_injury|perforation_or_rupture,no,,0.25,1.0,9,0.25,1.0,6,0.5,1.0,3,0.5,1.0,2
-8987538_1_3,PMC8987538,11524943_1_2,2,2,8095,797,822,up_to_2,ct|radiography,spine_spinal_cord,device_or_treatment_complication|dislocation_or_instability|postoperative_or_resolved_state,no,,0.5,1.0,1,0.5,1.0,1,0.5,1.0,1,0.5,1.0,2
+8987538_1_3,PMC8987538,11524943_1_2,2,2,8095,797,822,up_to_2,ct|nuclear_medicine|radiography,spine_spinal_cord,device_or_treatment_complication|dislocation_or_instability|postoperative_or_resolved_state,no,,0.5,1.0,1,0.5,1.0,1,0.5,1.0,1,0.5,1.0,2
 8988423_1_1,PMC8988423,5012097_1_1,1,1,8095,708,482,up_to_2,ultrasound,reproductive_pelvic,other,yes,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1
 8988853_1_1,PMC8988853,10188988_1_1,2,2,8072,750,550,up_to_2,ultrasound,heart,cardiac_disorder|infection_or_abscess,yes,,0.5,1.0,10,0.5,1.0,5,0.5,1.0,8,0.5,1.0,7
 8989140_1_1,PMC8989140,8039165_1_1,1,1,8095,750,645,up_to_2,ct,ear_nose_throat,other,yes,,0.0,0.0,132,1.0,1.0,6,0.0,0.0,115,1.0,1.0,3
@@ -7323,7 +7323,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9026236_1_2,PMC9026236,2877791_1_1,1,1,8095,720,230,over_3,ct,vasculature,other,no,,0.0,0.0,28,0.0,0.0,25,0.0,0.0,27,1.0,1.0,8
 9026236_1_3,PMC9026236,2877791_1_1,2,2,8094,720,572,up_to_2,angiography_fluoroscopy|ultrasound,vasculature,obstruction_or_volvulus,no,,0.0,0.0,13,0.5,1.0,7,0.5,1.0,6,0.5,1.0,6
 9029647_1_4,PMC9029647,10600782_1_4,1,1,8087,774,586,up_to_2,angiography_fluoroscopy,vasculature,vascular_stenosis_or_vasospasm,yes,,0.0,0.0,26,1.0,1.0,10,0.0,0.0,30,0.0,0.0,33
-9032845_1_1,PMC9032845,8715137_1_2,2,1,8095,753,1224,up_to_2,ct,thorax_respiratory,endocrine_or_metabolic_disorder,yes,,0.0,0.0,202,0.0,0.0,361,0.0,0.0,195,0.0,0.0,259
+9032845_1_1,PMC9032845,8715137_1_2,2,1,8095,753,1224,up_to_2,ct|nuclear_medicine,thorax_respiratory,endocrine_or_metabolic_disorder,yes,,0.0,0.0,202,0.0,0.0,361,0.0,0.0,195,0.0,0.0,259
 9035195_1_1,PMC9035195,10257436_1_1,5,3,8017,598,669,up_to_2,ct,vasculature,thrombosis_or_embolism,yes,,0.0,0.0,308,0.0,0.0,97,0.0,0.0,214,0.20000000298023224,1.0,10
 9035195_1_2,PMC9035195,10257436_1_1,1,1,8013,797,535,up_to_2,ultrasound,vasculature,thrombosis_or_embolism,yes,,0.0,0.0,520,0.0,0.0,1066,0.0,0.0,168,0.0,0.0,371
 9035325_1_1,PMC9035325,10010872_1_1,3,3,7846,633,336,up_to_2,ct,abdomen_retroperitoneum|lymphatic_splenic,edema_or_effusion|hemorrhage_or_hematoma|perforation_or_rupture,yes,,0.0,0.0,419,0.0,0.0,306,0.0,0.0,88,0.0,0.0,53
@@ -7338,7 +7338,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9046120_1_3,PMC9046120,10387371_1_2,3,2,8095,747,1072,up_to_2,ct,head_neck|vasculature,congenital_or_developmental_disorder,yes,,0.3333333432674408,1.0,10,0.3333333432674408,1.0,2,0.3333333432674408,1.0,9,0.3333333432674408,1.0,5
 9057529_1_3,PMC9057529,10823801_1_3,1,1,8094,709,299,2_to_3,radiography,musculoskeletal,postoperative_or_resolved_state,no,,0.0,0.0,13,1.0,1.0,9,1.0,1.0,8,1.0,1.0,9
 9057529_1_6,PMC9057529,10823801_1_3,1,1,8094,709,329,2_to_3,radiography,musculoskeletal,postoperative_or_resolved_state,no,,0.0,0.0,20,0.0,0.0,16,0.0,0.0,14,0.0,0.0,12
-9061986_1_1,PMC9061986,10244673_1_1,1,1,8069,688,418,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,614,0.0,0.0,202,0.0,0.0,1173,0.0,0.0,249
+9061986_1_1,PMC9061986,10244673_1_1,1,1,8069,688,418,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,614,0.0,0.0,202,0.0,0.0,1173,0.0,0.0,249
 9062588_1_1,PMC9062588,4592736_1_2,1,1,8093,800,487,up_to_2,ct,musculoskeletal|reproductive_pelvic,edema_or_effusion,yes,,0.0,0.0,21,0.0,0.0,252,1.0,1.0,7,0.0,0.0,31
 9062588_1_3,PMC9062588,4592736_1_2,1,1,8095,800,666,up_to_2,radiography,musculoskeletal|reproductive_pelvic,other,yes,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1,1.0,1.0,1
 9062942_1_1,PMC9062942,10010872_1_1,2,2,7845,757,427,up_to_2,ct,brain_intracranial|vasculature,aneurysm_or_dissection|hemorrhage_or_hematoma,no,,0.0,0.0,39,0.5,1.0,4,0.5,1.0,9,1.0,1.0,7
@@ -7509,7 +7509,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9278249_1_3,PMC9278249,10310455_1_3,1,1,8095,777,403,up_to_2,mri,heart,inflammatory_or_autoimmune_disorder,no,,0.0,0.0,12,1.0,1.0,6,0.0,0.0,12,1.0,1.0,5
 9282727_1_1,PMC9282727,7033346_1_3,1,1,8095,757,504,up_to_2,mri,endocrine,mass_or_lesion,no,,0.0,0.0,143,0.0,0.0,52,0.0,0.0,48,0.0,0.0,42
 9282736_1_2,PMC9282736,11980746_1_4,1,1,8095,757,548,up_to_2,angiography_fluoroscopy,vasculature,aneurysm_or_dissection,no,,0.0,0.0,136,0.0,0.0,40,0.0,0.0,144,0.0,0.0,53
-9282804_1_2,PMC9282804,5767848_1_1,1,1,8095,697,227,over_3,ct,vasculature,neurologic_disorder|vascular_stenosis_or_vasospasm,no,,0.0,0.0,872,0.0,0.0,200,0.0,0.0,716,0.0,0.0,33
+9282804_1_2,PMC9282804,5767848_1_1,1,1,8095,697,227,over_3,ct|nuclear_medicine,vasculature,neurologic_disorder|vascular_stenosis_or_vasospasm,no,,0.0,0.0,872,0.0,0.0,200,0.0,0.0,716,0.0,0.0,33
 9283990_1_1,PMC9283990,11089586_1_2,4,3,8094,734,205,over_3,ct|mri,reproductive_pelvic,mass_or_lesion,yes,,0.25,1.0,4,0.0,0.0,13,0.25,1.0,2,0.25,1.0,4
 9283990_1_2,PMC9283990,11089586_1_2,4,3,8094,770,315,2_to_3,ct|mri,reproductive_pelvic,mass_or_lesion,yes,,0.25,1.0,7,0.0,0.0,44,0.0,0.0,14,0.25,1.0,9
 9285534_1_2,PMC9285534,10663064_1_1,1,1,8086,750,343,2_to_3,ct,gastrointestinal,cystic_disorder,no,,0.0,0.0,69,0.0,0.0,30,1.0,1.0,9,0.0,0.0,12
@@ -7625,7 +7625,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9422718_1_3,PMC9422718,3765121_1_1,1,1,8095,750,955,up_to_2,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,404,0.0,0.0,43,0.0,0.0,76,0.0,0.0,27
 9424948_1_1,PMC9424948,12643405_1_1,1,1,8095,790,347,2_to_3,mri,reproductive_pelvic,mass_or_lesion,yes,,0.0,0.0,286,0.0,0.0,44,0.0,0.0,111,0.0,0.0,47
 9426963_1_4,PMC9426963,11452572_1_3,1,1,8086,766,203,over_3,ct,abdomen_retroperitoneum,ischemia_or_infarction,no,,0.0,0.0,117,0.0,0.0,210,0.0,0.0,63,0.0,0.0,583
-9427307_1_3,PMC9427307,10098014_1_3,4,3,8057,727,1217,up_to_2,ct,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,135,0.0,0.0,110,0.25,1.0,7,0.0,0.0,40
+9427307_1_3,PMC9427307,10098014_1_3,4,3,8057,727,1217,up_to_2,ct|nuclear_medicine,hepatobiliary_pancreatic,mass_or_lesion,yes,,0.0,0.0,135,0.0,0.0,110,0.25,1.0,7,0.0,0.0,40
 9428647_1_2,PMC9428647,10240851_1_1,2,2,8006,692,222,over_3,ct,brain_intracranial,stone_or_calcification,yes,,0.0,0.0,116,0.0,0.0,14,0.0,0.0,36,0.5,1.0,1
 9431006_1_1,PMC9431006,11150214_1_1,1,1,8095,673,286,2_to_3,ct,abdomen_retroperitoneum|renal_urinary|reproductive_pelvic,mass_or_lesion,yes,,0.0,0.0,1759,0.0,0.0,140,0.0,0.0,1273,0.0,0.0,92
 9431006_1_2,PMC9431006,11150214_1_1,1,1,8091,675,519,up_to_2,ct|nuclear_medicine,heart,mass_or_lesion,yes,,0.0,0.0,595,0.0,0.0,401,0.0,0.0,212,0.0,0.0,104
@@ -7703,7 +7703,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9508934_1_1,PMC9508934,10010872_1_1,1,1,8094,750,253,2_to_3,ct,hepatobiliary_pancreatic,cystic_disorder,yes,,0.0,0.0,97,0.0,0.0,116,0.0,0.0,60,0.0,0.0,42
 9509206_1_1,PMC9509206,3579048_1_1,1,1,8093,750,528,up_to_2,angiography_fluoroscopy,vasculature,vascular_stenosis_or_vasospasm,yes,,0.0,0.0,1811,0.0,0.0,363,0.0,0.0,838,0.0,0.0,38
 9509206_1_2,PMC9509206,3579048_1_1,1,1,8093,750,527,up_to_2,angiography_fluoroscopy,vasculature,vascular_stenosis_or_vasospasm,yes,,0.0,0.0,1933,0.0,0.0,402,0.0,0.0,902,0.0,0.0,39
-9509685_1_3,PMC9509685,10368649_1_2,1,1,8093,750,749,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,2059,0.0,0.0,248,0.0,0.0,1234,0.0,0.0,49
+9509685_1_3,PMC9509685,10368649_1_2,1,1,8093,750,749,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,2059,0.0,0.0,248,0.0,0.0,1234,0.0,0.0,49
 9513142_1_1,PMC9513142,10240851_1_1,1,1,8089,767,489,up_to_2,ultrasound,heart,enlargement_or_atrophy,yes,,0.0,0.0,67,0.0,0.0,38,0.0,0.0,77,0.0,0.0,31
 9513320_1_1,PMC9513320,7293114_1_2,3,2,8094,708,531,up_to_2,mri,spine_spinal_cord,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,154,0.0,0.0,50,0.0,0.0,132,0.0,0.0,49
 9513320_1_2,PMC9513320,7293114_1_2,3,2,8094,708,740,up_to_2,mri,spine_spinal_cord,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,119,0.0,0.0,64,0.0,0.0,131,0.0,0.0,40
@@ -7816,12 +7816,12 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9647498_1_1,PMC9647498,11014752_1_1,1,1,8095,750,750,square,mri,brain_intracranial,ischemia_or_infarction,yes,,0.0,0.0,78,0.0,0.0,29,0.0,0.0,52,0.0,0.0,19
 9647498_1_2,PMC9647498,11014752_1_1,2,2,8092,750,353,2_to_3,angiography_fluoroscopy,dental_oral|ear_nose_throat,obstruction_or_volvulus,yes,,1.0,1.0,1,0.5,1.0,1,1.0,1.0,1,1.0,1.0,1
 9648254_1_1,PMC9648254,10008126_1_1,4,4,8002,539,302,up_to_2,radiography,spine_spinal_cord,musculoskeletal_disorder,no,,1.0,1.0,2,1.0,1.0,2,1.0,1.0,2,1.0,1.0,2
-9650533_1_1,PMC9650533,10064447_1_1,1,1,8040,570,485,up_to_2,ct,vasculature,aneurysm_or_dissection|infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,438,0.0,0.0,583,0.0,0.0,666,0.0,0.0,484
+9650533_1_1,PMC9650533,10064447_1_1,1,1,8040,570,485,up_to_2,ct|nuclear_medicine,vasculature,aneurysm_or_dissection|infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,438,0.0,0.0,583,0.0,0.0,666,0.0,0.0,484
 9650533_1_2,PMC9650533,10064447_1_1,2,2,8041,570,406,up_to_2,ct,vasculature,aneurysm_or_dissection,yes,,0.0,0.0,927,0.0,0.0,486,0.0,0.0,224,0.0,0.0,48
 9653028_1_1,PMC9653028,10008126_1_1,3,2,8001,750,758,up_to_2,radiography,spine_spinal_cord,degenerative_disorder|musculoskeletal_disorder,no,,0.6666666865348816,1.0,4,0.0,0.0,11,0.6666666865348816,1.0,2,1.0,1.0,4
 9653028_1_3,PMC9653028,10008126_1_1,3,2,8001,750,492,up_to_2,radiography,spine_spinal_cord,degenerative_disorder|musculoskeletal_disorder,no,,1.0,1.0,1,0.6666666865348816,1.0,2,1.0,1.0,1,0.6666666865348816,1.0,2
 9659429_1_2,PMC9659429,10918503_1_2,1,1,8093,633,1101,up_to_2,mri,musculoskeletal|thorax_respiratory,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,95,1.0,1.0,3,0.0,0.0,49,1.0,1.0,7
-9659946_1_3,PMC9659946,5006504_1_2,1,1,8095,767,1078,up_to_2,mri,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,164,0.0,0.0,107,0.0,0.0,268,0.0,0.0,169
+9659946_1_3,PMC9659946,5006504_1_2,1,1,8095,767,1078,up_to_2,mri|nuclear_medicine,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,164,0.0,0.0,107,0.0,0.0,268,0.0,0.0,169
 9663243_1_1,PMC9663243,10173891_1_1,5,2,8077,660,244,2_to_3,ultrasound,reproductive_pelvic,pregnancy_related_disorder,yes,,0.0,0.0,22,0.0,0.0,13,0.0,0.0,14,0.20000000298023224,1.0,6
 9663243_1_2,PMC9663243,10173891_1_1,1,1,8073,657,223,2_to_3,ultrasound,reproductive_pelvic,pregnancy_related_disorder,yes,,0.0,0.0,172,0.0,0.0,131,0.0,0.0,113,0.0,0.0,82
 9663243_1_3,PMC9663243,10173891_1_1,1,1,8073,651,496,up_to_2,ultrasound,reproductive_pelvic,pregnancy_related_disorder,yes,,0.0,0.0,334,0.0,0.0,122,0.0,0.0,151,0.0,0.0,91
@@ -7954,7 +7954,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9830296_1_2,PMC9830296,12582803_1_2,1,1,8095,787,448,up_to_2,mri,ear_nose_throat,mass_or_lesion,no,,0.0,0.0,80,0.0,0.0,143,0.0,0.0,30,0.0,0.0,35
 9832896_1_1,PMC9832896,11440960_1_2,2,2,8093,776,755,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,13,0.5,1.0,6,1.0,1.0,8,0.5,1.0,2
 9832896_1_2,PMC9832896,11440960_1_2,2,2,8093,748,842,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,1.0,1.0,2,0.5,1.0,4,1.0,1.0,1,0.5,1.0,1
-9840568_1_1,PMC9840568,10408629_1_1,1,1,8084,749,599,up_to_2,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,186,0.0,0.0,288,0.0,0.0,115,0.0,0.0,133
+9840568_1_1,PMC9840568,10408629_1_1,1,1,8084,749,599,up_to_2,mri|nuclear_medicine,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,186,0.0,0.0,288,0.0,0.0,115,0.0,0.0,133
 9840568_1_4,PMC9840568,10408629_1_1,1,1,8084,749,310,2_to_3,mri,brain_intracranial,mass_or_lesion,yes,,0.0,0.0,287,0.0,0.0,427,0.0,0.0,206,0.0,0.0,95
 9840767_1_2,PMC9840767,10188774_1_2,1,1,8087,700,345,2_to_3,ct,dental_oral,mass_or_lesion,no,,0.0,0.0,54,0.0,0.0,101,0.0,0.0,49,0.0,0.0,30
 9840886_1_2,PMC9840886,10600981_1_3,1,1,8094,683,382,up_to_2,mri,reproductive_pelvic,inflammatory_or_autoimmune_disorder,no,,0.0,0.0,13,0.0,0.0,12,1.0,1.0,8,1.0,1.0,5
@@ -7994,7 +7994,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9870702_1_2,PMC9870702,10008126_1_1,1,1,8072,750,329,2_to_3,ct,thorax_respiratory,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,298,0.0,0.0,87,0.0,0.0,124,0.0,0.0,13
 9871095_1_1,PMC9871095,12634364_1_1,2,2,8092,598,875,up_to_2,ct,gastrointestinal|lymphatic_splenic,mass_or_lesion|perforation_or_rupture,yes,,0.0,0.0,14,0.0,0.0,51,0.5,1.0,5,0.5,1.0,4
 9871095_1_3,PMC9871095,12634364_1_1,2,2,8092,598,590,up_to_2,angiography_fluoroscopy,gastrointestinal,perforation_or_rupture,yes,,0.0,0.0,28,0.0,0.0,101,0.0,0.0,16,0.0,0.0,25
-9875172_1_2,PMC9875172,10064447_1_1,1,1,8040,894,1496,up_to_2,ct,vasculature,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,727,0.0,0.0,193,0.0,0.0,353,0.0,0.0,42
+9875172_1_2,PMC9875172,10064447_1_1,1,1,8040,894,1496,up_to_2,ct|nuclear_medicine,vasculature,inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,727,0.0,0.0,193,0.0,0.0,353,0.0,0.0,42
 9881601_1_1,PMC9881601,10624515_1_2,2,2,8094,750,719,up_to_2,mri,brain_intracranial,infection_or_abscess,yes,,0.0,0.0,122,0.0,0.0,206,0.0,0.0,67,0.0,0.0,60
 9887676_1_1,PMC9887676,5241950_1_1,1,1,8095,777,456,up_to_2,mri,brain_intracranial,ischemia_or_infarction,no,,0.0,0.0,612,0.0,0.0,138,0.0,0.0,516,1.0,1.0,5
 9887676_1_3,PMC9887676,5241950_1_1,1,1,8095,800,567,up_to_2,ultrasound,heart,mass_or_lesion,no,,1.0,1.0,1,1.0,1.0,1,1.0,1.0,2,1.0,1.0,5
@@ -8044,7 +8044,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9938940_1_2,PMC9938940,10234608_1_1,1,1,8091,750,561,up_to_2,ct,thorax_respiratory,hemorrhage_or_hematoma,yes,,0.0,0.0,288,0.0,0.0,65,0.0,0.0,75,0.0,0.0,14
 9940547_1_1,PMC9940547,10857816_1_3,3,2,8093,539,424,up_to_2,ultrasound,eye_orbit,edema_or_effusion,no,,0.0,0.0,17,0.3333333432674408,1.0,5,0.3333333432674408,1.0,3,0.6666666865348816,1.0,6
 9940547_1_2,PMC9940547,10857816_1_3,3,2,8093,539,432,up_to_2,ultrasound,eye_orbit,edema_or_effusion|postoperative_or_resolved_state,no,,0.0,0.0,20,0.3333333432674408,1.0,5,0.6666666865348816,1.0,3,0.6666666865348816,1.0,5
-9944191_1_1,PMC9944191,4918494_1_3,1,1,8095,750,882,up_to_2,ct,spine_spinal_cord,other,yes,,0.0,0.0,712,0.0,0.0,132,0.0,0.0,130,0.0,0.0,14
+9944191_1_1,PMC9944191,4918494_1_3,1,1,8095,750,882,up_to_2,ct|nuclear_medicine,spine_spinal_cord,other,yes,,0.0,0.0,712,0.0,0.0,132,0.0,0.0,130,0.0,0.0,14
 9946276_1_2,PMC9946276,10008126_1_1,1,1,8072,750,281,2_to_3,ct,musculoskeletal,infection_or_abscess|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,197,1.0,1.0,10,0.0,0.0,32,1.0,1.0,2
 9947094_1_1,PMC9947094,11081406_1_1,2,1,8095,712,404,up_to_2,mri,brain_intracranial,other,yes,,0.0,0.0,129,0.0,0.0,95,0.0,0.0,100,0.0,0.0,32
 9953040_1_1,PMC9953040,11121673_1_2,1,1,8095,776,313,2_to_3,mri,brain_intracranial,neurologic_disorder,yes,,0.0,0.0,453,0.0,0.0,63,0.0,0.0,378,0.0,0.0,26
@@ -8085,7 +8085,7 @@ query_id,pmcid,article_group,n_recorded_positives,n_descriptions,ranked_gallery_
 9991575_1_1,PMC9991575,10209917_1_1,2,2,8074,500,517,up_to_2,ct,hepatobiliary_pancreatic,edema_or_effusion|inflammatory_or_autoimmune_disorder,yes,,0.0,0.0,347,0.0,0.0,55,0.0,0.0,206,0.5,1.0,6
 9991594_1_2,PMC9991594,10424584_1_2,3,3,8091,633,413,up_to_2,ct,head_neck,mass_or_lesion,yes,,0.0,0.0,1160,0.0,0.0,191,0.0,0.0,74,0.0,0.0,20
 9991594_1_3,PMC9991594,10424584_1_2,2,2,8090,633,463,up_to_2,mri,head_neck,mass_or_lesion,yes,,0.0,0.0,115,0.0,0.0,73,0.0,0.0,30,0.5,1.0,5
-9992202_1_1,PMC9992202,10830647_1_1,1,1,8095,786,502,up_to_2,ct,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,373,0.0,0.0,127,0.0,0.0,173,1.0,1.0,7
+9992202_1_1,PMC9992202,10830647_1_1,1,1,8095,786,502,up_to_2,ct|nuclear_medicine,thorax_respiratory,mass_or_lesion,yes,,0.0,0.0,373,0.0,0.0,127,0.0,0.0,173,1.0,1.0,7
 9994380_1_1,PMC9994380,4426528_1_1,2,2,8095,750,1255,up_to_2,mri,spine_spinal_cord,hemorrhage_or_hematoma|mass_or_lesion,yes,,0.0,0.0,22,0.0,0.0,14,0.0,0.0,45,0.0,0.0,44
 9996063_1_1,PMC9996063,10008126_1_1,3,2,8001,797,764,up_to_2,ct|mri,musculoskeletal,mass_or_lesion,yes,,0.0,0.0,1317,0.0,0.0,795,0.0,0.0,1910,0.0,0.0,474
 9996118_1_1,PMC9996118,10257436_1_1,4,3,8016,567,231,2_to_3,ct,vasculature,thrombosis_or_embolism,yes,,0.0,0.0,76,0.25,1.0,3,0.0,0.0,42,0.25,1.0,1

@@ -8,8 +8,8 @@ Layout. Every figure is built at its printed size, 180 mm wide (double column) a
 most 225 mm high, with a margin of ``MARGIN_MM`` on every side that no text, line or image
 enters (checked for every figure). Axes and text are placed in millimetres from the top
 left corner of the figure. All text is Arial at 7 pt in regular weight; only the panel
-labels, lower-case letters of the same size, are bold. Colours come from the Okabe-Ito
-palette, and every colour is paired with a marker shape, a line style, a position or a
+labels, lower-case letters of the same size, are bold. Colors come from the Okabe-Ito
+palette, and every color is paired with a marker shape, a line style, a position or a
 text label.
 
 Fonts. ``find_arial`` selects the Arial regular and bold files by content: the files of
@@ -28,8 +28,8 @@ wide. The image is drawn at the size that fills the box, unless it would then ha
 than ``MIN_PPI`` pixels per inch; it is then drawn smaller, at exactly ``MIN_PPI`` (images
 are never upscaled). An image that would have more than ``MAX_PPI`` pixels per inch at its
 drawn size is downscaled uniformly (Lanczos) to that resolution. A file that embeds an ICC
-colour profile other than sRGB is first converted to sRGB (relative colorimetric intent with
-black-point compensation), so that it appears as in a colour-managed viewer; no other change
+color profile other than sRGB is first converted to sRGB (relative colorimetric intent with
+black-point compensation), so that it appears as in a color-managed viewer; no other change
 is made.
 
 Export. ``save`` writes a PDF (TrueType fonts embedded, text kept as text), an SVG (text
@@ -212,7 +212,7 @@ def find_arial() -> tuple[dict[str, FontFile], bool]:
 
     Candidates are the fonts that ``matplotlib.font_manager.findSystemFonts`` lists (through
     fontconfig and the usual font directories) and the fonts of matplotlib's font cache.
-    Files are recognised by their content, not by their path or name. Without the shipped
+    Files are recognized by their content, not by their path or name. Without the shipped
     files (sha256 in ``ARIAL_SHA256``), a regular and a bold file of the same version are
     used, the newest version first, then the first paths in sorted order. Without any Arial
     regular and bold files the figures cannot be drawn.
@@ -346,7 +346,7 @@ class Canvas:
         return self.figure.text(self.x(x), self.y(baseline), text, **kwargs)
 
     def row_text(self, x: float, middle: float, text: str, **kwargs):
-        """Text whose capital letters are vertically centred at ``middle`` mm."""
+        """Text whose capital letters are vertically centered at ``middle`` mm."""
         return self.text(x, middle + CAP_MIDDLE_MM, text, **kwargs)
 
     def panel_label(self, x: float, baseline: float, letter: str, title: str = "",
@@ -362,7 +362,7 @@ class Canvas:
                                       transform=self.figure.transFigure, **kwargs))
 
     def marker(self, x: float, y: float, **kwargs) -> None:
-        """A single marker centred at a point (mm)."""
+        """A single marker centered at a point (mm)."""
         self.figure.add_artist(Line2D([self.x(x)], [self.y(y)], transform=self.figure.transFigure, linestyle="",
                                       **kwargs))
 
@@ -585,7 +585,7 @@ def draw_subgroups(rows: Sequence[Mapping[str, object]], overall: Mapping[str, f
     difference over all queries; ``families`` lists ``(family, heading)`` in display order.
     Alternating light bands behind every second category row of a family run across the
     label columns and both panels, so that each row of panel b can be traced to its label.
-    Filled green circles mark intervals above zero and open grey circles include zero.
+    Filled green circles mark intervals above zero and open gray circles include zero.
     """
     pitch = 2.9
     heading_x, category_x = MARGIN_MM, MARGIN_MM + 1.6
@@ -707,7 +707,7 @@ def draw_subgroups(rows: Sequence[Mapping[str, object]], overall: Mapping[str, f
 # --------------------------------------------------------------------------------------
 @dataclass(frozen=True)
 class PreparedImage:
-    """An example image ready to be drawn: sRGB pixels, sizes, the drawn size of one pixel (mm) and its colour profile.
+    """An example image ready to be drawn: sRGB pixels, sizes, the drawn size of one pixel (mm) and its color profile.
 
     ``icc_profile`` is the description of the ICC profile embedded in the file (empty without one), and
     ``converted`` says whether the pixels were converted from that profile to sRGB.
@@ -772,9 +772,9 @@ SRGB = ImageCms.createProfile("sRGB")
 def srgb_pixels(im: Image.Image) -> tuple[Image.Image, str, bool]:
     """The image in RGB, the description of its embedded ICC profile and whether it was converted to sRGB.
 
-    A file without a profile, or with an sRGB profile, keeps its stored values (greyscale is
+    A file without a profile, or with an sRGB profile, keeps its stored values (grayscale is
     expanded to RGB). Another profile is converted to sRGB with the relative colorimetric
-    intent and black-point compensation, as a colour-managed viewer displays the file.
+    intent and black-point compensation, as a color-managed viewer displays the file.
     """
     icc = im.info.get("icc_profile")
     if not icc:
@@ -792,7 +792,7 @@ def srgb_pixels(im: Image.Image) -> tuple[Image.Image, str, bool]:
 def prepare_image(path: str | Path, box: tuple[float, float]) -> PreparedImage:
     """Load an image in sRGB and size it for a box of ``box`` = (width, height) mm.
 
-    The colours are converted to sRGB when the file embeds another ICC profile
+    The colors are converted to sRGB when the file embeds another ICC profile
     (``srgb_pixels``); the size follows ``fit_image``, and a downscaled image is resampled
     uniformly (Lanczos). Images with fewer than ``MIN_LONG_PX`` pixels on the longer side
     are refused; the example selection excludes them.
@@ -864,7 +864,7 @@ KEY_LABELS = {"positive": "Recorded positive (annotated pair with the query)",
 
 def _draw_image_box(canvas: Canvas, left: float, top: float, box: tuple[float, float], image: PreparedImage,
                     frame: str) -> None:
-    """One image centred in a box with a frame of the given style."""
+    """One image centered in a box with a frame of the given style."""
     width, height = box
     ax = canvas.axes(left, top, width, height)
     ax.set_xlim(0, width)
@@ -1084,7 +1084,7 @@ def save(canvas: Canvas, directory: Path, stem: str) -> list[Path]:
     paths = [directory / f"{stem}.{ext}" for ext in ("pdf", "svg", "png")]
     with _distinct_subset_tags():
         fig.savefig(paths[0], format="pdf", metadata={"CreationDate": None})
-    # matplotlib marks every unresampled SVG image for nearest-neighbour rendering; the hint is removed so that
+    # matplotlib marks every unresampled SVG image for nearest-neighbor rendering; the hint is removed so that
     # viewers smooth the images when they scale them. The embedded pixels are not changed.
     buffer = io.StringIO()
     fig.savefig(buffer, format="svg", metadata={"Date": None})
@@ -1094,7 +1094,7 @@ def save(canvas: Canvas, directory: Path, stem: str) -> list[Path]:
         raise RuntimeError(f"{stem}.svg: unexpected image elements; the rendering hint was not found on every image")
     with open(paths[1], "w", encoding="utf-8", newline="\n") as fh:
         fh.write(svg.replace(SVG_IMAGE_STYLE, ""))
-    # The PDF and SVG embed every image at its own resolution; the preview smooths the images it rasterises.
+    # The PDF and SVG embed every image at its own resolution; the preview smooths the images it rasterizes.
     for ax in fig.axes:
         for image in ax.get_images():
             image.set_interpolation("antialiased")

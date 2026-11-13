@@ -32,8 +32,8 @@
   "inputs": [
     {
       "path": "DATA_DIR/image_labels.jsonl",
-      "bytes": 12355179,
-      "sha256": "7da59f337ce75a5cc349dcee9cf42d2ecea09016bafed28bd77acb03230b1cd3"
+      "bytes": 12371750,
+      "sha256": "ea99b619dd91aebff33a105c09af0b38972f638af0c2ce95f68b4d21c0adde04"
     },
     {
       "path": "DATA_DIR/image_pairs.json",
@@ -414,18 +414,18 @@
     },
     {
       "path": "retrieval_subgroups_hit10.pdf",
-      "bytes": 58508,
-      "sha256": "19b671db45cdfa7dd7cc7b0958e5a1ea39bf199cd64eb813b2442e3ec81751b2"
+      "bytes": 55773,
+      "sha256": "c89b0b3cc9e83fe03dbff05aae4628212827e23b823aad0e7612ab1e62a44ead"
     },
     {
       "path": "retrieval_subgroups_hit10.svg",
-      "bytes": 129713,
-      "sha256": "2910a86705a36a2675f047fa7d8c13f66be4865c0b68886d8889f7c8cb41a00f"
+      "bytes": 115498,
+      "sha256": "edc05e676445b279a7135b2603063bc97e7874eacf34925fd055e8eaaaf13a8e"
     },
     {
       "path": "retrieval_subgroups_hit10.png",
-      "bytes": 747086,
-      "sha256": "32ec8f2fd846addc5cf66bd733edffb3ab0a9c20a880db07b96b3b5b648b9159"
+      "bytes": 656625,
+      "sha256": "167ed108e30679c6ef02db84f72984df985b4619e5e5ab4566d617303bddd902"
     },
     {
       "path": "retrieval_example_improvement_image_to_image.pdf",
@@ -519,13 +519,13 @@
     },
     {
       "path": "captions.tex",
-      "bytes": 20979,
-      "sha256": "d538ec76e763f2d3f65494c262504f7820a6ca524b25c77d2ab74572b969bcdd"
+      "bytes": 20977,
+      "sha256": "4707abb2909b561244dab723ba4c264b6f2b34da48b3b2a5985b217728fa726e"
     },
     {
       "path": "image_references.tex",
       "bytes": 21973,
-      "sha256": "2d6c1de4310a9e416c6c58bf0f4a5a6b4087ef44aeca541684dcb0b3e1acad27"
+      "sha256": "3f504aa8ec4a0982e8ee769b2b693c881915413ec32201cd585ddc66e55c3a5e"
     },
     {
       "path": "figure_pages.tex",
@@ -549,13 +549,13 @@
     },
     {
       "path": "source_data/subgroups.csv",
-      "bytes": 44632,
-      "sha256": "5d2f99cc5a48d9876d4c51d7e4e78b5567a8b12799ea80ab9a19abd51d55bb2c"
+      "bytes": 44627,
+      "sha256": "c535cccebf420f70734a43fcd4150e217efe8940e8855606aa6393206a0f9470"
     },
     {
       "path": "source_data/per_query.csv",
-      "bytes": 1393414,
-      "sha256": "fcb0244c5aac85f389ea99c5a5235b21c8aa0a1fe58f7f2318b7253d7c90d8f1"
+      "bytes": 1394587,
+      "sha256": "e7a4eba764c2e7533e4eb2da5483acdb374543bb6e2bd0e08369914adf5777da"
     },
     {
       "path": "source_data/examples.csv",

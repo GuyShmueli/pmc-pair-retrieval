@@ -55,13 +55,13 @@ DATA_DIR/
   image_pairs.json          pair IDs and modality, anatomy and diagnosis descriptions
   images/<image_id>.jpg     image files
   image_labels.jsonl        image-level labels, used for figures
-  licenses.csv              image licences and attribution, used for figures
+  licenses.csv              image licenses and attribution, used for figures
   withheld_image_ids.txt    withheld image IDs, used for figures
 ```
 
 The pair file contains 86,144 pairs linking 86,893 images from 56,013 articles. Each image ID begins
 with the PMCID digits of its source article. Images and captions retain the terms recorded in
-`licenses.csv`. See the dataset's `LICENSE.txt` for the scope of its licence.
+`licenses.csv`. See the dataset's `LICENSE.txt` for the scope of its license.
 
 ### Withheld images
 
@@ -228,7 +228,7 @@ vision tower. Image-plus-text weights contain the full model.
 <!-- END compare:released-weights -->
 
 The terms for the fine-tuned weights and their sidecars are not yet set. The repository's MIT
-licence does not cover them. See [`LICENSING.md`](LICENSING.md).
+license does not cover them. See [`LICENSING.md`](LICENSING.md).
 
 ### Download the released weights
 
@@ -267,14 +267,14 @@ and [`configs/image_text_to_image.yaml`](configs/image_text_to_image.yaml).
 | Selection criterion | Validation Recall@10 | Validation Recall@10 |
 
 Both configurations use three 224 × 224 crops along each image's long axis. View embeddings are
-L2-normalised, averaged and normalised again. Training adds crop augmentation. Evaluation uses
+L2-normalized, averaged and normalized again. Training adds crop augmentation. Evaluation uses
 fixed crops. Keep the configured batch sizes and worker counts when reproducing runs.
 
 ## Query text
 
 Each pair supplies a description: `"{diagnosis} in the {anatomy} on {modality}."`
 An image's text query averages the unit embeddings of its distinct pair descriptions. This mean,
-`t_q`, is not renormalised. Image-plus-text retrieval scores gallery image `g` as:
+`t_q`, is not renormalized. Image-plus-text retrieval scores gallery image `g` as:
 
 ```text
 s(q, g) = cos(image_q, image_g) + t_q · image_g
@@ -369,7 +369,7 @@ packages and matching dataset inputs. The check compares PNG previews only when 
 versions match. PDF, SVG, CSV and LaTeX outputs must still match.
 
 Subgroup intervals use 5,000 paired bootstrap resamples of article groups. Plotted label categories
-have at least 100 queries from at least 20 article groups. A query can contribute to multiple
+have at least 140 queries from at least 20 article groups. A query can contribute to multiple
 categories. Image credits and third-party terms are recorded in the figure source data and
 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
@@ -394,10 +394,10 @@ and GPU arithmetic can affect weights, checkpoint selection and rankings of near
 Verify repository files with `sha256sum -c SHA256SUMS`. Fine-tuned weight files are checked
 separately with `sha256sum -c WEIGHTS_SHA256SUMS`.
 
-## Licence
+## License
 
 The code, documentation and configuration are MIT-licensed under [`LICENSE`](LICENSE).
-[`LICENSING.md`](LICENSING.md) defines the covered paths. The licence does not cover the weights,
+[`LICENSING.md`](LICENSING.md) defines the covered paths. The license does not cover the weights,
 `data/` or `results/`, whose terms are not yet set. Third-party material retains the terms recorded
 in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 

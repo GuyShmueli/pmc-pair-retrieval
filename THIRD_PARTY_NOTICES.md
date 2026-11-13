@@ -17,14 +17,14 @@ files, whose terms are not yet set (see `LICENSING.md`).
 
 - BiomedCLIP model card:
   <https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/blob/9f341de24bfb00180f1b847274256e9b65a3a32e/README.md>
-- BiomedCLIP licence file:
+- BiomedCLIP license file:
   <https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/blob/9f341de24bfb00180f1b847274256e9b65a3a32e/LICENSE.md>
 - BiomedBERT model card:
   <https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/blob/d673b8835373c6fa116d6d8006b33d48734e305d/README.md>
-- BiomedBERT licence file:
+- BiomedBERT license file:
   <https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/blob/d673b8835373c6fa116d6d8006b33d48734e305d/LICENSE.md>
 
-Both licence files hold this text, apart from line breaks:
+Both license files hold this text, apart from line breaks:
 
 ```text
 MIT License
@@ -76,20 +76,20 @@ References given by the model cards:
 ## Images in the example figures
 
 The six `results/figures/retrieval_example_*.pdf` files reproduce 55 images from 53 articles in PubMed Central, the
-full-text archive of the U.S. National Library of Medicine. Each image keeps the licence given for it in
+full-text archive of the U.S. National Library of Medicine. Each image keeps the license given for it in
 `results/figures/source_data/image_credits.csv`, which also gives its attribution and the article's copyright notice:
 
-| Licence | Images | Articles |
+| License | Images | Articles |
 |---|---:|---:|
 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 35 | 34 |
 | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | 20 | 19 |
 
-The licences are the ones recorded in `licenses.csv` of the PMC-PaIR dataset. For each of these images, that file also
+The licenses are the ones recorded in `licenses.csv` of the PMC-PaIR dataset. For each of these images, that file also
 records: "Automatic caption/XML screening and article metadata extraction; no individual visual or legal clearance is
 implied."
 
 The figures show each image whole, in a framed box, with labels and tags outside the image. `image_credits.csv` records
-for each placement whether the image was downscaled (`downscaled`) and whether its colours were converted to sRGB
+for each placement whether the image was downscaled (`downscaled`) and whether its colors were converted to sRGB
 (`converted_to_srgb`). The legends in `results/figures/captions.tex` and the entries of
 `results/figures/image_references.tex` credit the same sources. The other two PDF files in `results/figures/` contain no
 images from articles.
@@ -107,4 +107,4 @@ The font files themselves are not in this repository.
 ## Python packages
 
 The packages in `requirements.txt` are not in this repository. They are installed separately, and each has its own
-licence.
+license.
