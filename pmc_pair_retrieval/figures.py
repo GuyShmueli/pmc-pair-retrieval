@@ -60,8 +60,7 @@ Example selection, for each category (token ``improvement``, ``deterioration`` o
    by visual review of the candidate panels, in draw order up to each selected example, to
    show burned-in dates or times (of the examination or of birth), identification or
    accession numbers, ages or sexes, or names of persons, institutions or departments, or
-   listed because such text could not be ruled out; images listed for an earlier state of
-   the figures stay in the list;
+   listed because such text could not be ruled out.
 4. the eligible queries are sorted in ascending order of the lower-case SHA-256 hex digest
    of the UTF-8 string ``"<configuration>/<category>/<query_id>"`` (for example
    ``image_to_image/continued_miss/9019962_1_2``), and the first query not already

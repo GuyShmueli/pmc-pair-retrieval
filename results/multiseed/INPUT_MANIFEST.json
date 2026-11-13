@@ -1,10 +1,10 @@
 {
-  "description": "Inputs for portable three-seed report regeneration. Paths are relative to the package root. This manifest excludes generated reports and actual model weights. Original source hashes and metadata normalization are recorded in provenance.json.",
+  "description": "Inputs for three-seed report regeneration. Paths are relative to the package root. This manifest excludes generated reports and actual model weights.",
   "inputs": [
     {
       "path": "configs/image_text_to_image.yaml",
-      "bytes": 4726,
-      "sha256": "3f6cbf03f2cf202e367d7276a83c6af7ecdd629b1530d61b166402f4bcf15a34"
+      "bytes": 4616,
+      "sha256": "7d3ffe31bce13c32f623fb2f90f947343b9ce1fb13d940ca156cbc92a5d9b0b6"
     },
     {
       "path": "configs/image_to_image.yaml",
@@ -13,13 +13,13 @@
     },
     {
       "path": "configs/multiseed/image_text_to_image_seed43.yaml",
-      "bytes": 4726,
-      "sha256": "04c2bd16107eb25cad25db09fe1cbaca58072c99ec481a2406aaa694d5cf8123"
+      "bytes": 4616,
+      "sha256": "efeaa12a5314af0a2ed63f7c134c84e01a92d18162c3514de8be0a65ded4d8e9"
     },
     {
       "path": "configs/multiseed/image_text_to_image_seed44.yaml",
-      "bytes": 4726,
-      "sha256": "488cf0ac035574b5576f637027bbc2a8356d78f8cd797551a20ac69ee025dfa5"
+      "bytes": 4616,
+      "sha256": "fdc3e7751ddd8977ee5137cbdefab05a60b91d7e148540da4c0b9d49ebf5ea6d"
     },
     {
       "path": "configs/multiseed/image_to_image_seed43.yaml",
@@ -58,23 +58,23 @@
     },
     {
       "path": "pmc_pair_retrieval/dataset.py",
-      "bytes": 10168,
-      "sha256": "9c1040412347d135eaebbfaeca49e0f516b388198189bf92daf15cb2eb1f579a"
+      "bytes": 10108,
+      "sha256": "2ced1804b3d6789912949fcefb3c28afdb46542766580fb396763eced444e376"
     },
     {
       "path": "pmc_pair_retrieval/evaluate.py",
-      "bytes": 26082,
-      "sha256": "7b98def392522e2aeb515015487241f213e29c0f7e18b723324c7f98ad00a486"
+      "bytes": 25997,
+      "sha256": "4016d3619cabb5887bd732859aad26f03f3ec03fe2e3c20c9c867c21dfe3419f"
     },
     {
       "path": "pmc_pair_retrieval/metrics.py",
-      "bytes": 5666,
-      "sha256": "f4e8a61843c4d7b8e485037b14935ecbca5625e5b6e2c682e6fc3af7cd2e5f83"
+      "bytes": 5609,
+      "sha256": "7791cacf420b42966a9976946fba3d0047d4941bba9a64338573260cd6510d62"
     },
     {
       "path": "pmc_pair_retrieval/model.py",
-      "bytes": 18786,
-      "sha256": "5f06766b71cf9fab65a8b947a00d14c480412e9ada782f7e67fb64576fc2f644"
+      "bytes": 18762,
+      "sha256": "4dfe5c27f921d905091281ecc98f2d935d3271d4393a58541d61fb58606b1861"
     },
     {
       "path": "pmc_pair_retrieval/split.py",
@@ -83,18 +83,18 @@
     },
     {
       "path": "pmc_pair_retrieval/train.py",
-      "bytes": 15336,
-      "sha256": "e32725be098d5250fbe3fdc6b43a548464726acf51de31d48084ff220d2eeef7"
+      "bytes": 15243,
+      "sha256": "fad620ab11c85a4e9dd8b8f8afb8803c50714745956188ad034eccb1ddd2fd0a"
     },
     {
       "path": "pmc_pair_retrieval/train_image_text_to_image.py",
-      "bytes": 59505,
-      "sha256": "c2d369933db142382c9f9a39d239c15b855923d48972a1cd47b78f24dc9cb750"
+      "bytes": 58881,
+      "sha256": "78a7db157324f172181d925e01f3fdcd8fb2a4f90fd957fe2d75754f26abd12a"
     },
     {
       "path": "pmc_pair_retrieval/train_image_to_image.py",
-      "bytes": 38001,
-      "sha256": "4cfbc98621a827f35f360785ae834118de0fd0488e9b4b184a903e706c2afe25"
+      "bytes": 37877,
+      "sha256": "972a275b142258d79479453e706e7e0e73db4381359055e5115fecdd903ce5f7"
     },
     {
       "path": "pmc_pair_retrieval/views.py",
@@ -103,13 +103,13 @@
     },
     {
       "path": "requirements.txt",
-      "bytes": 766,
-      "sha256": "a13978895e5ca9ecf043b71bac7b943665fde51dfe7e6e32060f9b6b93beff16"
+      "bytes": 734,
+      "sha256": "dc294ceaa3f55fabe869c9f49471fd613a3920a246abeb4eab775236642013b8"
     },
     {
       "path": "results/multiseed/PLAN.md",
-      "bytes": 3320,
-      "sha256": "861ef19cd7190b4d6e34bd072bbc82458e9a59f21fa58cfb07fe0fdebcbdab92"
+      "bytes": 3091,
+      "sha256": "8adfa1ccf9777a799559e904bb38ab917dd8601a6338835f82145b40096cc123"
     },
     {
       "path": "results/multiseed/eval/seed43/image_text_to_image/fine_tuned_test.jsonl",
@@ -230,11 +230,6 @@
       "path": "results/multiseed/eval/seed44/image_to_image/fine_tuned_val.summary.json",
       "bytes": 2671,
       "sha256": "569fa58083b2187505a978ab238cb02668218ceff4a622e5e7408af85a301277"
-    },
-    {
-      "path": "results/multiseed/provenance.json",
-      "bytes": 51707,
-      "sha256": "7f0a2bd78288058d2ee5a99d0462d6125b45fd9508f7b47de098f259eb2d59e7"
     },
     {
       "path": "results/multiseed/runs/image_text_to_image_seed43/best_model.json",

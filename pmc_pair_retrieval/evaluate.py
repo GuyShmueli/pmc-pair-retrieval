@@ -54,8 +54,8 @@ of the retrieval task. The pinned model cache is checked (``model.verify_model_c
 before the data are read.
 
 The computation is deterministic: on the same GPU model with the same software versions,
-the embeddings, the per-query rows and the ranked lists are reproduced bit for bit. The
-published results were computed on an NVIDIA L40S with torch 2.7.1+cu126. The image batch
+the embeddings, the per-query rows and the ranked lists are reproduced bit for bit.
+Reference hardware and software: NVIDIA L40S and torch 2.7.1+cu126. The image batch
 size (128 images, i.e. 384 view crops per forward pass) and the text batch size are
 numerically relevant; the number of loading workers is not.
 """
@@ -185,7 +185,7 @@ def load_graph(data_dir: str | os.PathLike, split_file: str | os.PathLike = DEFA
 
     Missing images raise ``ValueError`` unless ``allow_missing_images``; then the pairs
     with a missing image are dropped, which removes positives and gallery images, so the
-    results differ from the published ones.
+    results differ from the reported ones.
     """
     pairs, captions, id2path = dataset.load_pairs(data_dir)
     missing = sorted({i for pair in pairs for i in pair if i not in id2path})
@@ -242,8 +242,8 @@ def encode_texts(model: torch.nn.Module, tokenizer, texts: Sequence[str], batch_
 # --------------------------------------------------------------------------------------
 @contextlib.contextmanager
 def _full_fp32_matmul():
-    # TF32 changes the low bits of the scores and so the order of near ties; the
-    # published scores were computed with it disabled. Callers may have enabled it.
+    # Disable TF32 to preserve full-fp32 scores and the order of near ties.
+    # Callers may have enabled it.
     saved = torch.get_float32_matmul_precision()
     torch.set_float32_matmul_precision("highest")
     try:
@@ -259,9 +259,10 @@ def score_matrix(image_embs: torch.Tensor, text_embs: torch.Tensor | None = None
 
     Without text: ``G G^T``. With ``text_embs`` and ``query_texts`` (per query, the rows of
     ``text_embs`` holding its descriptions): ``G G^T + M G^T``, where row q of ``M`` is
-    the mean of the query's description embeddings, not renormalised. The published
-    scores were computed on the GPU; on the CPU a few near ties order differently, which
-    changes some average precision, nDCG and first-rank values but not Recall@k.
+    the mean of the query's description embeddings, not renormalised. The saved scores
+    use GPU computation. In these evaluations, CPU computation orders a few near ties
+    differently, changing some average precision, nDCG and first-rank values but not
+    Recall@k.
     """
     with _full_fp32_matmul():
         G = image_embs.float().to(device)
@@ -373,8 +374,7 @@ def main(argv: list[str] | None = None) -> None:
     """Evaluate one model on one split; write the per-query rows, ranked lists, summary and embeddings."""
     args = parse_args(argv)
     settings = evaluation_settings(args.retrieval)
-    # The published evaluation ran without TF32 and without cuDNN autotuning; set the flags
-    # here rather than inherit them.
+    # Disable TF32 and cuDNN autotuning explicitly instead of inheriting backend settings.
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
     torch.backends.cudnn.benchmark = False

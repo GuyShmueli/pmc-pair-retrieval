@@ -21,7 +21,7 @@ from PIL import Image
 from torch.utils.data import Dataset
 
 SPLITS = ("train", "val", "test")
-# Images used by the published runs; the public image archive withholds 68 of them.
+# Annotated images. The public image archive withholds 68 of them.
 N_PUBLISHED_IMAGES = 86893
 # An undirected pair edge (u, v) with u < v.
 Edge = tuple[str, str]
@@ -49,8 +49,8 @@ def load_pairs(data_dir: str | os.PathLike) -> tuple[list[tuple[str, str]], list
     image are kept, because the image_text_to_image training-pair order depends on the
     complete pair list in file order. Callers compare the pairs with ``id2path``: they
     refuse missing images unless explicitly allowed (``--allow-missing-images``), and each
-    caller documents how it then leaves the missing images out. Reproducing the published
-    numbers needs all 86,893 images of the pairs.
+    caller documents how it then leaves the missing images out. Reproducing the reported
+    results requires all 86,893 images of the pairs.
     """
     data_dir = os.path.abspath(os.fspath(data_dir))
     with open(os.path.join(data_dir, "image_pairs.json"), encoding="utf-8") as f:
@@ -70,7 +70,7 @@ def load_pairs(data_dir: str | os.PathLike) -> tuple[list[tuple[str, str]], list
 
 def load_pairs_and_captions(pairs: Sequence[Sequence[str]], captions: Sequence[Sequence[str]]
                             ) -> tuple[set[str], set[Edge], dict[str, list[str]], dict[Edge, list[str]]]:
-    """Image set, undirected pair edges and descriptions, as the published training code built them.
+    """Build the image set, undirected pair edges and descriptions.
 
     ``pairs`` and ``captions`` are the outputs of ``load_pairs`` (same row order). Returns
     ``all_ids`` (set of image ids), ``direct_edges`` (set of ``(u, v)`` with ``u < v``),
@@ -79,9 +79,9 @@ def load_pairs_and_captions(pairs: Sequence[Sequence[str]], captions: Sequence[S
     the mean of the embeddings of all of them) and ``pair2texts`` (edge -> sorted distinct
     descriptions).
 
-    The sets are filled by the same statements in the same row order as in the published
-    runs, so their iteration order under a fixed ``PYTHONHASHSEED`` (and Python 3.11) is
-    the same as there; the image_text_to_image training-pair order depends on it.
+    The sets are filled in file row order. Their iteration order depends on this
+    construction order, ``PYTHONHASHSEED`` and the Python version. Fix the hash seed and
+    use Python 3.11 to reproduce the image_text_to_image training-pair order.
     """
     if len(pairs) != len(captions):
         raise ValueError(f"pairs ({len(pairs)}) and captions ({len(captions)}) length mismatch")

@@ -7,9 +7,8 @@ members of the query's connected component that are not direct partners are remo
 from the ranking after sorting. Ranks come from ``np.argsort(-sims)`` with numpy's
 default (unstable) sort, which decides the order of exactly tied scores.
 
-The functions keep the dtype flow of the published code: with float32 scores the
-relevance vectors are float32, so per-query Recall@k values are float32 numbers
-converted to Python floats (for example 4/5 -> 0.800000011920929).
+With float32 scores the relevance vectors are float32, so per-query Recall@k values are
+float32 numbers converted to Python floats (for example 4/5 -> 0.800000011920929).
 """
 from __future__ import annotations
 

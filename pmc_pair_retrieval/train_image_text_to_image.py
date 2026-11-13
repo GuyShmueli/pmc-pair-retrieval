@@ -56,15 +56,15 @@ Outputs in the output directory:
 
 Every ``log_every`` steps of an epoch a progress line on stdout reports the running mean
 loss of the epoch, the image-image and image-text losses of the current step and the
-learning rate after the step, in the format of the published run's progress bar.
+learning rate after the step.
 
 Reproducibility. The seed and ``PYTHONHASHSEED`` fix the data order and augmentations:
 
 1. The training pairs are listed by iterating Python sets of image ids, then shuffled
    with ``random.Random(seed)``. Set iteration order depends on string hashing, so the
-   run needs ``PYTHONHASHSEED=hash_seed`` and Python 3.11, and the set statements of
-   ``prepare_data`` are kept exactly as in the published code. The log and
-   ``summary.json`` record the sha256 of the training-pair order.
+   run needs ``PYTHONHASHSEED=hash_seed`` and Python 3.11. The set construction in
+   ``prepare_data`` also determines this order. The log and ``summary.json`` record the
+   sha256 of the training-pair order.
 2. The batch sampler draws from its own ``random.Random(seed)`` across all epochs.
 3. Building the model advances the global torch generator. Its next draw is the base
    seed of the persistent training workers (logged as ``loader base seed``). Worker
@@ -76,10 +76,9 @@ Reproducibility. The seed and ``PYTHONHASHSEED`` fix the data order and augmenta
 GPU training is not guaranteed to be bitwise reproducible (cuDNN autotuning, bf16
 kernels).
 
-``--max-steps N`` is for smoke tests only. As in the published code, it also sets the
-cosine horizon to N steps (identical to a full run for N <= ``warmup_steps``, where all
-steps are warmup steps); the epoch in which step N is reached is validated, and the run
-ends.
+``--max-steps N`` is for smoke tests only. It also sets the cosine horizon to N steps
+(identical to a full run for N <= ``warmup_steps``, where all steps are warmup steps).
+The epoch in which step N is reached is validated, and the run ends.
 """
 from __future__ import annotations
 
@@ -171,7 +170,7 @@ def seed_everything(seed: int) -> None:
 
 
 def set_backend_flags() -> None:
-    """Backend flags of the published run: TF32 for fp32 matmuls and convolutions, cuDNN autotuning."""
+    """Enable TF32 for fp32 matmuls and convolutions, and cuDNN autotuning."""
     torch.backends.cudnn.benchmark = True
     torch.backends.cuda.matmul.allow_tf32 = True
     torch.backends.cudnn.allow_tf32 = True
@@ -330,10 +329,10 @@ class TrainingData:
 def prepare_data(config: Mapping, data_dir: str, allow_missing_images: bool = False) -> TrainingData:
     """Load the public data, the split and the hard negatives, and build the training structures.
 
-    The set statements follow the published code statement by statement and are fed the
-    pairs in file order: the iteration order of these sets, and with it the order of the
-    training pairs, depends on it. Every image of the pairs must be present unless
-    ``allow_missing_images``; without them, pairs with a missing image are dropped.
+    Sets are built from pairs in file order. Their iteration order determines the
+    training-pair order and depends on this construction order. Every image of the pairs
+    must be present unless ``allow_missing_images``. Without them, pairs with a missing
+    image are dropped.
     """
     pairs, captions, id2path_all = load_pairs(data_dir)
     all_ids, direct_edges, id2texts, pair2texts = load_pairs_and_captions(pairs, captions)
@@ -563,7 +562,7 @@ class HardNegativeBatchSampler(Sampler[list[int]]):
 
 
 def make_train_loader(dataset: Dataset, sampler: Sampler, num_workers: int) -> DataLoader:
-    """Training DataLoader with persistent workers, as in the published run.
+    """Training DataLoader with persistent workers.
 
     The workers are seeded once, when the first iterator is created, and keep their
     generators across epochs. Batch ``k`` of every pass goes to worker ``k mod num_workers``.
@@ -573,16 +572,15 @@ def make_train_loader(dataset: Dataset, sampler: Sampler, num_workers: int) -> D
 
 
 def start_epoch(loader: DataLoader) -> Iterator:
-    """Batch iterator of the next training epoch, created exactly as in the published run.
+    """Start the next training epoch with two DataLoader iterator calls.
 
-    The published run wrapped the loader in a ``tqdm.auto`` progress bar, whose
-    constructor already calls ``iter(loader)`` before the loop calls it again. With
-    persistent workers the first call starts a pass of the batch sampler and queues
-    ``PREFETCH_FACTOR x num_workers`` batches (8); the second call discards them and starts
-    the pass that is trained on. Every epoch therefore advances the sampler's generator by
-    one shuffle and 8 batches before the trained batches, and each worker loads its 2
-    discarded batches, drawing their augmentations. The batch order and the augmentation
-    streams of the published run depend on this, so the extra call is kept.
+    With persistent workers, the first ``iter(loader)`` call starts a pass of the batch
+    sampler and queues ``PREFETCH_FACTOR x num_workers`` batches (8). The second call
+    discards them and starts the pass that is trained on. Every epoch therefore advances
+    the sampler's generator by one shuffle and 8 batches before the trained batches, and
+    each worker loads its 2
+    discarded batches, drawing their augmentations. These initial draws are part of the
+    batch order and augmentation streams.
     """
     iter(loader)
     return iter(loader)
@@ -640,9 +638,7 @@ def build_optimizer(model, config: Mapping, total_steps: int):
 
     The schedule multiplies the peak learning rate by ``(step + 1) / warmup_steps`` during
     warmup and by ``0.5 * (1 + cos(pi * progress))`` afterwards, with ``progress`` going
-    from 0 to 1 at ``total_steps``. The published run had a third parameter group holding a
-    separate logit scale that no loss used; it never received a gradient and was never
-    updated, so it is omitted.
+    from 0 to 1 at ``total_steps``.
     """
     decay, no_decay = parameter_groups(model)
     opt = torch.optim.AdamW(
@@ -1067,8 +1063,8 @@ def _append_jsonl(path: str, record: Mapping) -> None:
 def main(config: dict, args: argparse.Namespace) -> None:
     """Train the image_text_to_image configuration (called by ``python -m pmc_pair_retrieval.train``)."""
     check_config(config)
-    # The training command has made string hashing match the published runs; the training-pair
-    # order depends on it, so a direct call of this function is checked as well.
+    # The training-pair order depends on fixed string hashing. Check it even when this
+    # function is called directly.
     problems = hash_seed_problems()
     if problems:
         raise SystemExit("; ".join(problems) + ". Start the run with 'python -m pmc_pair_retrieval.train'.")

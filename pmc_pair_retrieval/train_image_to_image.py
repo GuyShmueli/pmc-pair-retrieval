@@ -19,7 +19,7 @@ ignored. All other images are negatives. The whole vision tower is trained, whil
 text tower and the logit scale stay frozen. Training uses AdamW with layer-wise
 learning-rate decay and a warmup-cosine schedule over all epochs. The image encoder runs
 under bf16 autocast. The loss is computed on fp32 tensors outside autocast, with TF32
-enabled for its matmuls, as in the published run.
+enabled for its matmuls.
 
 Validation and selection. Before training (epoch 0) and after every epoch, the validation
 images are encoded from their three deterministic view crops (``eval_views``) and ranked
@@ -43,7 +43,7 @@ final norm and the projection head (peak ``lr``). ``lr_embed`` belongs to the pa
 position and class-token embeddings (peak ``lr * layer_decay ** 12``).
 
 Reproducibility. The seed determines the data order and the augmentations through three
-random streams, kept exactly as in the published run:
+random streams:
 
 1. A numpy generator draws the items of every epoch.
 2. The global torch generator is advanced by building the model. It then gives one base
@@ -137,7 +137,7 @@ def seed_everything(seed: int) -> None:
 
 
 def set_backend_flags() -> None:
-    """Backend flags of the published run: TF32 for fp32 matmuls (the loss) and convolutions, cuDNN autotuning.
+    """Enable TF32 for fp32 matmuls (the loss) and convolutions, and cuDNN autotuning.
 
     The validation scoring turns TF32 off locally (``retrieval_metrics``).
     """
@@ -509,10 +509,9 @@ def encode_images(model, paths: Sequence[str], indices: np.ndarray, batch_size: 
     """Unit-norm fp32 embeddings of the images at ``indices``, from their three deterministic view crops.
 
     The views of a batch go through one bf16-autocast forward pass and are aggregated
-    (normalise, average, renormalise). The result is normalised twice more in fp32, as in
-    the published validation. The model runs in eval mode and its mode is restored. The
-    DataLoader is created once per call, so each call draws exactly one base seed from the
-    global torch generator.
+    (normalise, average, renormalise). The result is normalised twice more in fp32.
+    The model runs in eval mode and its mode is restored. The DataLoader is created once
+    per call, so each call draws exactly one base seed from the global torch generator.
     """
     was_training = model.training
     model.eval()

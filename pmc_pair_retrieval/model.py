@@ -215,7 +215,7 @@ def _check_pinned_files(hub_dir: Path) -> None:
 
 
 def load_biomedclip(device):
-    """Build pretrained BiomedCLIP as the published runs did; returns ``(model, tokenizer)``.
+    """Build pretrained BiomedCLIP and return ``(model, tokenizer)``.
 
     Performs exactly one ``open_clip.create_model_and_transforms`` call for
     ``hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224`` (fp32, on the

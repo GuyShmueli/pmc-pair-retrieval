@@ -8,19 +8,18 @@
     44
   ],
   "input_mode": "shipped evaluations",
-  "historical_provenance": "results/multiseed/provenance.json",
   "plan": {
     "file": "results/multiseed/PLAN.md",
-    "sha256": "861ef19cd7190b4d6e34bd072bbc82458e9a59f21fa58cfb07fe0fdebcbdab92"
+    "sha256": "8adfa1ccf9777a799559e904bb38ab917dd8601a6338835f82145b40096cc123"
   },
   "input_manifest": {
     "file": "results/multiseed/INPUT_MANIFEST.json",
-    "files_verified": 78
+    "files_verified": 77
   },
   "inputs": [
     {
       "path": "configs/image_text_to_image.yaml",
-      "sha256": "3f6cbf03f2cf202e367d7276a83c6af7ecdd629b1530d61b166402f4bcf15a34"
+      "sha256": "7d3ffe31bce13c32f623fb2f90f947343b9ce1fb13d940ca156cbc92a5d9b0b6"
     },
     {
       "path": "configs/image_to_image.yaml",
@@ -32,7 +31,7 @@
     },
     {
       "path": "results/multiseed/PLAN.md",
-      "sha256": "861ef19cd7190b4d6e34bd072bbc82458e9a59f21fa58cfb07fe0fdebcbdab92"
+      "sha256": "8adfa1ccf9777a799559e904bb38ab917dd8601a6338835f82145b40096cc123"
     },
     {
       "path": "results/multiseed/eval/seed43/image_text_to_image/fine_tuned_test.jsonl",
@@ -129,10 +128,6 @@
     {
       "path": "results/multiseed/eval/seed44/image_to_image/fine_tuned_val.summary.json",
       "sha256": "569fa58083b2187505a978ab238cb02668218ceff4a622e5e7408af85a301277"
-    },
-    {
-      "path": "results/multiseed/provenance.json",
-      "sha256": "7f0a2bd78288058d2ee5a99d0462d6125b45fd9508f7b47de098f259eb2d59e7"
     },
     {
       "path": "results/multiseed/runs/image_text_to_image_seed43/best_model.json",
@@ -264,7 +259,7 @@
     "split_file_sha256": "b0b7be4be1597fa4e557fa4c5a51d0148361c2f253a604cf3df4a95a277c30eb"
   },
   "checkpoint_bytes_verified": false,
-  "verification_scope": "Fresh file hashes, configuration and checkpoint metadata, checkpoint selection, stopping rules, query alignment, metric recomputation and seed-42 reference agreement. Historical training execution is documented separately in provenance.json. Actual checkpoint bytes were not checked by this analysis.",
+  "verification_scope": "Fresh file hashes, configuration and checkpoint metadata, checkpoint selection, stopping rules, query alignment, metric recomputation and seed-42 reference agreement. Actual checkpoint bytes were not checked by this analysis.",
   "metrics": [
     "R@1",
     "R@5",
@@ -1480,7 +1475,7 @@
     "mismatches": []
   },
   "check_counts": {
-    "required_passed": 268,
+    "required_passed": 267,
     "required_failed": 0,
     "informational_passed": 6,
     "informational_failed": 0
@@ -1490,8 +1485,8 @@
       "check": "input SHA256: configs/image_text_to_image.yaml",
       "required": true,
       "pass": true,
-      "observed": "3f6cbf03f2cf202e367d7276a83c6af7ecdd629b1530d61b166402f4bcf15a34",
-      "expected": "3f6cbf03f2cf202e367d7276a83c6af7ecdd629b1530d61b166402f4bcf15a34"
+      "observed": "7d3ffe31bce13c32f623fb2f90f947343b9ce1fb13d940ca156cbc92a5d9b0b6",
+      "expected": "7d3ffe31bce13c32f623fb2f90f947343b9ce1fb13d940ca156cbc92a5d9b0b6"
     },
     {
       "check": "input SHA256: configs/image_to_image.yaml",
@@ -1504,15 +1499,15 @@
       "check": "input SHA256: configs/multiseed/image_text_to_image_seed43.yaml",
       "required": true,
       "pass": true,
-      "observed": "04c2bd16107eb25cad25db09fe1cbaca58072c99ec481a2406aaa694d5cf8123",
-      "expected": "04c2bd16107eb25cad25db09fe1cbaca58072c99ec481a2406aaa694d5cf8123"
+      "observed": "efeaa12a5314af0a2ed63f7c134c84e01a92d18162c3514de8be0a65ded4d8e9",
+      "expected": "efeaa12a5314af0a2ed63f7c134c84e01a92d18162c3514de8be0a65ded4d8e9"
     },
     {
       "check": "input SHA256: configs/multiseed/image_text_to_image_seed44.yaml",
       "required": true,
       "pass": true,
-      "observed": "488cf0ac035574b5576f637027bbc2a8356d78f8cd797551a20ac69ee025dfa5",
-      "expected": "488cf0ac035574b5576f637027bbc2a8356d78f8cd797551a20ac69ee025dfa5"
+      "observed": "fdc3e7751ddd8977ee5137cbdefab05a60b91d7e148540da4c0b9d49ebf5ea6d",
+      "expected": "fdc3e7751ddd8977ee5137cbdefab05a60b91d7e148540da4c0b9d49ebf5ea6d"
     },
     {
       "check": "input SHA256: configs/multiseed/image_to_image_seed43.yaml",
@@ -1567,29 +1562,29 @@
       "check": "input SHA256: pmc_pair_retrieval/dataset.py",
       "required": true,
       "pass": true,
-      "observed": "9c1040412347d135eaebbfaeca49e0f516b388198189bf92daf15cb2eb1f579a",
-      "expected": "9c1040412347d135eaebbfaeca49e0f516b388198189bf92daf15cb2eb1f579a"
+      "observed": "2ced1804b3d6789912949fcefb3c28afdb46542766580fb396763eced444e376",
+      "expected": "2ced1804b3d6789912949fcefb3c28afdb46542766580fb396763eced444e376"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/evaluate.py",
       "required": true,
       "pass": true,
-      "observed": "7b98def392522e2aeb515015487241f213e29c0f7e18b723324c7f98ad00a486",
-      "expected": "7b98def392522e2aeb515015487241f213e29c0f7e18b723324c7f98ad00a486"
+      "observed": "4016d3619cabb5887bd732859aad26f03f3ec03fe2e3c20c9c867c21dfe3419f",
+      "expected": "4016d3619cabb5887bd732859aad26f03f3ec03fe2e3c20c9c867c21dfe3419f"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/metrics.py",
       "required": true,
       "pass": true,
-      "observed": "f4e8a61843c4d7b8e485037b14935ecbca5625e5b6e2c682e6fc3af7cd2e5f83",
-      "expected": "f4e8a61843c4d7b8e485037b14935ecbca5625e5b6e2c682e6fc3af7cd2e5f83"
+      "observed": "7791cacf420b42966a9976946fba3d0047d4941bba9a64338573260cd6510d62",
+      "expected": "7791cacf420b42966a9976946fba3d0047d4941bba9a64338573260cd6510d62"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/model.py",
       "required": true,
       "pass": true,
-      "observed": "5f06766b71cf9fab65a8b947a00d14c480412e9ada782f7e67fb64576fc2f644",
-      "expected": "5f06766b71cf9fab65a8b947a00d14c480412e9ada782f7e67fb64576fc2f644"
+      "observed": "4dfe5c27f921d905091281ecc98f2d935d3271d4393a58541d61fb58606b1861",
+      "expected": "4dfe5c27f921d905091281ecc98f2d935d3271d4393a58541d61fb58606b1861"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/split.py",
@@ -1602,22 +1597,22 @@
       "check": "input SHA256: pmc_pair_retrieval/train.py",
       "required": true,
       "pass": true,
-      "observed": "e32725be098d5250fbe3fdc6b43a548464726acf51de31d48084ff220d2eeef7",
-      "expected": "e32725be098d5250fbe3fdc6b43a548464726acf51de31d48084ff220d2eeef7"
+      "observed": "fad620ab11c85a4e9dd8b8f8afb8803c50714745956188ad034eccb1ddd2fd0a",
+      "expected": "fad620ab11c85a4e9dd8b8f8afb8803c50714745956188ad034eccb1ddd2fd0a"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/train_image_text_to_image.py",
       "required": true,
       "pass": true,
-      "observed": "c2d369933db142382c9f9a39d239c15b855923d48972a1cd47b78f24dc9cb750",
-      "expected": "c2d369933db142382c9f9a39d239c15b855923d48972a1cd47b78f24dc9cb750"
+      "observed": "78a7db157324f172181d925e01f3fdcd8fb2a4f90fd957fe2d75754f26abd12a",
+      "expected": "78a7db157324f172181d925e01f3fdcd8fb2a4f90fd957fe2d75754f26abd12a"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/train_image_to_image.py",
       "required": true,
       "pass": true,
-      "observed": "4cfbc98621a827f35f360785ae834118de0fd0488e9b4b184a903e706c2afe25",
-      "expected": "4cfbc98621a827f35f360785ae834118de0fd0488e9b4b184a903e706c2afe25"
+      "observed": "972a275b142258d79479453e706e7e0e73db4381359055e5115fecdd903ce5f7",
+      "expected": "972a275b142258d79479453e706e7e0e73db4381359055e5115fecdd903ce5f7"
     },
     {
       "check": "input SHA256: pmc_pair_retrieval/views.py",
@@ -1630,15 +1625,15 @@
       "check": "input SHA256: requirements.txt",
       "required": true,
       "pass": true,
-      "observed": "a13978895e5ca9ecf043b71bac7b943665fde51dfe7e6e32060f9b6b93beff16",
-      "expected": "a13978895e5ca9ecf043b71bac7b943665fde51dfe7e6e32060f9b6b93beff16"
+      "observed": "dc294ceaa3f55fabe869c9f49471fd613a3920a246abeb4eab775236642013b8",
+      "expected": "dc294ceaa3f55fabe869c9f49471fd613a3920a246abeb4eab775236642013b8"
     },
     {
       "check": "input SHA256: results/multiseed/PLAN.md",
       "required": true,
       "pass": true,
-      "observed": "861ef19cd7190b4d6e34bd072bbc82458e9a59f21fa58cfb07fe0fdebcbdab92",
-      "expected": "861ef19cd7190b4d6e34bd072bbc82458e9a59f21fa58cfb07fe0fdebcbdab92"
+      "observed": "8adfa1ccf9777a799559e904bb38ab917dd8601a6338835f82145b40096cc123",
+      "expected": "8adfa1ccf9777a799559e904bb38ab917dd8601a6338835f82145b40096cc123"
     },
     {
       "check": "input SHA256: results/multiseed/eval/seed43/image_text_to_image/fine_tuned_test.jsonl",
@@ -1807,13 +1802,6 @@
       "pass": true,
       "observed": "569fa58083b2187505a978ab238cb02668218ceff4a622e5e7408af85a301277",
       "expected": "569fa58083b2187505a978ab238cb02668218ceff4a622e5e7408af85a301277"
-    },
-    {
-      "check": "input SHA256: results/multiseed/provenance.json",
-      "required": true,
-      "pass": true,
-      "observed": "7f0a2bd78288058d2ee5a99d0462d6125b45fd9508f7b47de098f259eb2d59e7",
-      "expected": "7f0a2bd78288058d2ee5a99d0462d6125b45fd9508f7b47de098f259eb2d59e7"
     },
     {
       "check": "input SHA256: results/multiseed/runs/image_text_to_image_seed43/best_model.json",
@@ -2040,7 +2028,7 @@
       "expected": true
     },
     {
-      "check": "image_pairs.json matches the dataset used in the original experiment",
+      "check": "image_pairs.json matches the required dataset checksum",
       "required": true,
       "pass": true,
       "observed": "cda80d74d8ff98f0e6d31dbbf66c9823a109ab37ef51db8c800d16e5da0271d7",

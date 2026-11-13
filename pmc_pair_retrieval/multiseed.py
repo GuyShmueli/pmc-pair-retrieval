@@ -5,8 +5,7 @@
 
 Seed 42 is the released model. Seeds 43 and 44 describe variability only. The command
 computes the metrics, paired bootstrap intervals, sample standard deviations and seed-42
-agreement checks. See results/multiseed/PLAN.md for the analysis plan and
-results/multiseed/provenance.json for the records of the runs.
+agreement checks. See results/multiseed/PLAN.md for the analysis procedure.
 
 Only image_pairs.json is read from DATA, to reconstruct article groups. No images,
 model cache, model inference or GPU are needed, so the two commands above work with the
@@ -243,7 +242,7 @@ def build_report(args):
     checks = Checks()
     manifest_hashes = verify_manifest(checks)
     pairs_hash = sha256_file(args.data_dir / "image_pairs.json")
-    checks.add("image_pairs.json matches the dataset used in the original experiment", pairs_hash, IMAGE_PAIRS_SHA256)
+    checks.add("image_pairs.json matches the required dataset checksum", pairs_hash, IMAGE_PAIRS_SHA256)
     groups, articles = article_groups(read_pairs(args.data_dir))
     reference = load_json(ROOT / "results" / "results.json")
     checks.add("reference bootstrap replicates and seed", reference["bootstrap"],
@@ -251,7 +250,7 @@ def build_report(args):
                 "seed": metrics.PAIRED_BOOTSTRAP_SEED})
     input_hashes = {}
     for name in ("results/results.json", "data/article_disjoint_split.json",
-                 "results/multiseed/PLAN.md", "results/multiseed/provenance.json"):
+                 "results/multiseed/PLAN.md"):
         input_hashes[name] = sha256_file(ROOT / name)
     configurations, compared_total, mismatches_total = {}, 0, []
     for cfg in CONFIGURATIONS:
@@ -334,7 +333,7 @@ def build_report(args):
     base_inputs = {name for name in input_hashes if name.startswith(("weights/", "configs/", "data/",
                                                                    "results/per_query/", "results/rankings/"))}
     covered_inputs = set(input_hashes) if not args.custom else base_inputs | {
-        "results/results.json", "results/multiseed/PLAN.md", "results/multiseed/provenance.json"}
+        "results/results.json", "results/multiseed/PLAN.md"}
     checks.add("consumed release inputs missing from input manifest", sorted(covered_inputs - manifest_hashes.keys()), [])
     counts = checks.counts()
     return {
@@ -343,7 +342,6 @@ def build_report(args):
         "descriptive_only": "Seed 42 remains the released model. Other seeds describe variability only. "
                             "No seed or metric is selected on test.",
         "seeds": args.seeds, "input_mode": "custom runs" if args.custom else "shipped evaluations",
-        "historical_provenance": "results/multiseed/provenance.json",
         "plan": {"file": "results/multiseed/PLAN.md", "sha256": input_hashes["results/multiseed/PLAN.md"]},
         "input_manifest": {"file": "results/multiseed/INPUT_MANIFEST.json", "files_verified": len(manifest_hashes)},
         "inputs": [{"path": name, "sha256": digest} for name, digest in sorted(input_hashes.items())],
@@ -352,7 +350,6 @@ def build_report(args):
                                          for m in c["seeds"].values()),
         "verification_scope": "Fresh file hashes, configuration and checkpoint metadata, checkpoint selection, "
                               "stopping rules, query alignment, metric recomputation and seed-42 reference agreement. "
-                              "Historical training execution is documented separately in provenance.json. "
                               + ("Actual checkpoint bytes were also checked." if args.verify_weights else
                                  "Actual checkpoint bytes were not checked by this analysis."),
         "metrics": list(METRICS), "paired_metrics": list(PAIRED_METRICS),
@@ -371,8 +368,8 @@ def render_markdown(report):
     seeds = report["seeds"]
     lines = ["# Three-seed retrieval results" if len(seeds) == 3 else "# Retrieval results across training seeds", "",
              report["descriptive_only"], "", report["verification_scope"], "",
-             "The original analysis plan is in `PLAN.md`. Historical audit information is in `provenance.json`. "
-             "The counts below refer to the checks performed by this portable report command.", "",
+             "The analysis procedure is in `PLAN.md`. "
+             "The counts below refer to the checks performed by this report command.", "",
              "## Selected checkpoints", "",
              "| Configuration | Seed | Selected epoch | Epochs run | Validation Recall@10 at selection (%) |",
              "|---|---:|---:|---:|---:|"]

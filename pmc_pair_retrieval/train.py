@@ -7,7 +7,7 @@ The configuration file selects the trainer through its ``configuration`` key
 (``image_to_image`` or ``image_text_to_image``).
 
 String hashing. The image_text_to_image training-pair order depends on Python's string
-hashing, which is fixed when the interpreter starts; the published runs used CPython 3.11
+hashing, which is fixed when the interpreter starts. Training requires CPython 3.11
 with ``PYTHONHASHSEED=42``. This command tests the hash seed that the interpreter actually
 uses, through the hash of a probe string: the environment variable alone is not enough,
 because ``python -E`` and ``-I`` leave it visible but make the interpreter ignore it. If the
@@ -26,7 +26,7 @@ dict, with every top-level value of the form ``data/...`` replaced by the absolu
 that repository file and ``epochs`` replaced by ``--epochs`` when given, and an
 ``argparse.Namespace`` with the absolute paths ``config``, ``data_dir`` and
 ``output_dir``, the overrides ``max_steps`` and ``epochs`` (``None`` when not given) and
-the flag ``allow_missing_images``. On entry, string hashing matches the published runs, the
+the flag ``allow_missing_images``. On entry, string hashing matches the required settings, the
 pinned model cache has passed ``model.precheck_model_cache``, the data directory holds
 ``image_pairs.json`` and ``images/``, and the output directory exists and is empty. The
 cache is checked before the output directory is created, so that a wrong environment
@@ -53,7 +53,7 @@ TRAINERS = {
     "image_to_image": "pmc_pair_retrieval.train_image_to_image",
     "image_text_to_image": "pmc_pair_retrieval.train_image_text_to_image",
 }
-# String hashing of the published runs: CPython 3.11 with PYTHONHASHSEED=42. The hash of the
+# Required string hashing: CPython 3.11 with PYTHONHASHSEED=42. The hash of the
 # probe string under these conditions identifies the hash seed that an interpreter really uses.
 HASH_SEED = 42
 PYTHON_VERSION = (3, 11)
@@ -105,7 +105,7 @@ def load_config(path: str | os.PathLike) -> dict:
     if config.get("configuration") not in TRAINERS:
         raise SystemExit(f"{path}: 'configuration' must be one of {sorted(TRAINERS)}")
     if type(config.get("hash_seed")) is not int or config["hash_seed"] != HASH_SEED:
-        raise SystemExit(f"{path}: 'hash_seed' must be {HASH_SEED}, the PYTHONHASHSEED of the published runs")
+        raise SystemExit(f"{path}: 'hash_seed' must be {HASH_SEED}, the required PYTHONHASHSEED")
     _reject_number_strings(config)
     return config
 
@@ -149,7 +149,7 @@ def validation_line(epoch: int, metric: str, val: Mapping, minutes: Mapping, bes
 
 
 def hash_seed_problems() -> list[str]:
-    """Why string hashing in this interpreter may differ from the published runs; empty if it matches.
+    """Return unmet interpreter and string-hashing requirements, or an empty list when all pass.
 
     The hash seed in use is tested through the hash of a probe string, not through the
     ``PYTHONHASHSEED`` variable, which ``python -E`` and ``-I`` leave in ``os.environ`` while
@@ -205,7 +205,7 @@ def restart_command(orig_argv: Sequence[str]) -> list[str]:
 
 
 def ensure_hash_seed(allow_restart: bool) -> None:
-    """Make sure that string hashing matches the published runs, restarting the interpreter once if needed.
+    """Enforce the required string hashing, restarting the interpreter once if needed.
 
     The hash seed is fixed at interpreter start-up, so it can only be corrected by executing
     the same command again (``os.execve``) with ``PYTHONHASHSEED`` set and without
@@ -220,13 +220,13 @@ def ensure_hash_seed(allow_restart: bool) -> None:
         return
     reasons = "; ".join(problems)
     if sys.version_info[:2] != PYTHON_VERSION:
-        raise SystemExit(f"Python 3.11 is required to reproduce the published runs: string hashing and the library "
+        raise SystemExit(f"Python 3.11 is required for training: string hashing and the library "
                          f"builds differ between Python versions ({reasons}).")
     if restarted:
-        raise SystemExit(f"String hashing still differs from the published runs after restarting Python with "
+        raise SystemExit(f"String hashing still fails the required check after restarting Python with "
                          f"PYTHONHASHSEED={HASH_SEED}: {reasons}.")
     if not allow_restart:
-        raise SystemExit(f"String hashing differs from the published runs ({reasons}); start Python with "
+        raise SystemExit(f"String hashing fails the required check ({reasons}). Start Python with "
                          f"PYTHONHASHSEED={HASH_SEED} and without -E or -I.")
     env = dict(os.environ)
     if sys.flags.ignore_environment:
@@ -234,7 +234,7 @@ def ensure_hash_seed(allow_restart: bool) -> None:
     env.update({"PYTHONHASHSEED": str(HASH_SEED), _RESTART_MARKER: "1"})
     without = " and without -E/-I" if sys.flags.ignore_environment else ""
     print(f"[train] restarting with PYTHONHASHSEED={HASH_SEED} (was {os.environ.get('PYTHONHASHSEED', 'unset')})"
-          f"{without} so that string hashing matches the published runs", flush=True)
+          f"{without} to apply the required string-hashing settings", flush=True)
     sys.stderr.flush()
     os.execve(sys.executable, restart_command(sys.orig_argv), env)
 

@@ -60,8 +60,7 @@ hard_negatives_sampled_per_image: 3
 # its image embedding with the mean of the unit embeddings of its distinct descriptions (query_text: mean;
 # the mean is not renormalised); evaluate scores the reported results with the same query text. The
 # checkpoint with the highest validation metric is kept (strictly higher than all earlier epochs).
-# Training stops once the metric has not improved for patience epochs, but not before min_epochs; in the
-# published run (seed 42) it stopped training after epoch 24, and the checkpoint of epoch 21 was kept.
+# Training stops once the metric has not improved for patience epochs, but not before min_epochs.
 query_text: mean
 eval_batch_size: 128        # images per forward pass in validation and evaluate
 text_batch_size: 256        # descriptions per text batch in validation and evaluate

@@ -2,9 +2,9 @@
 
 Seed 42 remains the released model. Other seeds describe variability only. No seed or metric is selected on test.
 
-Fresh file hashes, configuration and checkpoint metadata, checkpoint selection, stopping rules, query alignment, metric recomputation and seed-42 reference agreement. Historical training execution is documented separately in provenance.json. Actual checkpoint bytes were not checked by this analysis.
+Fresh file hashes, configuration and checkpoint metadata, checkpoint selection, stopping rules, query alignment, metric recomputation and seed-42 reference agreement. Actual checkpoint bytes were not checked by this analysis.
 
-The original analysis plan is in `PLAN.md`. Historical audit information is in `provenance.json`. The counts below refer to the checks performed by this portable report command.
+The analysis procedure is in `PLAN.md`. The counts below refer to the checks performed by this report command.
 
 ## Selected checkpoints
 
@@ -101,4 +101,4 @@ Fine-tuned minus pretrained, in percentage points, with 95% intervals from 5,000
 
 Seed 42: 232 values compared with `results/results.json`, 0 mismatches.
 
-Fresh required checks: 268 passed, 0 failed. Informational checks: 6 passed, 0 did not. Full observed and expected values are in `multiseed.json`.
+Fresh required checks: 267 passed, 0 failed. Informational checks: 6 passed, 0 did not. Full observed and expected values are in `multiseed.json`.

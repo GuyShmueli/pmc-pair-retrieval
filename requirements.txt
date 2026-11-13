@@ -1,4 +1,4 @@
-# Versions used for the published runs (Python 3.11.10, Linux x86-64, NVIDIA L40S, CUDA 12.6 wheels).
+# Pinned environment: Python 3.11.10, Linux x86-64, CUDA 12.6 wheels.
 # Model construction, data augmentation, JPEG decoding and tokenisation all depend on these versions,
 # so keep the pins for exact reproduction. torch and torchvision come from the PyTorch CUDA 12.6 index.
 --extra-index-url https://download.pytorch.org/whl/cu126
