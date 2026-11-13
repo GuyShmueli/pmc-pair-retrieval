@@ -81,8 +81,8 @@ full-text archive of the U.S. National Library of Medicine. Each image keeps the
 
 | License | Images | Articles |
 |---|---:|---:|
-| [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 35 | 34 |
-| [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | 20 | 19 |
+| [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 50 | 48 |
+| [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | 5 | 5 |
 
 The licenses are the ones recorded in `licenses.csv` of the PMC-PaIR dataset. For each of these images, that file also
 records: "Automatic caption/XML screening and article metadata extraction; no individual visual or legal clearance is

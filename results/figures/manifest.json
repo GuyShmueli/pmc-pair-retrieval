@@ -317,8 +317,8 @@
     },
     {
       "path": "DATA_DIR/licenses.csv",
-      "bytes": 184955180,
-      "sha256": "101ee8629e79ce7daf0f451efb151213bba965527cc237742d1bc13a57b16eaa"
+      "bytes": 184810300,
+      "sha256": "53b95239f48cdab17497299bb886178e5f4b8c4ca1c2e2471a0fb9446922797c"
     },
     {
       "path": "DATA_DIR/withheld_image_ids.txt",
@@ -519,13 +519,13 @@
     },
     {
       "path": "captions.tex",
-      "bytes": 20977,
-      "sha256": "4707abb2909b561244dab723ba4c264b6f2b34da48b3b2a5985b217728fa726e"
+      "bytes": 20887,
+      "sha256": "a1a7ad27e79bba5f7b60117a4eef8899be918cf1123e0615758ff51032605158"
     },
     {
       "path": "image_references.tex",
       "bytes": 21973,
-      "sha256": "3f504aa8ec4a0982e8ee769b2b693c881915413ec32201cd585ddc66e55c3a5e"
+      "sha256": "9875100e048339706eb0b72191be6335bc5fdd9d48acd21dd76ff5029b8e6556"
     },
     {
       "path": "figure_pages.tex",
@@ -565,7 +565,7 @@
     {
       "path": "source_data/image_credits.csv",
       "bytes": 72211,
-      "sha256": "17d62b29a13f46f14d4ffefffb8339870603ea998df2eb8ef3a5e609871d41e5"
+      "sha256": "f3e4c88d3489d58ea7527a77e976b0cbf310749002f7a0e638b967ecc8e18773"
     }
   ]
 }
