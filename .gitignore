@@ -1,0 +1,30 @@
+# Outputs of the documented commands, in the repository root. The leading slashes keep these
+# patterns away from the shipped results/figures/, results/multiseed/runs/, results/multiseed/eval/,
+# data/image_sizes.csv and data/pixel_md5.json. Without a trailing slash, a pattern also matches a
+# symbolic link to an output folder.
+/runs
+/eval
+/eval_*
+/figures
+/seed_reports
+/seed_runs
+/split.json
+/image_sizes.csv
+/pixel_md5.json
+
+# The two weight files, and partial downloads of them (see "Download the released weights" in
+# README.md). The sidecars weights/*.json stay tracked.
+/weights/*.safetensors
+/weights/*.part
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Notebooks and editors
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/

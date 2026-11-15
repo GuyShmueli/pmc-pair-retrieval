@@ -1,0 +1,100 @@
+{
+  "n_queries": 8096,
+  "R@1": {
+    "mean": 0.07542885542688928,
+    "lo": 0.07118119708013448,
+    "hi": 0.0805439579490275
+  },
+  "R@5": {
+    "mean": 0.2102111837635251,
+    "lo": 0.2027275295309923,
+    "hi": 0.21713363652372009
+  },
+  "R@10": {
+    "mean": 0.3154585068486815,
+    "lo": 0.30752950394630807,
+    "hi": 0.32305844731259864
+  },
+  "R@100": {
+    "mean": 0.7635548448644711,
+    "lo": 0.7537056210502133,
+    "hi": 0.7701605868290672
+  },
+  "Hit@1": {
+    "mean": 0.12240612648221344,
+    "lo": 0.11598320158102766,
+    "hi": 0.13006422924901187
+  },
+  "Hit@5": {
+    "mean": 0.3028656126482213,
+    "lo": 0.29322813735177866,
+    "hi": 0.31189785079051385
+  },
+  "Hit@10": {
+    "mean": 0.42922430830039526,
+    "lo": 0.4176105484189723,
+    "hi": 0.43873517786561267
+  },
+  "Hit@100": {
+    "mean": 0.847949604743083,
+    "lo": 0.8392971837944664,
+    "hi": 0.8554872776679843
+  },
+  "mAP": {
+    "mean": 0.17174316558353736,
+    "lo": 0.1672918530048234,
+    "hi": 0.17684017075393083
+  },
+  "nDCG": {
+    "mean": 0.3463723804322227,
+    "lo": 0.34181765153233196,
+    "hi": 0.35055918963678645
+  },
+  "MRR": 0.22003882053778825,
+  "median_first_relevant_rank": 15.0,
+  "retrieval": "image_text_to_image",
+  "split": "test",
+  "name": "fine_tuned",
+  "views": 3,
+  "gallery_size": 8096,
+  "n_ignored_entries": 144344,
+  "score_definition": "cos(image_q, image_g) + t_q . image_g",
+  "query_text": "t_q = mean of the unit embeddings of the query image's distinct descriptions (not renormalised)",
+  "n_texts": 5056,
+  "weights": {
+    "file": "results/multiseed/runs/image_text_to_image_seed44/best_model.safetensors",
+    "kind": "full_model",
+    "n_tensors": 351,
+    "sha256": "049b11db47ff7bce4563d808b0fbb9fcf6e1342fc649ee9ed49fee6f6e720d92",
+    "state_dict_sha256": "91ff29172d066dd0946346aded14b425e01cabbce045dd92434fc2f15964592d",
+    "model_state_dict_sha256": "91ff29172d066dd0946346aded14b425e01cabbce045dd92434fc2f15964592d",
+    "configuration": "image_text_to_image",
+    "epoch": 26,
+    "global_step": 14248,
+    "selection": {
+      "split": "val",
+      "metric": "R@10",
+      "value": 0.3093657143409502
+    }
+  },
+  "settings": {
+    "config": "configs/image_text_to_image.yaml",
+    "image_size": 224,
+    "image_batch_size": 128,
+    "text_batch_size": 256,
+    "precision": "fp32 weights, bf16 autocast encoders, fp32 scores without TF32"
+  },
+  "data": {
+    "split_file_sha256": "b0b7be4be1597fa4e557fa4c5a51d0148361c2f253a604cf3df4a95a277c30eb",
+    "image_pairs_sha256": "cda80d74d8ff98f0e6d31dbbf66c9823a109ab37ef51db8c800d16e5da0271d7",
+    "n_images": 86893
+  },
+  "environment": {
+    "gpu": "NVIDIA L40S",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "numpy": "2.1.2",
+    "python": "3.11.10"
+  },
+  "seconds": 79.9384241104126
+}

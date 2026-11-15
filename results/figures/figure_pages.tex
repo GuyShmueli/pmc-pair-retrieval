@@ -1,0 +1,17 @@
+% Reference page layout of the figures: every figure at its natural size (180 mm wide, all text 7 pt)
+% with its legend directly below it, one figure per page. A4 with 15 mm margins gives a text block of
+% 180 x 267 mm; legends are set in 8 pt Helvetica. Compile with pdflatex (twice, for the citations) in
+% the directory that holds the figure PDFs, captions.tex and image_references.tex.
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=15mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[font=footnotesize,labelfont=bf,skip=4pt]{caption}
+\begin{document}
+\input{captions.tex}
+\clearpage
+\input{image_references.tex}
+\end{document}

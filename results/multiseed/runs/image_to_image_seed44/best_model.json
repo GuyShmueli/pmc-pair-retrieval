@@ -1,0 +1,105 @@
+{
+  "configuration": "image_to_image",
+  "epoch": 7,
+  "global_step": 3857,
+  "val": {
+    "n_queries": 8245,
+    "R@1": {
+      "mean": 0.04024637558187303,
+      "lo": 0.03724879421511516,
+      "hi": 0.0439050268483325
+    },
+    "R@5": {
+      "mean": 0.12507302177325008,
+      "lo": 0.11904012192394857,
+      "hi": 0.13144835523859127
+    },
+    "R@10": {
+      "mean": 0.1957825158289789,
+      "lo": 0.18873396113135882,
+      "hi": 0.20355893832556382
+    },
+    "R@100": {
+      "mean": 0.5847253379703528,
+      "lo": 0.5753383643347658,
+      "hi": 0.5941744428479838
+    },
+    "Hit@1": {
+      "mean": 0.0687689508793208,
+      "lo": 0.06367192237719829,
+      "hi": 0.07471801091570648
+    },
+    "Hit@5": {
+      "mean": 0.18556701030927836,
+      "lo": 0.17706488781079444,
+      "hi": 0.19394178289872652
+    },
+    "Hit@10": {
+      "mean": 0.2754396604002426,
+      "lo": 0.26634020618556703,
+      "hi": 0.2843298969072165
+    },
+    "Hit@100": {
+      "mean": 0.6834445118253487,
+      "lo": 0.6733656761673742,
+      "hi": 0.6939963614311704
+    },
+    "mAP": {
+      "mean": 0.10564426225977579,
+      "lo": 0.10158481300981469,
+      "hi": 0.11013911977364069
+    },
+    "nDCG": {
+      "mean": 0.2715228122704796,
+      "lo": 0.26719606849663086,
+      "hi": 0.2762008634053031
+    }
+  },
+  "config": {
+    "configuration": "image_to_image",
+    "seed": 44,
+    "hash_seed": 42,
+    "split": "data/article_disjoint_split.json",
+    "pixel_hashes": "data/pixel_md5.json",
+    "image_size": 224,
+    "train_views": 3,
+    "eval_views": 3,
+    "crop_scale": [
+      0.9,
+      1.0
+    ],
+    "color_jitter": {
+      "brightness": 0.1,
+      "contrast": 0.1,
+      "p": 0.5
+    },
+    "rotation_degrees": 5,
+    "epochs": 12,
+    "batch_size": 128,
+    "lr": 6e-06,
+    "layer_decay": 0.75,
+    "weight_decay": 0.05,
+    "betas": [
+      0.9,
+      0.98
+    ],
+    "eps": 1e-06,
+    "warmup_steps": 200,
+    "clip_grad_norm": 1.5,
+    "temperature": 0.1,
+    "grad_checkpointing": true,
+    "eval_batch_size": 128,
+    "early_stopping": {
+      "metric": "R@10",
+      "min_epochs": 3,
+      "patience": 12
+    },
+    "num_workers": 8,
+    "log_every": 100
+  },
+  "weights_file": "best_model.safetensors",
+  "kind": "vision_tower",
+  "n_tensors": 151,
+  "state_dict_sha256": "596c7a7124c8b044dcd55abe83b339b5112c9f2e766c91ecdf7350216060ec03",
+  "sha256": "bc0a4fb9c6bbe386f8801103fbb8ccd2db926f1fbdf59d925423d8dcbda26b61"
+}

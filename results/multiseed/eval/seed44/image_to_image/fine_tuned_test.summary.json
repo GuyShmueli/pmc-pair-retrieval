@@ -1,0 +1,100 @@
+{
+  "n_queries": 8096,
+  "R@1": {
+    "mean": 0.043472172769721554,
+    "lo": 0.039803828553755846,
+    "hi": 0.046890867847430226
+  },
+  "R@5": {
+    "mean": 0.12878735683372486,
+    "lo": 0.12249898159634433,
+    "hi": 0.13601209363106845
+  },
+  "R@10": {
+    "mean": 0.20033615869295088,
+    "lo": 0.19368888432844017,
+    "hi": 0.20766613990371668
+  },
+  "R@100": {
+    "mean": 0.5996237730574261,
+    "lo": 0.5902257367494615,
+    "hi": 0.6083732725049069
+  },
+  "Hit@1": {
+    "mean": 0.0741106719367589,
+    "lo": 0.06929347826086957,
+    "hi": 0.07905447134387351
+  },
+  "Hit@5": {
+    "mean": 0.19355237154150198,
+    "lo": 0.18403841403162055,
+    "hi": 0.20244874011857708
+  },
+  "Hit@10": {
+    "mean": 0.2837203557312253,
+    "lo": 0.2743268280632411,
+    "hi": 0.29299654150197624
+  },
+  "Hit@100": {
+    "mean": 0.6970108695652174,
+    "lo": 0.6867588932806324,
+    "hi": 0.7057929841897232
+  },
+  "mAP": {
+    "mean": 0.10912560807602838,
+    "lo": 0.10507013759156676,
+    "hi": 0.11375052182338488
+  },
+  "nDCG": {
+    "mean": 0.27669660107397764,
+    "lo": 0.272568271169444,
+    "hi": 0.28135964369787747
+  },
+  "MRR": 0.14401909112542613,
+  "median_first_relevant_rank": 37.0,
+  "retrieval": "image_to_image",
+  "split": "test",
+  "name": "fine_tuned",
+  "views": 3,
+  "gallery_size": 8096,
+  "n_ignored_entries": 144344,
+  "score_definition": "cos(image_q, image_g)",
+  "query_text": null,
+  "n_texts": null,
+  "weights": {
+    "file": "results/multiseed/runs/image_to_image_seed44/best_model.safetensors",
+    "kind": "vision_tower",
+    "n_tensors": 151,
+    "sha256": "bc0a4fb9c6bbe386f8801103fbb8ccd2db926f1fbdf59d925423d8dcbda26b61",
+    "state_dict_sha256": "596c7a7124c8b044dcd55abe83b339b5112c9f2e766c91ecdf7350216060ec03",
+    "model_state_dict_sha256": "f858ba9071bab72c65e86896654d1a5e1dc519619f29514ce44be8178376bce5",
+    "configuration": "image_to_image",
+    "epoch": 7,
+    "global_step": 3857,
+    "selection": {
+      "split": "val",
+      "metric": "R@10",
+      "value": 0.1957825158289789
+    }
+  },
+  "settings": {
+    "config": "configs/image_to_image.yaml",
+    "image_size": 224,
+    "image_batch_size": 128,
+    "text_batch_size": null,
+    "precision": "fp32 weights, bf16 autocast encoders, fp32 scores without TF32"
+  },
+  "data": {
+    "split_file_sha256": "b0b7be4be1597fa4e557fa4c5a51d0148361c2f253a604cf3df4a95a277c30eb",
+    "image_pairs_sha256": "cda80d74d8ff98f0e6d31dbbf66c9823a109ab37ef51db8c800d16e5da0271d7",
+    "n_images": 86893
+  },
+  "environment": {
+    "gpu": "NVIDIA L40S",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "numpy": "2.1.2",
+    "python": "3.11.10"
+  },
+  "seconds": 24.621982097625732
+}
