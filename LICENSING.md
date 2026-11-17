@@ -6,16 +6,16 @@ Different terms apply to different files of this repository. Every file belongs 
 |---|---|---|
 | Code, documentation and configuration | `pmc_pair_retrieval/**`, `configs/**`, `README.md`, `LICENSE`, `LICENSING.md`, `CITATION.cff`, `SHA256SUMS`, `WEIGHTS_SHA256SUMS`, `requirements.txt`, `environment.yml`, `.gitattributes`, `.gitignore` | MIT license in [`LICENSE`](LICENSE) |
 | Data files and results | `data/**`, `results/results.json`, `results/results.md`, `results/multiseed/**`, `results/per_query/**`, `results/rankings/**`, `results/figures/captions.tex`, `results/figures/figure_pages.tex`, `results/figures/manifest.json`, `results/figures/source_data/examples.csv`, `results/figures/source_data/overall_metrics.csv`, `results/figures/source_data/paired_differences.csv`, `results/figures/source_data/per_query.csv`, `results/figures/source_data/per_query_change.csv`, `results/figures/source_data/subgroups.csv` | [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) |
-| Weights | `weights/**` | Not yet set |
+| Weights | `weights/**` | MIT license in [`weights/LICENSE`](weights/LICENSE), which keeps Microsoft's notice for BiomedCLIP |
 | Third-party material | `results/figures/*.pdf`, `results/figures/image_references.tex`, `results/figures/source_data/image_credits.csv`, `THIRD_PARTY_NOTICES.md` | The terms recorded for each item. See "Third-party material" |
 
-A path that is not in this table is covered by neither license.
+A path that is not in this table is covered by none of these licenses.
 
 ## What `LICENSE` covers
 
 `LICENSE` holds the standard MIT text. In this repository, its words "this software and associated documentation files"
-mean the files of the first class and no others. It grants no license for the data files, the results, the weights or
-the third-party material.
+mean the files of the first class and no others. It grants no license for the data files, the results or the
+third-party material. The weights have their own MIT license file, `weights/LICENSE`.
 
 ## Data files and results
 
@@ -33,10 +33,15 @@ modifications, as the license requires. `data/article_disjoint_split.json` is id
 `weights/*.json` are their sidecars. The weight files are not stored in Git, so a clone does not contain them (see
 "Released weights" in `README.md`).
 
-The terms for these four files are not yet set. Neither `LICENSE` nor the CC BY 4.0 grant above covers them, whether or
-not the weight files are in your copy. The weight files are fine-tuned from BiomedCLIP. `THIRD_PARTY_NOTICES.md` quotes
-the license and the statements on use that Microsoft gives for pretrained BiomedCLIP. These do not set terms for the
-fine-tuned files.
+These files are released under the MIT license in `weights/LICENSE`. The weight files are fine-tuned from Microsoft's
+BiomedCLIP, and `weights/LICENSE` keeps Microsoft's copyright and license notice, as Microsoft's MIT license requires
+for copies and substantial portions. `THIRD_PARTY_NOTICES.md` also quotes the statements on use that Microsoft gives for
+pretrained BiomedCLIP.
+
+The weights were fine-tuned on training images of the PMC-PaIR dataset. These images are not in this repository and
+keep their own terms, which the dataset's `licenses.csv` records for each image. The dataset's `withheld.csv` lists the
+images whose files are not distributed, with reasons. The MIT license covers the weights to the extent of the authors'
+rights and grants no rights in the training images.
 
 ## Third-party material
 

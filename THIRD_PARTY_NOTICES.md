@@ -13,7 +13,7 @@ that `pmc_pair_retrieval.model` downloads come from `microsoft/BiomedNLP-BiomedB
 `d673b8835373c6fa116d6d8006b33d48734e305d`. The files of these two model repositories are not in this repository.
 
 This section quotes what Microsoft states for its pretrained models. It does not set terms for the fine-tuned weight
-files, whose terms are not yet set (see `LICENSING.md`).
+files. Those are released under the MIT license in `weights/LICENSE`, which keeps Microsoft's notice (see `LICENSING.md`).
 
 - BiomedCLIP model card:
   <https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/blob/9f341de24bfb00180f1b847274256e9b65a3a32e/README.md>

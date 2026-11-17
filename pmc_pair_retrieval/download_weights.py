@@ -6,10 +6,8 @@
 
 The two ``safetensors`` files are not stored in Git. Their names and sha256 values are read
 from the sidecars ``weights/<configuration>.json`` and must agree with
-``WEIGHTS_SHA256SUMS``; if they do not, the command stops. The files come from the Zenodo
-record ``WEIGHTS_RECORD_ID`` or from ``--base-url``. While ``WEIGHTS_RECORD_ID`` is
-``None`` the record has not been published, and without ``--base-url`` the command exits
-with a message that says so.
+``WEIGHTS_SHA256SUMS``; if they do not, the command stops. The files come from the
+versioned GitHub release at ``WEIGHTS_BASE_URL``, or from ``--base-url``.
 
 A file is streamed to ``weights/<name>.part`` and hashed on the way. It replaces
 ``weights/<name>``, in one atomic step, only if its size and sha256 are the expected ones;
@@ -44,9 +42,8 @@ WEIGHTS_DIR = REPOSITORY_ROOT / "weights"
 CHECKSUM_FILE = REPOSITORY_ROOT / "WEIGHTS_SHA256SUMS"
 CONFIGURATIONS = ("image_to_image", "image_text_to_image")
 
-# Id of the Zenodo record that holds the two weight files; None until the record is published.
-WEIGHTS_RECORD_ID = None
-ZENODO_FILE_URL = "https://zenodo.org/records/{record}/files/{name}?download=1"
+# Pin downloads to the release containing the checkpoints described by the sidecars.
+WEIGHTS_BASE_URL = "https://github.com/GuyShmueli/pmc-pair-retrieval/releases/download/v1.0.3"
 # The sidecars record no file size, so the exact sizes are kept here.
 WEIGHT_FILE_BYTES = {"image_to_image.safetensors": 344782408, "image_text_to_image.safetensors": 783652708}
 
@@ -172,10 +169,9 @@ def url_problem(url: str) -> str | None:
 
 
 def source_url(name: str, base_url: str | None) -> str:
-    """The URL of the weight file ``name``: below ``base_url`` if given, otherwise in the Zenodo record."""
-    if base_url is not None:
-        return f"{base_url.rstrip('/')}/{name}"
-    return ZENODO_FILE_URL.format(record=WEIGHTS_RECORD_ID, name=name)
+    """The URL of the weight file ``name`` in the pinned release or an explicit alternative."""
+    root = WEIGHTS_BASE_URL if base_url is None else base_url
+    return f"{root.rstrip('/')}/{name}"
 
 
 class _CheckedRedirects(urllib.request.HTTPRedirectHandler):
@@ -276,7 +272,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
                         help="the weight file to handle (default: all)")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--base-url", metavar="URL",
-                      help="take each file from URL/<file name> instead of the Zenodo record: https, or http for a "
+                      help="take each file from URL/<file name> instead of the GitHub release: https, or http for a "
                            "loopback address only; the sha256 values are checked in the same way")
     mode.add_argument("--check", action="store_true",
                       help="only hash the files in weights/, without using the network")
@@ -300,10 +296,6 @@ def main(argv: list[str] | None = None) -> None:
     """Verify the local weight files, or download the ones that are absent."""
     args = parse_args(argv)
     signal.signal(signal.SIGTERM, _terminate)
-    if not args.check and args.base_url is None and WEIGHTS_RECORD_ID is None:
-        raise SystemExit('[download_weights] The weight record has not been published, so there is nothing to download '
-                         'yet. See "Download the released weights" in README.md. --check verifies files that are '
-                         'already in weights/.')
     files = expected_files()
     selected = list(files.values()) if args.configuration == "all" else [files[args.configuration]]
     try:

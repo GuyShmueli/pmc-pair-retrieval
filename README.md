@@ -13,8 +13,9 @@ Dataset construction is documented in the companion
 The dataset is not yet available for download. Its reserved Zenodo DOI is
 [`10.5281/zenodo.23439169`](https://doi.org/10.5281/zenodo.23439169).
 
-Fine-tuned checkpoint downloads are also not yet available. Their metadata and checksums are included
-here. See [Released weights](#released-weights) for availability and terms.
+The two seed-42 fine-tuned checkpoints are available as attachments to
+[release v1.0.3](https://github.com/GuyShmueli/pmc-pair-retrieval/releases/tag/v1.0.3).
+Their metadata, checksums and MIT license are included here. See [Released weights](#released-weights).
 <!-- END release-status -->
 
 ## Installation
@@ -177,7 +178,7 @@ for split in val test; do
 done
 ```
 
-Once the fine-tuned weights are available, evaluate them with the corresponding configuration:
+After downloading the fine-tuned weights, evaluate them with the corresponding configuration:
 
 ```bash
 for split in val test; do
@@ -227,13 +228,29 @@ vision tower. Image-plus-text weights contain the full model.
 | image_text_to_image | `weights/image_text_to_image.safetensors` | full model, 351 tensors | 21 | 11,508 | 30.87 | `4d159e28b2ab1621e463bc3be8aab907356b83536d0ac9698620f32dabd54292` | `e7ebac89af320be1d57c7a51388623501d62b94353d84259be0c7f2d50bf56a9` |
 <!-- END compare:released-weights -->
 
-The terms for the fine-tuned weights and their sidecars are not yet set. Neither the repository's
-MIT license nor its CC BY 4.0 grant covers them. See [`LICENSING.md`](LICENSING.md).
+The fine-tuned weights and their sidecars are released under the MIT license in
+[`weights/LICENSE`](weights/LICENSE). That file also keeps Microsoft's copyright and license notice
+for BiomedCLIP, from which the weights are fine-tuned.
+
+The weights were fine-tuned from BiomedCLIP (see [Pretrained model](#pretrained-model)) on the
+training split of the [PMC-PaIR dataset](https://doi.org/10.5281/zenodo.23439169). The training
+images come from PubMed Central open-access articles and keep their own terms, which the dataset's
+`licenses.csv` records for each image. The dataset's `withheld.csv` lists the images whose files are
+not distributed, with reasons. The MIT license covers the weights to the extent of the authors'
+rights and grants no rights in the training images.
+
+The weights were developed for research on medical image retrieval and for reproducing the results
+in this repository. They were evaluated only with the automatic retrieval metrics in
+[Expected results](#expected-results), on the PMC-PaIR validation and test splits, with the
+three-view input described in [Configurations](#configurations). Relevance in that evaluation means
+a recorded image pair of the dataset, and those pairs were derived from figure captions and case
+text, not from image pixels. The weights have not been validated for clinical decision-making or
+production deployment. This guidance adds no restrictions to the MIT license.
 
 ### Download the released weights
 
-The downloader has no public weight record configured and currently reports that downloads are
-unavailable. Once a record is configured, download both files with:
+Download both files from
+[GitHub release v1.0.3](https://github.com/GuyShmueli/pmc-pair-retrieval/releases/tag/v1.0.3) with:
 
 ```bash
 python -m pmc_pair_retrieval.download_weights
@@ -398,9 +415,10 @@ separately with `sha256sum -c WEIGHTS_SHA256SUMS`.
 
 The code, documentation and configuration are MIT-licensed under [`LICENSE`](LICENSE). The data
 files in `data/` and the results in `results/` are released under CC BY 4.0, except the
-third-party material. [`LICENSING.md`](LICENSING.md) defines the paths of each class. Neither
-license covers the weights, whose terms are not yet set. Third-party material retains the terms
-recorded in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+third-party material. The fine-tuned weights are released under the MIT license in
+[`weights/LICENSE`](weights/LICENSE), which also keeps Microsoft's notice for BiomedCLIP.
+[`LICENSING.md`](LICENSING.md) defines the paths of each class. Third-party material retains the
+terms recorded in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 ## Citation
 
@@ -414,7 +432,7 @@ dataset construction pipeline if you use it. Bibliographic details are in [`CITA
 | `pmc_pair_retrieval/` | Training, evaluation, reporting and figure commands |
 | `configs/` | Training and evaluation settings |
 | `data/` | Split, cached negatives, pixel hashes and figure inputs |
-| `weights/` | Checkpoint sidecars and separately downloaded weight files |
+| `weights/` | Checkpoint sidecars, the weights' license and separately downloaded weight files |
 | `results/per_query/`, `results/rankings/` | Per-query metrics and top-10 retrieval lists |
 | `results/multiseed/` | Three-seed reports and training/evaluation records |
 | `results/figures/` | Figure PDFs, captions and source-data tables |

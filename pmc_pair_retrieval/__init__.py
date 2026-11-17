@@ -14,4 +14,4 @@ Importing the package loads no third-party library, so that ``train`` can restar
 interpreter with the required hash seed before anything heavy is imported.
 """
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
