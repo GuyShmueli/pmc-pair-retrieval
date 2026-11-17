@@ -2,13 +2,16 @@ cff-version: "1.2.0"
 message: >-
   Please cite this software, the PMC-PaIR dataset, the PMC-PaIR Data Descriptor,
   BiomedCLIP and, if you use it, the PMC-PaIR dataset construction pipeline, as
-  listed under references. The license field covers only the files that
-  LICENSING.md lists as code, documentation and configuration. LICENSING.md
-  gives the terms for the other paths.
+  listed under references. The code, documentation and configuration are
+  released under the MIT license, and the data files and results under
+  CC BY 4.0. LICENSING.md lists the paths of each class and the terms of the
+  weights and of third-party material.
 title: "BiomedCLIP image retrieval on PMC-PaIR"
 type: software
-version: "1.1.0rc1"
-license: MIT
+version: "1.0.1"
+license:
+  - MIT
+  - CC-BY-4.0
 authors:
   - family-names: Shmueli
     given-names: Guy

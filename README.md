@@ -227,8 +227,8 @@ vision tower. Image-plus-text weights contain the full model.
 | image_text_to_image | `weights/image_text_to_image.safetensors` | full model, 351 tensors | 21 | 11,508 | 30.87 | `4d159e28b2ab1621e463bc3be8aab907356b83536d0ac9698620f32dabd54292` | `e7ebac89af320be1d57c7a51388623501d62b94353d84259be0c7f2d50bf56a9` |
 <!-- END compare:released-weights -->
 
-The terms for the fine-tuned weights and their sidecars are not yet set. The repository's MIT
-license does not cover them. See [`LICENSING.md`](LICENSING.md).
+The terms for the fine-tuned weights and their sidecars are not yet set. Neither the repository's
+MIT license nor its CC BY 4.0 grant covers them. See [`LICENSING.md`](LICENSING.md).
 
 ### Download the released weights
 
@@ -396,10 +396,11 @@ separately with `sha256sum -c WEIGHTS_SHA256SUMS`.
 
 ## License
 
-The code, documentation and configuration are MIT-licensed under [`LICENSE`](LICENSE).
-[`LICENSING.md`](LICENSING.md) defines the covered paths. The license does not cover the weights,
-`data/` or `results/`, whose terms are not yet set. Third-party material retains the terms recorded
-in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+The code, documentation and configuration are MIT-licensed under [`LICENSE`](LICENSE). The data
+files in `data/` and the results in `results/` are released under CC BY 4.0, except the
+third-party material. [`LICENSING.md`](LICENSING.md) defines the paths of each class. Neither
+license covers the weights, whose terms are not yet set. Third-party material retains the terms
+recorded in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 ## Citation
 
