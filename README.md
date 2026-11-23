@@ -10,8 +10,7 @@ Dataset construction is documented in the companion
 <!-- BEGIN release-status -->
 ## Data and weights
 
-The dataset is not yet available for download. Its reserved Zenodo DOI is
-[`10.5281/zenodo.23439169`](https://doi.org/10.5281/zenodo.23439169).
+The dataset is available from Zenodo: https://doi.org/10.5281/zenodo.23439169
 
 The two seed-42 fine-tuned checkpoints are available as attachments to
 [release v1.0.3](https://github.com/GuyShmueli/pmc-pair-retrieval/releases/tag/v1.0.3).
