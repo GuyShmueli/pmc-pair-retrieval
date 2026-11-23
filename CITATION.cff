@@ -33,11 +33,12 @@ references:
     doi: "10.5281/zenodo.23439169"
   - type: article
     title: >-
-      Clinically similar image pairs with modality, anatomy and diagnosis
-      labels from PubMed Central case reports
+      A dataset of clinically similar image pairs from citation-linked case reports for medical image retrieval
     authors:
       - family-names: Shmueli
         given-names: Guy
+      - family-names: Bressem
+        given-names: Keno K.
       - family-names: Hope
         given-names: Tom
   - type: software
